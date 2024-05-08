@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>57.0</apiVersion>
+    <isExposed>true</isExposed>
+    <targets>
+    <target>lightning__AppPage</target>
+    <target>lightning__RecordPage</target>
+    <target>lightning__HomePage</target>
+    <target>lightning__FlowScreen</target>
+</targets>
+<targetConfigs>
+        <targetConfig targets="lightning__FlowScreen">
+           <property name="OutList" type="@salesforce/schema/Innova_Application_Software__c[]" label="Application and Software" role="outputOnly"></property>
+           <property name="OutString" type='String' label="Application Software Ouput String" role="outputOnly"></property>
+            <property name="OutStringSub" type='String' label="Application Software for Subcategory" role="outputOnly"></property>
+            
+            <property name="selectedRegion" type="String"></property>
+            <property name="selectedBrand" type="String"></property>
+            <property name="selectedBrand1" type="String"></property>
+
+
+           <property name="OutStringSoftware" type='String' label="Each Application Software " role="outputOnly"></property> 
+           <!-- //not in use last property -->
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

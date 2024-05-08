@@ -1,0 +1,37 @@
+.THIS .label-request {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    padding: 10px; /* Add padding for spacing */
+    border-bottom: 1px solid #ccc; /* Add bottom border for separation */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.THIS .label-request:hover{
+    background-color: #f0f0f0;
+}
+
+/* Styles for the left container */
+.THIS .label-request .left {
+    margin-right: 10px; /* Add right margin to separate from the text */
+}
+
+/* Styles for the right container */
+.THIS .label-request .right {
+    flex: 1; /* Expand to fill remaining space */
+}
+
+/* Style for the ServiceRequestItemName */
+.THIS .label-request .right b {
+    font-weight: bold; /* Make text bold */
+    display: block; /* Ensure each item starts on a new line */
+}
+
+/* Style for the ServiceRequestItemDesc */
+.THIS .label-request .right .description {
+    color: #666; /* Change text color to gray */
+    margin-top: 5px; /* Add top margin for separation */
+}
+
+.THIS .label-request .title {
+    font-weight: bold;
+}

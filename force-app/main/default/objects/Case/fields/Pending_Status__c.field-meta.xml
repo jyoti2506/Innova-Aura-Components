@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pending_Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Pending Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Pending 3rd party</fullName>
+                <default>false</default>
+                <label>Pending 3rd party</label>
+            </value>
+            <value>
+                <fullName>Pending development</fullName>
+                <default>false</default>
+                <label>Pending development</label>
+            </value>
+            <value>
+                <fullName>Pending user reply</fullName>
+                <default>false</default>
+                <label>Pending user reply</label>
+            </value>
+            <value>
+                <fullName>Waiting equipment return</fullName>
+                <default>false</default>
+                <label>Waiting equipment return</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

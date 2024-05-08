@@ -1,0 +1,135 @@
+<aura:component controller="approvalController" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction">
+    
+    <!-- Call Javescript Method on Load -->
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/> 
+    
+    <!-- Functional Attributes -->
+    <aura:attribute name="columns" type="list" description="Captures the value of column names of the data table"/>
+    <aura:attribute name="data" type="object" description="Captures the records displayed in the data table"/>
+    <aura:attribute name="sortedBy" default="submittedDate" type="string" description="Captures the column name used for sorting"/>
+    <aura:attribute name="sortedDirection" type="string" description="Captures the direction of sorting(ascending or descending)"/>
+    <aura:attribute name="isModalOpen" type="boolean" default="false"/>
+    <aura:attribute name="isModalOpen2" type="boolean" default="false"/>
+    <aura:attribute name="comment" type="string" default=""/>
+    <aura:attribute name="showMessage" type="boolean" default="false"/>
+    <aura:attribute name="showApprovalComponent" type="boolean" default="false"/>
+    
+    <!-- Spinner -->
+    <lightning:spinner aura:id="spinnerId" variant="brand" size="medium"/>
+    <!-- Spinner -->
+    
+    <aura:if isTrue="{!v.showMessage}">
+        <!-- start of card -->
+        <article class="slds-card">
+            <div class="slds-card__header slds-grid"></div>
+            <div class="slds-media__body">
+                <h1 class="slds-card__header-title slds-align_absolute-center slds-p-bottom_medium">Welcome! Once you have created a case, it will show here.</h1>
+            </div>
+            <footer class="slds-card__footer"></footer>
+        </article>
+        <!-- end of card -->
+    </aura:if>
+    
+    <aura:if isTrue="{!v.showApprovalComponent}">
+        <!-- Page Header -->
+        <div class="slds-page-header" role="banner">
+            <span class="slds-page-header__title roboto">My Cases</span>
+        </div>
+        <!-- Page Header -->
+        
+        <!--Approve and Reject buttons are disabled by default.Whenever a record is selected, buttons will be enabled-->
+        <div class="slds-m-vertical_medium">
+            <lightning:button aura:id="approvalButtonId" label="Approve" variant="success" disabled="true"
+                              onclick="{!c.openModal}"/>
+            <lightning:button aura:id="rejectButtonId" label="Reject" variant="destructive" disabled="true"
+                              onclick="{!c.openModal2}"/>
+        </div>
+        <!--Approve and Reject buttons are disabled by default.Whenever a record is selected, buttons will be enabled-->
+        
+        <!-- Page Body -->
+        <div>
+            <lightning:datatable aura:id="approvalRecordsTableId"
+                                 keyField="workItemId"
+                                 columns="{!v.columns}"
+                                 data="{!v.data}"
+                                 sortedBy="{!v.sortedBy}"
+                                 sortedDirection="{!v.sortedDirection}"
+                                 onsort="{!c.handleSortingOfRows}"
+                                 onrowselection="{!c.handleRowSelection}"/>
+            
+        </div>
+        <!--first modal-->
+        <div>
+            <aura:if isTrue="{!v.isModalOpen}">
+                
+                <!-- Modal/Popup Box starts here-->
+                <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+                    <div class="slds-modal__container">
+                        <!-- Modal/Popup Box Header Starts here-->
+                        <header class="slds-modal__header">
+                            <lightning:buttonIcon iconName="utility:close"
+                                                  onclick="{! c.closeModal }"
+                                                  alternativeText="close"
+                                                  variant="bare-inverse"
+                                                  class="slds-modal__close"/>
+                            <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">Submit for Approval</h2>
+                        </header>
+                        <!--Modal/Popup Box Body Starts here-->
+                        <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                            <lightning:textarea name="comment" label="Comment" placeholder="Enter your comment" value="{!v.comment}"/>
+                        </div>
+                        <!--Modal/Popup Box Footer Starts here-->
+                        <footer class="slds-modal__footer">
+                            <lightning:button variant="neutral"
+                                              label="Cancel"
+                                              title="Cancel"
+                                              onclick="{!c.closeModal}"/>
+                            <lightning:button variant="brand"
+                                              label="Submit"
+                                              title="Submit"
+                                              onclick="{!c.handleApproveAction}"/>
+                        </footer>
+                    </div>
+                </section>
+                <div class="slds-backdrop slds-backdrop_open"></div>
+            </aura:if>
+        </div>
+        <!--second modal-->
+        <div>
+            <aura:if isTrue="{!v.isModalOpen2}">
+                
+                <!-- Modal/Popup Box starts here-->
+                <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+                    <div class="slds-modal__container">
+                        <!-- Modal/Popup Box Header Starts here-->
+                        <header class="slds-modal__header">
+                            <lightning:buttonIcon iconName="utility:close"
+                                                  onclick="{!c.closeModal2}"
+                                                  alternativeText="close"
+                                                  variant="bare-inverse"
+                                                  class="slds-modal__close"/>
+                            <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">Submit for Reject</h2>
+                        </header>
+                        <!--Modal/Popup Box Body Starts here-->
+                        <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                            <lightning:textarea name="comment" label="Comment" placeholder="Enter your comment" value="{!v.comment}"/>
+                        </div>
+                        <!--Modal/Popup Box Footer Starts here-->
+                        <footer class="slds-modal__footer">
+                            <lightning:button variant="neutral"
+                                              label="Cancel"
+                                              title="Cancel"
+                                              onclick="{!c.closeModal2}"/>
+                            <lightning:button variant="brand"
+                                              label="Submit"
+                                              title="Submit"
+                                              onclick="{!c.handleRejectAction}"/>
+                        </footer>
+                    </div>
+                </section>
+                <div class="slds-backdrop slds-backdrop_open"></div>
+            </aura:if>
+        </div>
+        <!-- Page Body -->
+    </aura:if>
+</aura:component>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>StatusIsPendingRequiredPendingReason</fullName>
+    <active>true</active>
+    <description>Required when status is set to Pending.</description>
+    <errorConditionFormula>OR($RecordType.DeveloperName = &apos;Incident&apos;,$RecordType.DeveloperName =&apos;Request&apos;)&amp;&amp;
+(ISPICKVAL(Status, &quot;Pending&quot;)&amp;&amp;
+ISBLANK(Innova_Pending_Reason__c))</errorConditionFormula>
+    <errorDisplayField>Innova_Pending_Reason__c</errorDisplayField>
+    <errorMessage>Pending Reason mandatory when Status is on pending.</errorMessage>
+</ValidationRule>

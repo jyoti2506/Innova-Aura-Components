@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>wkitsm__ChangedLocked</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+$RecordType.DeveloperName = &apos;Change&apos;,
+NOT(ISPICKVAL(Status, &apos;Submitted for Approval&apos;)),
+ISPICKVAL(PRIORVALUE(Status), &apos;Submitted for Approval&apos;)
+)</errorConditionFormula>
+    <errorMessage>You cannot edit a case when it is in &apos;Submitted for Approval&apos; state.</errorMessage>
+</ValidationRule>

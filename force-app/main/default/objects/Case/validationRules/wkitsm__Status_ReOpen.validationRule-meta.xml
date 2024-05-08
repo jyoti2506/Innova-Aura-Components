@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>wkitsm__Status_ReOpen</fullName>
+    <active>false</active>
+    <errorConditionFormula>IF(OR($RecordType.DeveloperName = &apos;Incident&apos;, $RecordType.DeveloperName = &apos;Request&apos;),
+IF(ISPICKVAL(PRIORVALUE(Status), &apos;Closed&apos;),
+NOT(ISPICKVAL(Status, &apos;Closed&apos;)), false),
+false)</errorConditionFormula>
+    <errorDisplayField>Status</errorDisplayField>
+    <errorMessage>You cannot reopen a closed incident. Open a new incident.</errorMessage>
+</ValidationRule>

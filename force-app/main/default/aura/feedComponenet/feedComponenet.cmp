@@ -1,0 +1,22 @@
+<aura:component controller="FeedClass" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	<!--<aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    <div aura:id="feedContainer" class="feed-container">
+        <forceChatter:feed type="News" subjectId="" />
+    </div>-->
+     <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+
+    <aura:attribute name="feedItems" type="FeedItem[]" />
+    
+    <div class="slds-card">
+        <div class="slds-card__header slds-grid">
+            <h2 class="slds-text-heading_small slds-truncate">Comments and Emails</h2>
+        </div>
+        <div class="slds-card__body">
+            <aura:iteration items="{!v.feedItems}" var="item">
+                <p>{!item.Body}</p>
+                <hr/>
+            </aura:iteration>
+        </div>
+    </div>
+</aura:component>

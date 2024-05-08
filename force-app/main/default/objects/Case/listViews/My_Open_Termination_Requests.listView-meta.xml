@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Open_Termination_Requests</fullName>
+    <booleanFilter>(1 AND 2) OR (2 AND 3 AND 4)</booleanFilter>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>NAME</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>CASES.CREATED_DATE</columns>
+    <columns>Innova_Resolved_Date_Time__c</columns>
+    <columns>Termination_Effective_Date_Time__c</columns>
+    <columns>OWNER_NAME</columns>
+    <columns>Innova_Open_Task_Count__c</columns>
+    <columns>Innova_Service1__c</columns>
+    <columns>Innova_Category1__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Innova_Service_Request_Trigger__c</field>
+        <operation>equals</operation>
+        <value>Termination Request</value>
+    </filters>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>notEqual</operation>
+        <value>Resolved,Closed</value>
+    </filters>
+    <filters>
+        <field>NAME</field>
+        <operation>contains</operation>
+        <value>HCM Support</value>
+    </filters>
+    <filters>
+        <field>CASES.SUBJECT</field>
+        <operation>contains</operation>
+        <value>FYI: Termination</value>
+    </filters>
+    <label>My Open Termination Requests</label>
+    <sharedTo>
+        <group>Admins</group>
+    </sharedTo>
+</ListView>

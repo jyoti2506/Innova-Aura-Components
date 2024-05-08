@@ -1,0 +1,31 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" controller="ITSMPendingPopup" >
+    <aura:attribute name="popupMessage" type="String" />
+    <aura:attribute name="isOpen" type="Boolean" default="false"/>
+    <aura:attribute name="recordId" type="String" />
+    <aura:attribute name="CaseObject" type="Case" /> 
+    <aura:attribute type="Object" name="record"/>
+    <aura:attribute name="recordLoadError" type="String"/>
+    <force:recordData aura:id="record"
+                      recordId="{!v.recordId}"
+                       fields="IsClosedStatus__c"
+                      targetFields="{!v.CaseObject}"
+                      targetError="{!v.recordLoadError}"
+                      targetRecord="{!v.record}"  
+                      recordUpdated="{!c.doInit}"
+                      />
+    <aura:if isTrue="{!v.isOpen}">
+        <div style="height: 640px;" >
+            <section role="dialog" tabindex="-1" class="slds-modal slds-fade-in-open">
+                <div class="slds-modal__container">
+                
+<lightning:buttonIcon iconName="utility:close" class="slds-modal__close" onclick="{!c.closeFlowModal}"/>
+
+                    <div class="slds-modal__content slds-p-around_medium">
+                        <lightning:flow aura:id="flow" onstatuschange="{!c.closeModalOnFinish}" />
+                    </div>
+                </div>
+            </section>
+            <div class="slds-backdrop slds-backdrop_open"></div>
+        </div> 
+    </aura:if>
+</aura:component>

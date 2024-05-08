@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ApprovalStatus__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(  Innova_IsApproved__c =true, IMAGE(&quot;/img/msg_icons/confirm16.png&quot;,&quot;Green&quot;),
+IF (  Innova_IsRejected__c =true,IMAGE(&quot;/img/permissions_deny16.gif&quot;, &quot;Red&quot;),
+IF ((ISPICKVAL(Status,&quot;Submitted for Approval&quot;)),IMAGE(&quot;/img/alohaSkin/help_orange.png&quot;, &quot;Yellow&quot;),
+IMAGE(&quot;/img/checkbox_unchecked.gif&quot;, &quot;None&quot;))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>ApprovalStatus</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

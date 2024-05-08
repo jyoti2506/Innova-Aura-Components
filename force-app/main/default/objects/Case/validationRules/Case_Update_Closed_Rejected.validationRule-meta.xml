@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case_Update_Closed_Rejected</fullName>
+    <active>true</active>
+    <description>Validation rule to block users by updating the Closed ticket after 72 Hrs from closed date/time</description>
+    <errorConditionFormula>AND(
+  ISPICKVAL(PRIORVALUE(Status), &apos;Closed&apos;),
+NOT( Innova_Extension_to_Closed_Date__c ))</errorConditionFormula>
+    <errorMessage>You cannot edit a case that is in &apos;Closed&apos; state, after 72 Hrs from closed date/time</errorMessage>
+</ValidationRule>

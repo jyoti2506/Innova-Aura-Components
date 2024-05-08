@@ -1,0 +1,8 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global" >
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:attribute name="flowAPIName" type="String"/>
+    
+	<lightning:flow aura:id="screenFlow" />
+    
+</aura:component>

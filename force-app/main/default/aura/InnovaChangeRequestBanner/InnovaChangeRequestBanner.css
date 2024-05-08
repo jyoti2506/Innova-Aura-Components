@@ -1,0 +1,5 @@
+.THIS.custom-table {
+    max-width: 150px;
+    width: 100%; /* Ensures the table is responsive within the specified max-width */
+    margin: 0 auto; /* Centers the table on the page, optional */
+}

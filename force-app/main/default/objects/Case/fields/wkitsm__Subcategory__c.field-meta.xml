@@ -1,0 +1,728 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>wkitsm__Subcategory__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>Subcategory</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>wkitsm__Category__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>wkitsm__Subcategory</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>Physical Building Access</controllingFieldValue>
+            <valueName>Isonas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Security</controllingFieldValue>
+            <valueName>Active Directory</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Security</controllingFieldValue>
+            <valueName>Anti-Virus</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Security</controllingFieldValue>
+            <valueName>Bitlocker</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Security</controllingFieldValue>
+            <controllingFieldValue>Server</controllingFieldValue>
+            <controllingFieldValue>Network</controllingFieldValue>
+            <valueName>DNS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Security</controllingFieldValue>
+            <valueName>Hardening</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Security</controllingFieldValue>
+            <valueName>MFA - Multi Factor Authentication</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Security</controllingFieldValue>
+            <valueName>Security Group</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Security</controllingFieldValue>
+            <valueName>Server Patching</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Server</controllingFieldValue>
+            <valueName>Application Install</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Server</controllingFieldValue>
+            <valueName>Database</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Server</controllingFieldValue>
+            <valueName>Decommision</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Server</controllingFieldValue>
+            <valueName>DHCP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Server</controllingFieldValue>
+            <valueName>Domain Controller</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Server</controllingFieldValue>
+            <valueName>Exchange</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Server</controllingFieldValue>
+            <valueName>File Server</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Server</controllingFieldValue>
+            <controllingFieldValue>Network</controllingFieldValue>
+            <valueName>Firewall</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Server</controllingFieldValue>
+            <valueName>Hard drive</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Server</controllingFieldValue>
+            <valueName>Hyper V</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Server</controllingFieldValue>
+            <valueName>IIS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Server</controllingFieldValue>
+            <valueName>New VM/Physical</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Server</controllingFieldValue>
+            <valueName>Restart</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Server</controllingFieldValue>
+            <valueName>Terminal Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Server</controllingFieldValue>
+            <valueName>V Center</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Server</controllingFieldValue>
+            <valueName>VMWare</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Storage</controllingFieldValue>
+            <valueName>Backups</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Storage</controllingFieldValue>
+            <valueName>Capacity</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Storage</controllingFieldValue>
+            <valueName>File Restores</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Telephone &amp; Mobile</controllingFieldValue>
+            <valueName>CloudCall</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Telephone &amp; Mobile</controllingFieldValue>
+            <valueName>Desk Phone</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Telephone &amp; Mobile</controllingFieldValue>
+            <valueName>Fax</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Telephone &amp; Mobile</controllingFieldValue>
+            <valueName>Mobile Device / Cell Phone</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Telephone &amp; Mobile</controllingFieldValue>
+            <valueName>Soft Phone</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Telephone &amp; Mobile</controllingFieldValue>
+            <valueName>Tablets</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Telephone &amp; Mobile</controllingFieldValue>
+            <valueName>Teams Phone</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Password</controllingFieldValue>
+            <valueName>Reset</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Account</controllingFieldValue>
+            <valueName>Unlock</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>Able</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>Additional Bullhorn Details</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>Adobe Acrobat DC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>Adobe Acrobat Pro DC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>Adobe Creative Cloud</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>Adobe Reader</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>Adra</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>Alere eScreen</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>AwardCo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <controllingFieldValue>Cloud</controllingFieldValue>
+            <valueName>AWS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>Broadbean</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>Bullhorn</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>Bullhorn ATS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>Bullhorn HR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>CAP (Consultant Portal)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>CareerBuilder</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>Ceridian Dayforce (Oracle)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>Cezanne HR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>Charter</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>Cisco AnyConnect</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>Citrix Receiver Client / Citrix Workspace App</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>CloudCall Communicator</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>Commissions</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>Concur</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>Consulting Care - Hiregenegic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>Consulting Care - Solutions</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>Consulting Care - Staffing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>Coupa</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>cubEnterprise</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>Daxtra</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>Defender</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>DICE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>Docusign</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>eFax</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>Egencia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>F5 VPN</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>First Advantage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>FortiClient</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>Git Bash</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>Google Chrome</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>HBS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>HGC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>HubSpot</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>Iron Mountain</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>Lawson</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>Learning Management System (LMS)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>LinkedIn Recruiter</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>Luminance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>ManageEngine</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>Microsoft 365 Defender Anti Virus</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>Microsoft Office (Word, Excel, Powerpoint)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>Microsoft Power BI Pro</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>Microsoft Project</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>Microsoft Teams</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>Microsoft Visio Pro</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>Microsoft Visual Studio Code (free)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>Microsoft Visual Studio Enterprise</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>Monster</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>Mozilla Firefox</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>Multiple</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>MyACS Portal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>MyInnova Portal (Sharepoint)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>Nitro PDF</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>Notepad ++</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>Onboarding Metrics (ONB Portal)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>Oracle ERP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>Oracle HCM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>PeopleSoft</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>PeopleStrong</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>Peoplnet</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>Putty</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>Python</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>Quickbooks SaaS Only</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>Rate Calculator</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>RSAT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>Sage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>Salesforce Sales Cloud</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>Salesforce Service Cloud (Tanium)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>Sales Navigator</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>Samba</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>Sense</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <controllingFieldValue>Access</controllingFieldValue>
+            <valueName>Sharepoint</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>Slack</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>Smartsheet</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>Sonicwall NetExtender</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>SQL Server Developer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>SQL Server Management Studio</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>T&amp;E Portal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>VCM (Consultant Management)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>VMware Horizon Client</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application/Software</controllingFieldValue>
+            <valueName>ZoomInfo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>O365</controllingFieldValue>
+            <valueName>Azure Active Directory</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>O365</controllingFieldValue>
+            <valueName>Exchange policy/Rule</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>O365</controllingFieldValue>
+            <valueName>Intune</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hardware</controllingFieldValue>
+            <valueName>Desktop Speaker</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hardware</controllingFieldValue>
+            <valueName>Device Charger</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hardware</controllingFieldValue>
+            <valueName>Docking Station</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hardware</controllingFieldValue>
+            <valueName>Headset</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hardware</controllingFieldValue>
+            <valueName>Keyboard</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hardware</controllingFieldValue>
+            <valueName>Laptop</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hardware</controllingFieldValue>
+            <valueName>Monitor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hardware</controllingFieldValue>
+            <valueName>Mouse</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hardware</controllingFieldValue>
+            <valueName>Multiple Accessories</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hardware</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hardware</controllingFieldValue>
+            <valueName>Power Adapter</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hardware</controllingFieldValue>
+            <valueName>Printer / Copier / Scanner / Fax (Multi Function)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hardware</controllingFieldValue>
+            <valueName>WebCam</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Network</controllingFieldValue>
+            <valueName>Cabling</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Network</controllingFieldValue>
+            <valueName>Certificates</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Network</controllingFieldValue>
+            <valueName>Data Center</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Network</controllingFieldValue>
+            <valueName>Internet</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Network</controllingFieldValue>
+            <valueName>Load balancers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Network</controllingFieldValue>
+            <valueName>Network Jack</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Network</controllingFieldValue>
+            <valueName>Performance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Network</controllingFieldValue>
+            <valueName>Routers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Network</controllingFieldValue>
+            <valueName>Switches</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Network</controllingFieldValue>
+            <controllingFieldValue>Access</controllingFieldValue>
+            <valueName>VPN</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Network</controllingFieldValue>
+            <controllingFieldValue>Access</controllingFieldValue>
+            <valueName>Wi-Fi</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Access</controllingFieldValue>
+            <valueName>File Share</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Access</controllingFieldValue>
+            <valueName>USB</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cloud</controllingFieldValue>
+            <valueName>Azure</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cloud</controllingFieldValue>
+            <valueName>BareMetal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cloud</controllingFieldValue>
+            <valueName>Google</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cloud</controllingFieldValue>
+            <valueName>Oracle</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cloud</controllingFieldValue>
+            <valueName>Private Cloud</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Email</controllingFieldValue>
+            <valueName>Access</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Email</controllingFieldValue>
+            <valueName>Address Book</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Email</controllingFieldValue>
+            <valueName>Alias</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Email</controllingFieldValue>
+            <valueName>Archiving</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Email</controllingFieldValue>
+            <valueName>Distribution List</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Email</controllingFieldValue>
+            <valueName>Forwarding</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Email</controllingFieldValue>
+            <valueName>License</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Email</controllingFieldValue>
+            <valueName>Not Working</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Email</controllingFieldValue>
+            <valueName>Opt In</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Email</controllingFieldValue>
+            <valueName>Opt Out</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Email</controllingFieldValue>
+            <valueName>Shared Mailbox</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Email</controllingFieldValue>
+            <valueName>Signature</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Termination</controllingFieldValue>
+            <valueName>Termination</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New Hire</controllingFieldValue>
+            <valueName>New Hire</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

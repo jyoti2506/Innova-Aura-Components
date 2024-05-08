@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>wkitsm__BackoutTime__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The outage and effort to backout this change.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The outage and effort to backout this change.</inlineHelpText>
+    <label>Backout Time</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Less Than 1 Hour Outage with Minimal Reversal Time</fullName>
+                <default>false</default>
+                <label>Less Than 1 Hour Outage with Minimal Reversal Time</label>
+            </value>
+            <value>
+                <fullName>More Than 1 Hour Outage with Significant Reversal Time</fullName>
+                <default>false</default>
+                <label>More Than 1 Hour Outage with Significant Reversal Time</label>
+            </value>
+            <value>
+                <fullName>No Backout Option</fullName>
+                <default>false</default>
+                <label>No Backout Option</label>
+            </value>
+            <value>
+                <fullName>No Outage and Less Than 1 Hour</fullName>
+                <default>true</default>
+                <label>No Outage and Less Than 1 Hour</label>
+            </value>
+            <value>
+                <fullName>No Outage and More Than 1 Hour</fullName>
+                <default>false</default>
+                <label>No Outage and More Than 1 Hour</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

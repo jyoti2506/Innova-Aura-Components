@@ -1,0 +1,6 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global" >
+     <!-- Brand variant: Identifies the primary action in a group of buttons -->
+    <div class="slds-form-element buttons slds-text-align_center">
+    <lightning:button variant="Brand" label="Create a Service Request"  onclick="{! c.handleClick }" />
+    </div>
+</aura:component>

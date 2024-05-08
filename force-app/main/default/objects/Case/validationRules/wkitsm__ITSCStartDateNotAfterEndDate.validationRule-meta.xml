@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>wkitsm__ITSCStartDateNotAfterEndDate</fullName>
+    <active>true</active>
+    <description>Requires that the planned start date not be after the planned end date</description>
+    <errorConditionFormula>AND($RecordType.DeveloperName = &apos;Change&apos;, wkitsm__PlannedStartDateTime__c &gt; wkitsm__PlannedEndDateTime__c)</errorConditionFormula>
+    <errorMessage>Planned start time cannot be after planned end time.</errorMessage>
+</ValidationRule>

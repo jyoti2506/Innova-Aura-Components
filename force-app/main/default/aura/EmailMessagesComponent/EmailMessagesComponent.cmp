@@ -1,0 +1,31 @@
+<aura:component controller="EmailMessagesController" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <aura:attribute name="recordId" type="String" />
+    <aura:attribute name="commentId" type="String" />
+    <aura:attribute name="emailMessages" type="List" default="[]" />
+
+    <aura:handler name="init" value="{!this}" action="{!c.init}" />
+
+    <aura:if isTrue="{!not(empty(v.emailMessages))}">
+        <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+           
+            <tbody>
+                <aura:iteration items="{!v.emailMessages}" var="emailMessage">
+                    <!-- Only display email messages related to the current comment -->
+                    <aura:if isTrue="{!emailMessage.CommentId == v.commentId}">
+                        <tr>
+                            <b><td>{!emailMessage.Subject}</td></b>
+                        </tr>
+                        <tr>
+                            <td colspan="1">
+                                <!-- Use lightning:formattedText with whiteSpace: pre-line for line breaks -->
+                                <lightning:formattedText value="{!emailMessage.TextBody}" class="slds-wrap" />
+                            </td>
+                            
+                        </tr>
+                    </aura:if>
+                    <br/>
+                </aura:iteration>
+            </tbody>
+        </table>
+    </aura:if>
+</aura:component>

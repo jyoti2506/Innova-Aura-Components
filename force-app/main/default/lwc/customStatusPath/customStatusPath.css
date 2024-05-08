@@ -1,0 +1,15 @@
+.status-path {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+.status-step {
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.current {
+    background-color: #0070d2;
+    color: white;
+    border-color: #0070d2;
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>wkitsm__Case_Update_Closed_Rejected</fullName>
+    <active>false</active>
+    <description>Validation rule to block users by updating the Closed ticket</description>
+    <errorConditionFormula>ISPICKVAL(PRIORVALUE(Status), &apos;Closed&apos;)</errorConditionFormula>
+    <errorMessage>You cannot edit a case that is in &apos;Closed&apos; state.</errorMessage>
+</ValidationRule>

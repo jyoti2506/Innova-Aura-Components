@@ -1,0 +1,18 @@
+<aura:component controller="serviceRequestCatalogController" implements="forceCommunity:availableForAllPageTypes" access="global" >
+    
+    <aura:handler name="init" value="{!this}" action="{!c.init}" />
+    <aura:attribute name="catalogCategories" type="List" />
+    
+    <ul>
+        <aura:iteration items="{!v.catalogCategories}" var="category">
+            <li> 
+                <div class="label-category" onclick="{!c.handleDivClick}" data-category="{!category}">
+                    <lightning:icon iconName="standard:category" alternativeText="Category" size="large" title="large size" class="slds-m-around_small" />
+                    {!category}
+                </div>
+                
+            </li>
+        </aura:iteration>
+    </ul>
+    
+</aura:component>

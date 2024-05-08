@@ -1,0 +1,192 @@
+<template>
+    <h3><b>Please note: The Foundational Applications/Software come preinstalled with each new or replacement device. Foundational products cannot be Deleted.</b></h3>
+    <div class="slds-grid slds-wrap">
+        <div class="slds-p-right_x-small slds-col slds-size_6-of-12">
+            <template if:true={regionOptions}>
+                <lightning-combobox label="Region" value={regionValue} options={regionOptions} onchange={handleRegionChange}></lightning-combobox>
+            </template>
+        </div>
+        <div class="slds-p-left_x-small slds-col slds-size_6-of-12">
+            <template if:true={brandOptions}>
+                <lightning-combobox label="Brand" value={brandValue} options={brandOptions}  onchange={handleBrandChange}></lightning-combobox>
+            </template>
+        </div>
+
+
+        <!-- <div class="slds-p-left_x-small slds-col slds-size_6-of-12" >
+           
+            <template if:true={showEMEA}>
+                <lightning-combobox label="Brand" value={brandValue} options={EMEABrandValues}  onchange={handleRegionChange}></lightning-combobox>
+            </template>
+        </div>
+        
+
+        
+
+        <div class="slds-p-left_x-small slds-col slds-size_6-of-12">
+           
+            <template if:true={showNonEMEA}>
+                
+                <lightning-combobox label="Brand" value={brandValue} options={NonEMEABrandValues}  onchange={handleRegionChange}></lightning-combobox>
+            </template>
+        </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <div class="slds-p-bottom_x-small">
+        <lightning-input label="Enter Application Name" type="search"  onchange={searchApplication} value={searchKey}></lightning-input>
+    </div>
+    <table class="slds-table slds-table_bordered slds-border_left slds-border_right">
+        <thead>
+            <tr class="slds-line-height_reset">
+                <th class="slds-text-align_center" scope="col">
+                    <div class="slds-truncate" title="Application/Software Name">Application/Software Name</div>
+                </th>
+                <th class="slds-text-align_center"  scope="col">
+                    <div class="slds-truncate" title="Add">Action</div>
+                </th>
+                <th class="slds-text-align_center" scope="col">
+                    <div class="slds-truncate" title="Description of the Request">Description of the Request</div>
+                </th>
+                <th class="slds-text-align_center" scope="col">
+                    <div class="slds-truncate" title="Requires IT Approval">IT Approval</div>
+                </th>
+
+                <th class="slds-text-align_center" scope="col">
+                    <div class="slds-truncate" title="Foundational Data Access">Foundational Access</div>
+                </th>
+            </tr>
+        </thead>
+
+        <template if:true={showtable}>
+            <tbody>
+                <template for:each={applicationList} for:item="row" for:index="index">
+                    <tr key={row.id}>
+                        <td key={row.id} data-label="Application/Software Name">
+                            <div class="slds-truncate">
+                                <div class="slds-box slds-box_small" data-id={index} >{row.Name}
+                                </div>
+                            </div>
+                            
+                        </td>
+                        <td key={row.id} data-label="Add">
+                            <div class="slds-truncate">
+                                <form>
+                                    <lightning-radio-group 
+                                                           name="radioGroup"
+                                                           data-id={row.Id}
+                                                           options={options}
+                                                           value={row.value}
+                                                           type="button"
+                                                           onchange={handleSaveRecord}>
+                                    </lightning-radio-group>
+                                    
+                                </form>
+                            </div>
+                            
+                            <div key={row.Id} class="" if:true={row.displayAccessLevel}>
+                                <lightning-combobox data-id={row.Id}
+                                                    placeholder="Select Level of Access"
+                                                    options={accessOptions}
+                                                    onchange={handleSaveRecord} ></lightning-combobox>
+                            </div>
+                            
+                            
+                            
+                            
+                            
+                        </td>
+                        
+                        <td key={row.id} data-label="Description of the Request">
+                            <div class="slds-truncate">
+                                <!-- <lightning-input
+                                                 data-id={row.Id}
+                                                 type="textarea"
+                                                 variant="label-hidden"
+                                                 onchange={handleSaveRecord}
+                                                 name="Description of the Request"
+                                                 value={row.Innova_Description_of_the_Request__c}>
+                                </lightning-input> -->
+                                     
+                                <lightning-textarea
+                                data-id={row.Id}
+                                variant="label-hidden"
+                                name="Description of the Request"
+                                value={row.Innova_Description_of_Request__c}
+                                onchange={handleSaveRecord}>
+                               
+                                   </lightning-textarea>
+
+
+                            </div>
+                        </td>
+                        
+                        <td key={row.id} data-label="Requires IT Approval">
+                            <div class="slds-align_absolute-center slds-size_1-of-1">
+                                <lightning-input 
+                                                 data-id={index}
+                                                 type="checkbox"
+                                                 variant="label-hidden"
+                                                 name="Requires IT Approval"
+                                                 disabled="True"
+                                                 checked={row.Innova_Requires_IT_Approval__c} >
+                                </lightning-input>
+                                <!-- <lightning-button label='Reset' data-id={row.Id}  onclick={handleResetClick}>
+                                </lightning-button>  -->
+                                
+                            </div>
+                            
+                        </td>
+                        <td key={row.id} data-label="Foundational Data Access">
+                            <div class="slds-align_absolute-center slds-size_1-of-1" >
+                                <lightning-input
+                                                 data-id={index}
+                                                 type="checkbox"
+                                                 variant="label-hidden"
+                                                 name="Foundational Data Access"
+                                                 disabled="True"
+                                                 checked={row.Innova_Foundational_access__c}>
+                                </lightning-input>
+                            </div>
+                            
+                            
+                        </td>
+                        <td>
+                            <div>
+                                <lightning-button label='Reset' data-id={row.Id} class="slds-m-right_x-small slds-float_right" onclick={handleResetClick} >
+                                </lightning-button>
+                            </div>
+                        </td>
+                        
+                        
+                    
+                    </tr>
+                </template>
+                
+            </tbody>
+        </template>
+    </table>
+    
+    <div class="pagination">
+        <button class="slds-button slds-button_neutral" disabled={isfirst}  data-page="prev" onclick={handlePageNavigation}>Previous</button>
+        <span>{currentPage} / {totalPages}</span>
+        <button class="slds-button slds-button_neutral" disabled={islast} data-page="next" onclick={handlePageNavigation}>Next</button>
+    </div>
+    
+    
+</template>

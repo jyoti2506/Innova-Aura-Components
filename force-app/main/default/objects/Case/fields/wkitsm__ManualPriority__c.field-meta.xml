@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>wkitsm__ManualPriority__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>Manually override the Priority</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enable the option to select a value for the Priority field. When disabled, the Priority value is calculated based on the values of the Impact and Urgency fields.</inlineHelpText>
+    <label>Manual priority</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

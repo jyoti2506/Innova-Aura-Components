@@ -1,0 +1,82 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes" access="global" >
+    <aura:attribute name="showCreateaCase" type="Boolean" default="true"/>
+    <aura:attribute name="showHardware" type="Boolean" default="true"/>
+    <aura:attribute name="showNewHire" type="Boolean" default="true"/>
+    <aura:attribute name="showTermination" type="Boolean" default="true"/>
+    <lightning:layout multipleRows="true">
+        <lightning:layoutItem padding="around-small" size="12" smallDeviceSize="12" mediumDeviceSize="12" largeDeviceSize="3">
+            <lightning:layout>
+                <lightning:layoutItem size="12">
+                    <lightning:verticalNavigation  selectedItem="{! v.selectedItem }"
+                                                  onselect="{! c.handleSelect }"
+                                                  class="navigation">
+                        <lightning:verticalNavigationSection label=" ">
+                            <lightning:verticalNavigationItemIcon
+                                                                  label="All"
+                                                                  name="reports_all"
+                                                                  iconName="standard:all" />
+                            <lightning:verticalNavigationItemIcon
+                                                                  label="General"
+                                                                  name="reports_General"
+                                                                   />
+                            <lightning:verticalNavigationItemIcon
+                                                                  label="Hardware"
+                                                                  name="reports_tickets"
+                                                                  />
+                            <lightning:verticalNavigationItemIcon
+                                                                  label="HR"
+                                                                  name="reports_articles"
+                                                                  />
+                            
+                        </lightning:verticalNavigationSection>
+                    </lightning:verticalNavigation>
+                </lightning:layoutItem>
+            </lightning:layout>
+        </lightning:layoutItem>
+        
+        <lightning:layoutItem padding="around-small" size="9" smallDeviceSize="9" mediumDeviceSize="9" largeDeviceSize="7">
+            <aura:if isTrue="{!v.showCreateaCase}">
+                <div style="display: flex; align-items: center; border-bottom: 2px solid #ccc; padding-bottom: 8px; padding-top: 18px">
+                    <lightning:icon iconName="standard:entitlement" size="large" />
+                    <a href="javascript:void(0);" onclick="{!c.navigateToPage}">
+                        <p style="margin-left: 8px; font-size: 16px; cursor: pointer;">Create a Generic Case</p>
+                        &nbsp; &nbsp; Submit a case: a broken laptop, unable to login to a site, a paycheck questions or need a software installed.
+                    </a>
+                </div>
+            </aura:if>
+            <br/>
+            <br/>
+            <aura:if isTrue="{!v.showHardware}">
+                <div style="display: flex; align-items: center; border-bottom: 2px solid #ccc; padding-bottom: 8px;">
+                    <lightning:icon iconName="standard:care_request_reviewer" size="large" />
+                    <a href="javascript:void(0);" onclick="{!c.navigateToAnotherPage}">
+                        <p style="margin-left: 8px; font-size: 16px; cursor: pointer;">Hardware Request</p>
+                        &nbsp; &nbsp; This form allows users to request new hardware such as computers, monitors, and other peripherals.
+                    </a>
+                </div>
+            </aura:if>
+            <br/>
+            <br/>
+            <aura:if isTrue="{!v.showTermination}">
+                <div style="display: flex; align-items: center; border-bottom: 2px solid #ccc; padding-bottom: 8px;">
+                    <lightning:icon iconName="standard:promotion_segments" size="large" />
+                    <a href="javascript:void(0);" onclick="{!c.navigate}">
+                        <p style="margin-left: 8px; font-size: 16px; cursor: pointer;">IT Termination Request</p>
+                        &nbsp; &nbsp;&nbsp;Used to terminate IT accounts for an employee, gather their hardware, and remove access to corporate    applications.
+                    </a>
+                </div>
+            </aura:if>
+            <br/>
+            <br/>
+            <aura:if isTrue="{!v.showNewHire}">
+                <div style="display: flex; align-items: center; border-bottom: 2px solid #ccc; padding-bottom: 8px;">
+                    <lightning:icon iconName="standard:client" size="large" />
+                    <a href="javascript:void(0);" onclick="{!c.navigatePage}">
+                        <p style="margin-left: 8px; font-size: 16px; cursor: pointer;">New Hire Request</p>
+                        &nbsp; &nbsp;Used for IT related new hire: provisioning IT accounts, hardware and software.
+                    </a>
+                </div>
+            </aura:if>
+        </lightning:layoutItem>
+    </lightning:layout>
+</aura:component>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IT_Infra_Volt_Cyber_Security_Support_Case</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>NAME</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>CASES.PRIORITY</columns>
+    <columns>CASES.CREATED_DATE</columns>
+    <columns>Innova_Due_Date__c</columns>
+    <columns>OWNER_NAME</columns>
+    <columns>Innova_Category1__c</columns>
+    <columns>Innova_Subcategory1__c</columns>
+    <columns>Innova_Sub_Subcategory__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Current_Queue__c</field>
+        <operation>equals</operation>
+        <value>IT Infra - Volt-Cyber Security Support</value>
+    </filters>
+    <label>IT Infra - Volt-Cyber Security Support</label>
+    <sharedTo>
+        <group>IT_Infra_Volt_Cyber_Security_Support</group>
+    </sharedTo>
+</ListView>

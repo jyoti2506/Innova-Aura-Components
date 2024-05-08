@@ -1,0 +1,17 @@
+<aura:component implements="lightning:isUrlAddressable,force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global"  >
+
+    <aura:attribute name="articlerecord" type="Object"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    <!-- Add lightning/navigation service -->
+    <lightning:navigation aura:id="navService"/>
+    
+    <div>
+        <a href="{!v.articleUrl}" onclick="{!c.handleClick}">
+            <div style="display: flex; align-items: center; border-bottom: 2px solid #ccc; padding-bottom: 8px; padding-top: 8px;">
+                <lightning:icon iconName="standard:knowledge" size="large"/>
+                <p style="padding-left: 8px;">{!v.articlerecord.Title}</p>
+            </div>
+        </a>
+    </div>
+</aura:component>

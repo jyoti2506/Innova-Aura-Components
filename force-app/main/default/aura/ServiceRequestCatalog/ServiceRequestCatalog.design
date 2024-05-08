@@ -1,0 +1,4 @@
+<design:component>
+    <design:attribute name="showCategories" label="ShowCategories" description="Show Categories for Navigation"/>
+    <design:attribute name="baseURL" label="Base URL" description="Base url of this site, e.g., /Service/s" />
+</design:component>

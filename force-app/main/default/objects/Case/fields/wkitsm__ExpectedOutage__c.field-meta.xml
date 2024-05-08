@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>wkitsm__ExpectedOutage__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The expected service outage resulting from this change.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The expected service outage resulting from this change.</inlineHelpText>
+    <label>Expected Outage</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>2 to 3 Hours</fullName>
+                <default>false</default>
+                <label>2 to 3 Hours</label>
+            </value>
+            <value>
+                <fullName>3 to 5 Hours</fullName>
+                <default>false</default>
+                <label>3 to 5 Hours</label>
+            </value>
+            <value>
+                <fullName>Less Than 2 Hours</fullName>
+                <default>false</default>
+                <label>Less Than 2 Hours</label>
+            </value>
+            <value>
+                <fullName>More Than 5 Hours</fullName>
+                <default>false</default>
+                <label>More Than 5 Hours</label>
+            </value>
+            <value>
+                <fullName>No Outage</fullName>
+                <default>true</default>
+                <label>No Outage</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

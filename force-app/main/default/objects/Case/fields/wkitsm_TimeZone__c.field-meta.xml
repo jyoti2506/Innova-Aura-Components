@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>wkitsm_TimeZone__c</fullName>
+    <defaultValue>(&quot;Default&quot;)</defaultValue>
+    <externalId>false</externalId>
+    <label>wkitsm__TimeZone</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Default</fullName>
+                <default>false</default>
+                <label>Default</label>
+            </value>
+            <value>
+                <fullName>Central Daylight Time (CDT)</fullName>
+                <default>false</default>
+                <label>Central Daylight Time (CDT)</label>
+            </value>
+            <value>
+                <fullName>Mountain Daylight Time (MDT)</fullName>
+                <default>false</default>
+                <label>Mountain Daylight Time (MDT)</label>
+            </value>
+            <value>
+                <fullName>Pacific Daylight Time (PDT)</fullName>
+                <default>false</default>
+                <label>Pacific Daylight Time (PDT)</label>
+            </value>
+            <value>
+                <fullName>Mountain Standard Time (MST)</fullName>
+                <default>false</default>
+                <label>Mountain Standard Time (MST)</label>
+            </value>
+            <value>
+                <fullName>Alaska Daylight Time (AKDT)</fullName>
+                <default>false</default>
+                <label>Alaska Daylight Time (AKDT)</label>
+            </value>
+            <value>
+                <fullName>Hawaii-Aleutian Standard Time (HAST)</fullName>
+                <default>false</default>
+                <label>Hawaii-Aleutian Standard Time (HAST)</label>
+            </value>
+            <value>
+                <fullName>Newfoundland Daylight Time (NDT)</fullName>
+                <default>false</default>
+                <label>Newfoundland Daylight Time (NDT)</label>
+            </value>
+            <value>
+                <fullName>Atlantic Daylight Time (ADT)</fullName>
+                <default>false</default>
+                <label>Atlantic Daylight Time (ADT)</label>
+            </value>
+            <value>
+                <fullName>Central Standard Time (CST)</fullName>
+                <default>false</default>
+                <label>Central Standard Time (CST)</label>
+            </value>
+            <value>
+                <fullName>Mountain Time (MT)</fullName>
+                <default>false</default>
+                <label>Mountain Time (MT)</label>
+            </value>
+            <value>
+                <fullName>India Standard Time (IST)</fullName>
+                <default>false</default>
+                <label>India Standard Time (IST)</label>
+            </value>
+            <value>
+                <fullName>British Summer Time (BST)</fullName>
+                <default>false</default>
+                <label>British Summer Time (BST)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

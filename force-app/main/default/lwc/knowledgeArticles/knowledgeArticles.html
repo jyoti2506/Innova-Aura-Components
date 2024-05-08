@@ -1,0 +1,13 @@
+<template>
+
+
+    <ul>
+        <template for:each={kbArticles} for:item="article">
+            <li key={article.Id}> 
+                <c-knowledge-article-hyperlink articlerecord={article}></c-knowledge-article-hyperlink>
+            </li>
+        </template>
+    </ul>
+
+
+</template>

@@ -1,0 +1,27 @@
+<template>
+    <div class="slds-card">
+      <div class="slds-card__header">
+        <lightning-button label="New Post" onclick={handleNewPostClick}></lightning-button>
+        <h2 class="slds-card__header-title">Feed</h2>
+      </div>
+      <div class="slds-card__body slds-scrollable_y" style="height:30rem;">
+        <template for:each={feedItems} for:item="item">
+          <div class="slds-m-around_medium">
+            <div class="comment-box">
+              <img src={item.userPicUrl} alt="Profile" class="profile-pic" />
+              <div class="comment-info">
+                <div class="user-info"><b>{item.userName}</b></div>
+                <div class="timestamp">{item.formattedTime}</div>
+              </div>
+              <div class="comment-body">
+                <lightning-formatted-text value={item.body}></lightning-formatted-text>
+              </div>
+            </div>
+          </div>
+        </template>
+        <template if:false={error}>
+          <div class="slds-text-body_small slds-text-color_error">{error}</div>
+        </template>
+      </div>
+    </div>
+  </template>

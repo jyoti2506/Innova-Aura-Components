@@ -1,0 +1,64 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes" access="global" >
+    <aura:attribute name="isModalOpen" type="boolean" default="false"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:if isTrue="{!v.isModalOpen}"> 
+        <!-- Modal/Popup Box starts here-->
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+            
+            <div class="modal-dialog" style="overflow-y: scroll; max-height:85%;  margin-top: 50px; margin-bottom:50px;" >
+                
+                <div class="slds-modal__container">
+                    
+                    
+                    <!-- Modal/Popup Box Header Starts here-->
+                    
+                    <header class="slds-modal__header">
+                        
+                        <lightning:buttonIcon iconName="utility:close"
+                                              
+                                              onclick="{!c.closeFlowModal }"
+                                              
+                                              alternativeText="close"
+                                              
+                                              variant="bare-inverse"
+                                              
+                                              class="slds-modal__close"/>
+                        
+                        
+                      <div class="header-container" style="display: flex; justify-content: space-between; align-items: center;">    
+   
+        <div class="text-container" style="margin-right: 10px;">
+            <!-- Place your text content here -->
+           <h4 id="modal-heading-01" class="header-text" style="font-weight: bold;"> New Incident </h4>
+           
+          <h1>Use this form to report an incident or issue.</h1> 
+        </div>
+           
+  <div class="image-container" style="text-align: right;">
+ <img src="https://innovasolutionsitsc.file.force.com/servlet/servlet.FileDownload?file=015Dn0000007HAh"/>       
+                          </div>
+    </div>
+                    </header>
+                    
+                    <!--Modal/Popup Box Body Starts here-->
+                    
+                    <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                        
+                        
+                    </div>
+                    
+                    <lightning:flow aura:id="flowData" onstatuschange="{!c.closeModel}"/>
+                    
+                    
+                    <!--Modal/Popup Box Footer Starts here-->
+                    
+                </div>
+                
+            </div>
+            
+        </section>
+        
+        <div class="slds-backdrop slds-backdrop_open"></div>
+        
+    </aura:if>
+</aura:component>

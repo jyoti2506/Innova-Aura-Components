@@ -1,0 +1,7 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	
+    <div class="slds-page-header slds-text-align_center headerColor">
+        <p class="slds-text-heading--label headerText" style="font-size: 24px;"><b>Service   Request</b></p>
+    </div>
+    
+</aura:component>

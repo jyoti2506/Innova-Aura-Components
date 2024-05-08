@@ -1,0 +1,129 @@
+<aura:component controller="OpenCaseListView"  implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <aura:attribute name="cases" type="Case[]" />
+    <aura:attribute name="pageNumber" type="Integer" default="1"/>
+    <aura:attribute name="pageTotal" type="Integer" default="1"/>
+    <aura:attribute name="pageSize" type="Integer" default="10"/>
+    <aura:attribute name="isFirstPage" type="Boolean" />
+    <aura:attribute name="isLastPage" type="Boolean" />
+    <!-- Start Paging Button Visibility -->
+    <aura:attribute name="disableFirstButton" 		type="Boolean"  default="true" />
+    <aura:attribute name="disablePreviousButton" 	type="Boolean"  default="true" />
+    <aura:attribute name="disableNextButton" 		type="Boolean"  default="true" />
+    <aura:attribute name="disableLastButton" 		type="Boolean"  default="true" />
+    <!-- End Paging Button Visibility -->
+     <!-- show loading spinner if query is still running-->
+    <aura:attribute name="isLoading" type="Boolean" default="false"/>
+   <!-- 
+  Show DateTime fields in Time Zone on Users record.
+  Default TZ to NY 
+ -->
+    <aura:attribute name="localTZ" type="String" default="America/New_York"/> 
+    
+    <aura:dependency resource="lightning:formattedDateTime" type="COMPONENT"/>
+    <!-- Handler -->
+    <aura:attribute name="recordId" type="String" />
+    <aura:attribute name="searchKeyword" type="String" description="use for store user search input"/>
+    <aura:handler name="init" 			value="{!this}" action="{!c.doInit}" />
+    <!-- <aura:handler name="afterRender" 	value="{!this}" action="{!c.onAfterRender}" />
+     <aura:if isTrue="{!v.isLoading}">
+    <lightning:spinner alternativeText="Loading..." size="medium"/>
+    </aura:if>-->
+    <div class="slds-page-header">
+        <div class="demo-only demo-only--sizing slds-grid slds-wrap">
+            <div class="slds-size_1-of-2">
+                <div class="slds-text-heading--label headerText">
+                    <span class="slds-icon_container">
+                        <lightning:icon iconName="standard:case" size="medium" class="slds-m-right_small"></lightning:icon>
+                    </span>
+                    <b><span class="slds-text-title_bold">My Open Cases</span></b>
+                </div>
+            </div>
+            <div class="slds-size_1-of-2">
+                <lightning:input value="{!v.searchKeyword}"
+                                 placeholder="Search cases.."
+                                 aura:id="searchField"
+                                 name="searchField"
+                                 onchange="{!c.searchByKeyword}" />
+            </div>
+        </div>
+    </div>
+    <br/>
+    
+    <!-- Display Cases -->
+    <aura:if isTrue="{!v.isLoading}"> 
+        <lightning:spinner alternative-text="Loading..." size="medium"/>
+    </aura:if>
+    <aura:if isTrue="{!empty(v.cases)}">
+        <!-- If there are no cases, display a message -->
+        <div class="slds-p-around_medium">
+            <p>You have no open cases.</p>
+        </div>
+        <aura:set attribute="else">
+            <table class="slds-table slds-table_bordered slds-table_cell-buffer" >
+                
+                <thead>
+                    <tr class="slds-line-height_reset">
+                        <th class="slds-size_1-of-6 side" scope="col">
+                            <div class="slds-truncate" title="CaseNumber">Case#</div>
+                        </th>
+                        
+                        <th class="slds-size_3-of-6 side" scope="col">
+                            <div class="slds-truncate" title="CaseSubject">Title</div>
+                        </th>
+                        <th class="slds-size_1-of-6 side" scope="col">
+                            <div class="slds-truncate" title="Status">Status</div>
+                        </th>
+                        <th class="slds-size_2-of-6 side" scope="col">
+                            <div class="slds-truncate" title="CreatedDate">Date/Time Opened</div>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <aura:iteration items="{!v.cases}" var="caseRecord">
+                        <tr>
+                            <td data-label="CaseNumber">
+                                <div class="slds-truncate">
+                                    <a target="_self" href="{!'https://innovasolutionsitsc--partialsb.sandbox.my.site.com/Service/s/case/'+caseRecord.Id+'/detail'}" >
+                                        {!caseRecord.CaseNumber}
+                                    </a>
+                                </div>  
+                                
+                            </td>
+                            <td data-label="Subject" class="slds-truncate slds-wrap-text slds-size_3-of-6">
+                                <div title="{!caseRecord.Subject}">{!caseRecord.Subject}</div>
+                            </td>
+                            <td data-label="Status" >
+                                <div class="slds-truncate" title="{!caseRecord.Status}">{!caseRecord.Status}</div>
+                            </td>
+                            <!--<td data-label="Date/Time Opened">-->
+                            <td data-label="Date/Time Opened" >
+                                <div class="slds-truncate ">
+                                    <lightning:formattedDateTime value="{!caseRecord.CreatedDate}" 
+                                                                 year="numeric" 
+                                                                 month="numeric" 
+                                                                 day="numeric" 
+                                                                 hour="2-digit" 
+                                                                 minute="2-digit" 
+                                                                 timeZone="{!v.localTZ}"/>
+                                </div>
+                            </td>
+                        </tr>
+                    </aura:iteration>
+                </tbody>
+            </table>
+            
+            <div class="slds-p-top_medium">Page {!v.pageNumber} of {!v.pageTotal}</div>
+            
+            <div class="slds-p-top_medium">
+                
+                <lightning:button label="First" onclick="{!c.firstPage}" iconName="utility:jump_to_left" disabled="{!v.disableFirstButton}" />
+                <lightning:button label="Previous" onclick="{!c.previousPage}" iconName="utility:chevronleft" disabled="{!v.disablePreviousButton}" />
+                <lightning:button label="Next" onclick="{!c.nextPage}" iconName="utility:chevronright" iconPosition="right" disabled="{!v.disableNextButton}" />
+                <lightning:button label="Last" onclick="{!c.lastPage}" iconName="utility:jump_to_right" iconPosition="right" disabled="{!v.disableLastButton}" />
+                
+            </div>
+            
+        </aura:set>
+    </aura:if>
+    
+</aura:component>

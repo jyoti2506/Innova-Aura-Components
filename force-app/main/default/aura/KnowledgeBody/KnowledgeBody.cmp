@@ -1,0 +1,23 @@
+<aura:component controller="KnowledgeTopicController" implements="forceCommunity:availableForAllPageTypes" access="global" >
+	
+    <aura:handler name="init" value="{! this }" action="{! c.doInit }" />
+  <!-- <aura:attribute name="htmlContent" type="String" />-->
+    <aura:attribute name="recordId" type="String" />
+    
+    
+    <aura:attribute name="articleTitle" type="String" />
+    <aura:attribute name="articleBody" type="String" />
+   
+    <div class="slds-align_absolute-center ">
+  <h1><lightning:formattedText class="article-title" value="{!v.articleTitle}" /></h1>
+    <!--<aura:unescapedHtml value="{! v.htmlContent }" />-->
+    
+   </div>
+
+
+    <!--<h1 class="slds-text-heading_medium">{!v.articleTitle}</h1>-->
+   <aura:unescapedHtml 
+       value= "{!v.articleBody}"/>
+   
+    
+</aura:component>

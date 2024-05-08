@@ -1,0 +1,128 @@
+<aura:component controller="CustomFeedComponentController" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global">
+    <aura:attribute name="recordId" type="String" />
+    <aura:attribute name="myVal" type="String" />
+    <aura:attribute name="myComment" type="String" />
+    <aura:attribute name="relatedRecordSubject" type="String" />
+    <aura:attribute name="allComments" type="List" default="[]" />
+    <aura:attribute name="currentUser" type="Object" />
+    <aura:attribute name="CommentsWithFormattedTime" type="List" />
+    <aura:attribute name="feedCommentWrapperTime" type="List" />
+    <aura:attribute name="Comments" type="FeedItem[]" />
+    <aura:attribute name="showCommentBox" type="Boolean" default="false" />
+    <aura:handler name="init" value="{!this}" action="{!c.init}" />
+    <!--Accordion-->
+    <aura:attribute name="activeSections" type="List" default="[]" />
+    <aura:attribute name="activeSectionsMessage" type="String" default=""/>
+    
+    
+    
+    <aura:handler name="change" value="{!v.recordId}" action="{!c.loadRelatedRecordSubject}" />
+    <ui:outputText value="{!v.relatedRecordSubject}" class="related-record-subject" />
+    
+    <lightning:card title="Post Comment">
+        <div class="slds-m-around_medium">
+            <lightning:inputRichText value="{!v.myVal}" />
+            <div class="slds-m-around_medium slds-float_right">
+                <lightning:button variant="brand" label="Post" onclick="{!c.sendPost}" />
+            </div>
+            <br />
+        </div><br />
+    </lightning:card>
+    <lightning:card>
+        
+        <div class="slds-scrollable_y" style="height:50rem;width:auto;" tabindex="0">
+            <div class="slds-m-around_medium slds-size_2-of-2 comment-container">
+                <lightning:accordion allowMultipleSectionsOpen="true" onsectiontoggle="{!c.handleSectionToggle}" activeSectionName="{!v.activeSections}">
+                    <aura:iteration items="{!v.CommentsWithFormattedTime}" var="comment" indexVar="index">
+                        <lightning:accordionSection name="{!'section_' + comment.Id}" label="{!comment.CommenterName}">
+                            
+                           <div class="bordered-section">
+                                <div class="comment-box">
+                                   
+                                    <aura:if isTrue="{!comment.ObjectType == 'FeedItem'}">
+                                        <div class="comment-wrapper">
+                                            <img src="{!comment.CommenterProfilePicUrl}" alt="Profile" class="profile-pic" />
+                                            <div class="comment-info">
+                                                <div class="user-info"><b>{!comment.CommenterName}</b></div>
+                                                <div class="timestamp" style="color: #008000;">{!comment.formattedTime}</div>
+                                            </div>
+                                        </div>
+                                        <div class="comment-body">
+                                            <lightning:formattedRichText value="{!comment.Body}" class="captured-comment" />
+                                        </div>
+                                        <br/>
+                                        <aura:if isTrue="{!v.currentUser}">
+                                            <div class="comment-on-comment-section">
+                                                <aura:if isTrue="{!v.showCommentBox == index}">
+                                                    <lightning:inputRichText aura:id="commentInput" value="{!v.myComment}" />
+                                                    <div class="slds-m-around_medium slds-float_right">
+                                                        <lightning:button aura:id="{!'commentButton_' + comment.Id}" variant="brand" label="Post" onclick="{!c.createComment}" name="{!index}"/>
+                                                    </div>
+                                                </aura:if>
+                                                &nbsp;&nbsp;
+                                                <div class="slds-page-header">
+                                                    <div class="slds-align_absolute-center" style="height:0.5rem">
+                                                        <lightning:button aura:id="{!'commentButton_' + comment.Id}" variant="base" label="Add Comment" title="Base action" iconName="utility:comments" onclick="{! c.sendcomment }" name= "{!index}" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </aura:if>                                
+                                        <aura:set attribute="else">
+                                            <div class="comment-wrapper">
+                                                <lightning:icon iconName="action:email" size="small" alternativeText="email" />
+                                                <div class="comment-info">
+                                                    <div class="user-info"><b>{!comment.CommenterName}</b></div>
+                                                    <div class="timestamp" style="color: #008000;">{!comment.formattedTime}</div>
+                                                </div>
+                                            </div>
+                                            <div class="comment-body">
+                                                <lightning:formattedRichText value="{!comment.Body}" class="captured-comment" />
+                                            </div>
+                                            <aura:if isTrue="{!v.currentUser}">
+                                                <div class="comment-on-comment-section">
+                                                    <aura:if isTrue="{!v.showCommentBox == index}">
+                                                        <lightning:inputRichText aura:id="commentInput" value="{!v.myComment}" />
+                                                        <div class="slds-m-around_medium slds-float_right">
+                                                            <lightning:button aura:id="{!'commentButton_' + comment.Id}" variant="brand" label="Post" onclick="{!c.createComment}" name="{!index}"/>
+                                                        </div>
+                                                    </aura:if>
+                                                    &nbsp;&nbsp;
+                                                    <div class="slds-page-header">  
+                                                        <div class="slds-align_absolute-center" style="height:0.5rem">
+                                                            <lightning:button aura:id="{!'commentButton_' + comment.Id}" variant="base" label="Add Comment" title="Base action" iconName="utility:comments" onclick="{! c.sendcomment }" name= "{!index}" />
+                                                        </div>  
+                                                    </div>
+                                                </div>
+                                            </aura:if> 
+                                        </aura:set>
+                                    </aura:if>
+                                         
+                                    <br />
+                                   <div class="slds-m-around_medium">
+                                        <aura:iteration items="{!v.feedCommentWrapperTime}" var="feedcomment">
+                                            <aura:if isTrue="{!and(comment.Id == feedcomment.feedItemId,feedcomment.CommentBody != null)}">
+                                                <div class="bordered">
+                                                    <div class="comment-box">
+                                                        <img src="{!feedcomment.CommenterProfilePicUrl}" alt="Profile" class="profile-pic" style="width: 40px; height: 40px; border-radius: 50%; object-fit: cover; border: 2px solid #fff; display: inline-block;" />
+                                                        <div class="comment-details" style="display: inline-block; vertical-align: top; margin-left: 10px;">
+                                                            <div class="user-info"><b>{!feedcomment.CommenterName}</b></div>
+                                                            <div class="timestamp" style="color: #008000;">{!feedcomment.formattedTime}</div>
+                                                            <ui:outputRichText value="{!feedcomment.CommentBody}" class="captured-comment" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </aura:if>
+                                        </aura:iteration>
+                                    </div>
+                                    
+                                </div>
+                             
+                            </div>
+                        </lightning:accordionSection>
+                    </aura:iteration>
+                </lightning:accordion>
+                
+            </div>
+        </div>
+    </lightning:card>
+</aura:component>

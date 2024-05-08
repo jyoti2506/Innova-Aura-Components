@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>wkitsm__Status_Closed</fullName>
+    <active>false</active>
+    <errorConditionFormula>AND(
+OR($RecordType.DeveloperName = &apos;Incident&apos;, $RecordType.DeveloperName = &apos;Request&apos;),
+ISPICKVAL(Status, &apos;Closed&apos;),
+NOT(OR(CreatedBy.Id = $User.Id, ISPICKVAL(PRIORVALUE(Status), &apos;Resolved&apos;)))
+)</errorConditionFormula>
+    <errorDisplayField>Status</errorDisplayField>
+    <errorMessage>To close the case, first move the case to &apos;Resolved&apos; state.</errorMessage>
+</ValidationRule>

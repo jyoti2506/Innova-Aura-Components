@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>wkitsm__ResolutionType__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>Resolution Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>All Task Completed</fullName>
+                <default>false</default>
+                <label>All Task Completed</label>
+            </value>
+            <value>
+                <fullName>Duplicate</fullName>
+                <default>false</default>
+                <label>Duplicate</label>
+            </value>
+            <value>
+                <fullName>Information Shared</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Information Shared</label>
+            </value>
+            <value>
+                <fullName>Known Error</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Known Error</label>
+            </value>
+            <value>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+                <label>Rejected</label>
+            </value>
+            <value>
+                <fullName>Resolution Found</fullName>
+                <default>false</default>
+                <label>Resolution Found</label>
+            </value>
+            <value>
+                <fullName>Training</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Training</label>
+            </value>
+            <value>
+                <fullName>User Cancelled</fullName>
+                <default>false</default>
+                <label>User Cancelled</label>
+            </value>
+            <value>
+                <fullName>User Error</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>User Error</label>
+            </value>
+            <value>
+                <fullName>Workaround Accepted</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Workaround Accepted</label>
+            </value>
+            <value>
+                <fullName>Workaround Declined</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Workaround Declined</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

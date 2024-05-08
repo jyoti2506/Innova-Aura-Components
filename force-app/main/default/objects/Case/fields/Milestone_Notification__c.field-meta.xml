@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Milestone_Notification__c</fullName>
+    <externalId>false</externalId>
+    <label>Milestone Notification</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Response: Warning of upcoming SLA violation</fullName>
+                <default>false</default>
+                <label>Response: Warning of upcoming SLA violation</label>
+            </value>
+            <value>
+                <fullName>Response: SLA violation</fullName>
+                <default>false</default>
+                <label>Response: SLA violation</label>
+            </value>
+            <value>
+                <fullName>Response: SLA violation escalation to L1</fullName>
+                <default>false</default>
+                <label>Response: SLA violation escalation to L1</label>
+            </value>
+            <value>
+                <fullName>Response: SLA violation escalation to L2</fullName>
+                <default>false</default>
+                <label>Response: SLA violation escalation to L2</label>
+            </value>
+            <value>
+                <fullName>Resolution: Warning of upcoming SLA violation</fullName>
+                <default>false</default>
+                <label>Resolution: Warning of upcoming SLA violation</label>
+            </value>
+            <value>
+                <fullName>Resolution: SLA Violation</fullName>
+                <default>false</default>
+                <label>Resolution: SLA Violation</label>
+            </value>
+            <value>
+                <fullName>Resolution: SLA violation escalation to L1</fullName>
+                <default>false</default>
+                <label>Resolution: SLA violation escalation to L1</label>
+            </value>
+            <value>
+                <fullName>Resolution: SLA violation escalation to L2</fullName>
+                <default>false</default>
+                <label>Resolution: SLA violation escalation to L2</label>
+            </value>
+            <value>
+                <fullName>Resolution Warning</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Resolution Warning</label>
+            </value>
+            <value>
+                <fullName>Resolution L1</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Resolution L1</label>
+            </value>
+            <value>
+                <fullName>Resolution L2</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Resolution L2</label>
+            </value>
+            <value>
+                <fullName>Resolution Violation</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Resolution Violation</label>
+            </value>
+            <value>
+                <fullName>Response L1</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Response L1</label>
+            </value>
+            <value>
+                <fullName>Response L2</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Response L2</label>
+            </value>
+            <value>
+                <fullName>Response Violation</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Response Violation</label>
+            </value>
+            <value>
+                <fullName>Response Warning</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Response Warning</label>
+            </value>
+            <value>
+                <fullName>Response Warning</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Response Warning</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

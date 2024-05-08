@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Innova_Service_Request_Trigger__c</fullName>
+    <externalId>false</externalId>
+    <label>Service Request Trigger</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Hardware Request</fullName>
+                <default>false</default>
+                <label>Hardware Request</label>
+            </value>
+            <value>
+                <fullName>Onboarding Request</fullName>
+                <default>false</default>
+                <label>Onboarding Request</label>
+            </value>
+            <value>
+                <fullName>Termination Request</fullName>
+                <default>false</default>
+                <label>Termination Request</label>
+            </value>
+            <value>
+                <fullName>New Hire Application /Software</fullName>
+                <default>false</default>
+                <label>New Hire Application /Software</label>
+            </value>
+            <value>
+                <fullName>Software/Application Request</fullName>
+                <default>false</default>
+                <label>Software/Application Request</label>
+            </value>
+            <value>
+                <fullName>New Hire w/ Bundles</fullName>
+                <default>false</default>
+                <label>New Hire w/ Bundles</label>
+            </value>
+            <value>
+                <fullName>IT Request</fullName>
+                <default>false</default>
+                <label>IT Request</label>
+            </value>
+            <value>
+                <fullName>Signature Template</fullName>
+                <default>false</default>
+                <label>Signature Template</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

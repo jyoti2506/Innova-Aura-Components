@@ -1,0 +1,21 @@
+<template>
+    <lightning-vertical-Navigation onselect={handleSelect}> 
+    
+        <lightning-vertical-navigation-section label="Topics">
+            <template for:each={topics} for:item="item">
+
+                <lightning-vertical-navigation-item-icon 
+                    key={item.Name} 
+                    label={item.Name} 
+                    name={item.Name}
+                     icon-name="standard:category"
+                     class="category-icon"
+                 >
+                  
+                </lightning-vertical-navigation-item-icon>
+
+            </template>
+        </lightning-vertical-navigation-section>
+        
+    </lightning-vertical-Navigation>
+</template>

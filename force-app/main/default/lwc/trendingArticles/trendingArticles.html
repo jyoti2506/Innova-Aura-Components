@@ -1,0 +1,28 @@
+<template>
+
+    <template if:true={articles}>
+
+        <div class="slds-page-header"> 
+            <div class="slds-text-heading--label headerText">
+                <span class="slds-icon_container">
+                        <lightning-icon icon-name="custom:custom55" size="medium" class="slds-m-right_small"></lightning-icon>
+                </span>
+                <span class="slds-text-title_bold">Trending Articles</span>
+            </div>
+        </div>
+        
+        <ul>
+            <template for:each={articles} for:item="article">
+                <li key={article.Id}>
+                    <p class="article" onclick={navigateToArticle} data-recid={article.Id}>
+                        {article.Title}
+                    </p>
+                </li>
+            </template>
+        </ul>
+
+    </template>
+
+    <template if:true={error}></template>
+
+</template>

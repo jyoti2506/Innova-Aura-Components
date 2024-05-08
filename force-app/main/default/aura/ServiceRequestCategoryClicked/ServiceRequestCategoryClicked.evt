@@ -1,0 +1,3 @@
+<aura:event type="APPLICATION" description="Service Request Category has been clicked." >
+	<aura:attribute name="categoryName" type="String"/>
+</aura:event>

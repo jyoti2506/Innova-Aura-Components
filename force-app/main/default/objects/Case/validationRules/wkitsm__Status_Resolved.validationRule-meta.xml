@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>wkitsm__Status_Resolved</fullName>
+    <active>false</active>
+    <errorConditionFormula>IF(OR($RecordType.DeveloperName = &apos;Incident&apos;, $RecordType.DeveloperName = &apos;Request&apos;, $RecordType.DeveloperName = &apos;MajorIncident&apos;),
+IF(ISPICKVAL(Status, &apos;Resolved&apos;),
+OR(
+   ISNULL(TEXT(wkitsm__ResolutionType__c)),
+   ISBLANK(TEXT(wkitsm__ResolutionType__c))
+), false),
+false)</errorConditionFormula>
+    <errorDisplayField>Status</errorDisplayField>
+    <errorMessage>Select the resolution type and details.</errorMessage>
+</ValidationRule>

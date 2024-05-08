@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>wkitsm__Category__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>Category</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>wkitsm__ServiceProvider__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>wkitsm__Category</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>End User Services</controllingFieldValue>
+            <valueName>Access</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>End User Services</controllingFieldValue>
+            <valueName>Account</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>End User Services</controllingFieldValue>
+            <controllingFieldValue>Enterprise Infrastructure</controllingFieldValue>
+            <valueName>Application/Software</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>End User Services</controllingFieldValue>
+            <valueName>Email</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>End User Services</controllingFieldValue>
+            <valueName>Hardware</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>End User Services</controllingFieldValue>
+            <valueName>Password</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>End User Services</controllingFieldValue>
+            <valueName>Physical Building Access</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>End User Services</controllingFieldValue>
+            <valueName>Telephone &amp; Mobile</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Enterprise Infrastructure</controllingFieldValue>
+            <valueName>Cloud</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Enterprise Infrastructure</controllingFieldValue>
+            <valueName>Network</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Enterprise Infrastructure</controllingFieldValue>
+            <valueName>O365</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Enterprise Infrastructure</controllingFieldValue>
+            <valueName>Security</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Enterprise Infrastructure</controllingFieldValue>
+            <valueName>Server</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Enterprise Infrastructure</controllingFieldValue>
+            <valueName>Storage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Termination Request</controllingFieldValue>
+            <valueName>Termination</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New Hire Request</controllingFieldValue>
+            <valueName>New Hire</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

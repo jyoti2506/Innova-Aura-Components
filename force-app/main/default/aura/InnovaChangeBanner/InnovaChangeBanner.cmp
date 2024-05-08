@@ -1,0 +1,48 @@
+<aura:component controller="changeRequestController" implements="forceCommunity:availableForAllPageTypes" access="global" >
+	
+    <aura:attribute name="recordId" type="String" />
+    <aura:attribute name="changeRecord" type="Object" />
+    <aura:attribute name="conDetails" type="List"/>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    <lightning:card>
+            <div class="c-container">
+                <table>
+                    <tr>
+                        <td>
+                    <!-- Add Header with Case Subject -->
+                   <h1> &nbsp;&nbsp;&nbsp;&nbsp;<lightning:icon iconName="standard:change_request" alternativeText="Icon 1" size="Medium" />&nbsp;&nbsp;
+                       <b>{!v.changeRecord.Subject}</b></h1>
+                        </td>
+                        <td style="text-align:right; padding-right:10px;">
+                            <c:approvalComponentMini recordId="{!v.recordId}"/>
+                        </td>
+                    </tr>
+                </table>
+                
+                <lightning:layout multipleRows="true">
+                    <aura:iteration items="{!v.conDetails}" var="det" indexVar="index">
+                        <lightning:layoutItem size="12" smallDeviceSize="1" mediumDeviceSize="3" largeDeviceSize="2" padding="around-small">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <aura:if isTrue="{!index == 0}">
+                                           <b>{!det.label}</b><br/>
+                                            {!det.value}
+                                        </aura:if>
+                                        <aura:if isTrue="{!index != 0}">
+                                            <b>{!det.label}</b><br/>
+                                            <ui:outputRichText value="{!det.value}"/>
+                                        </aura:if>
+                                    </td>
+                                </tr>
+                            </table>
+                        </lightning:layoutItem>
+                    </aura:iteration>
+                    <!--<lightning:layoutItem> <c:approvalComponentMini /> </lightning:layoutItem>-->
+                </lightning:layout>
+            </div>
+        </lightning:card>
+    
+</aura:component>

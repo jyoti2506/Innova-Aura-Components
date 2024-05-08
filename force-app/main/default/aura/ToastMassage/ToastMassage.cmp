@@ -1,0 +1,6 @@
+<aura:component implements="lightning:availableForFlowScreens" access="global" >
+	<aura:attribute name="recordId" type="String" default=""/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+  <aura:handler name="showToast" value="{!c}" action="{!c.showToast}"/>
+
+</aura:component>

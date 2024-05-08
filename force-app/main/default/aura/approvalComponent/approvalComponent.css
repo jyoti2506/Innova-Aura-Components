@@ -1,0 +1,42 @@
+.THIS .roboto{
+    
+    font-family: roboto;
+
+}
+
+.THIS .boldText {
+    font-weight: bold;
+}
+
+.THIS .whiteHeader{
+    background-color: white !important;
+}
+
+.THIS .button-group-container {
+    display: flex;
+    align-items: center;
+}
+
+.THIS.slds-table {
+   width: auto;  
+
+}
+
+.THIS.slds-truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/*modify button added to datatable to resemble 
+hyperlink shown on open case and close case*/
+.THIS .slds-button_neutral {
+    
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    color: #000000; 
+    box-shadow: none;
+    cursor: pointer;
+}

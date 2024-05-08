@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ITSCLeadTime</fullName>
+    <active>true</active>
+    <description>Validation rule for blocking create/update of cases that do not provide enough lead time.</description>
+    <errorConditionFormula>AND(RecordType.DeveloperName = &apos;Change&apos;, OR(AND(ISNEW(), NOT(ISNULL(wkitsm__PlannedStartDateTime__c))), ISCHANGED(wkitsm__PlannedStartDateTime__c)), (DATETIMEVALUE(NOW())) &gt; DATETIMEVALUE(wkitsm__PlannedStartDateTime__c - 7))</errorConditionFormula>
+    <errorMessage>All changes require a lead time of at least 7 days.</errorMessage>
+</ValidationRule>

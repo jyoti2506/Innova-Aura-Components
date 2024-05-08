@@ -1,0 +1,44 @@
+.THIS .bordered-section {
+    border-bottom: 1px solid #ccc; 
+    padding-bottom: 5px; 
+    padding-top: 5px; 
+}
+.THIS .bordered {
+    padding-bottom: 10px;
+}
+.THIS .comment-container {
+    padding-right: 30px; 
+    text-align: auto;
+}
+
+/* New styles for the .comment-wrapper and .comment-info elements */
+.THIS .comment-wrapper {
+  display: flex; /* Make the wrapper a flexbox container */
+}
+
+.THIS .comment-info {
+  margin-left: 10px; /* Margin for spacing between image and text */
+  display: flex; /* Make the comment-info a flexbox container as well */
+  flex-direction: column; /* Stack elements vertically */
+}
+
+.THIS .user-info, .THIS .timestamp { /* Target both elements for styling */
+  font-size: 14px; /* Adjust font size as needed */
+}
+
+.THIS .captured-comment {
+  clear: both;
+}
+
+.THIS .comment-body {
+    margin-top: 10px;
+}
+
+.THIS .profile-pic{
+    width: 40px; 
+    height: 40px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    border: 2px solid #fff; 
+    display: inline-block;
+}

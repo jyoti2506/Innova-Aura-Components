@@ -1,0 +1,27 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global" >
+	
+    <aura:attribute name="baseURL" type="String" access="global" default="/Service/s"/>
+    <aura:attribute name="showCategories" type="Boolean" access="global" default="false"/>
+    
+    <aura:if isTrue="{!v.showCategories}">
+        <lightning:layout>
+            <lightning:layoutItem>
+                <c:ServiceRequestCategory/>
+            </lightning:layoutItem>
+            <lightning:layoutItem>
+                <div class="slds-m-left_xx-large">
+                	<c:ServiceRequestItem showCategories="{!v.showCategories}"/>
+                </div>
+            </lightning:layoutItem>
+        </lightning:layout>
+        
+        <aura:set attribute="else">
+            <lightning:layout>  
+                <lightning:layoutItem>
+                    <c:ServiceRequestItem showCategories="{!v.showCategories}"/>
+                </lightning:layoutItem>
+            </lightning:layout>
+        </aura:set>
+    </aura:if>
+        
+</aura:component>
