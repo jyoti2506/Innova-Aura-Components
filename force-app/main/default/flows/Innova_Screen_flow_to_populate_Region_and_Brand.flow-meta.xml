@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <actionCalls>
+        <name>Refresh_View</name>
+        <label>Refresh View</label>
+        <locationX>176</locationX>
+        <locationY>350</locationY>
+        <actionName>c:RefreshView</actionName>
+        <actionType>component</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <nameSegment>c:RefreshView</nameSegment>
+        <versionSegment>1</versionSegment>
+    </actionCalls>
+    <apiVersion>58.0</apiVersion>
+    <choices>
+        <name>Canada_Atlantic</name>
+        <choiceText>Canada - Atlantic</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Canada - Atlantic</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Canada_Central</name>
+        <choiceText>Canada - Central</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Canada - Central</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Canada_Eastern</name>
+        <choiceText>Canada - Eastern</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Canada - Eastern</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Canada_Mountain</name>
+        <choiceText>Canada - Mountain</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Canada - Mountain</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Canada_Pacific</name>
+        <choiceText>Canada - Pacific</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Canada - Pacific</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Europe_Central</name>
+        <choiceText>Europe - Central</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Europe - Central</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Europe_Eastern</name>
+        <choiceText>Europe - Eastern</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Europe - Eastern</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Europe_Further_Eastern</name>
+        <choiceText>Europe - Further-Eastern</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Europe - Further-Eastern</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Europe_GMT</name>
+        <choiceText>Europe - GMT</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Europe - GMT</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Europe_Western</name>
+        <choiceText>Europe - Western</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Europe - Western</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>HireGenics</name>
+        <choiceText>HireGenics</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>HireGenics</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>India_Standard</name>
+        <choiceText>India - Standard</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>India - Standard</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Innova</name>
+        <choiceText>Innova</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Innova</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Innova_Solutions</name>
+        <choiceText>Innova Solutions</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Innova Solutions</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Mexico_Central</name>
+        <choiceText>Mexico - Central</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Mexico - Central</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Mexico_Eastern</name>
+        <choiceText>Mexico - Eastern</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Mexico - Eastern</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Mexico_Mountain</name>
+        <choiceText>Mexico - Mountain</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Mexico - Mountain</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>Mexico_Pacific</name>
+        <choiceText>Mexico - Pacific</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>Mexico - Pacific</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>USA</name>
+        <choiceText>USA</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>USA</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>USA_Alaska</name>
+        <choiceText>USA - Alaska</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>USA - Alaska</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>USA_Central</name>
+        <choiceText>USA - Central</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>USA - Central</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>USA_Eastern</name>
+        <choiceText>USA - Eastern</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>USA - Eastern</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>USA_Hawaii</name>
+        <choiceText>USA - Hawaii</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>USA - Hawaii</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>USA_Mountain</name>
+        <choiceText>USA - Mountain</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>USA - Mountain</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>USA_Pacific</name>
+        <choiceText>USA - Pacific</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>USA - Pacific</stringValue>
+        </value>
+    </choices>
+    <choices>
+        <name>USA_Phoenix</name>
+        <choiceText>USA - Phoenix</choiceText>
+        <dataType>String</dataType>
+        <value>
+            <stringValue>USA - Phoenix</stringValue>
+        </value>
+    </choices>
+    <dynamicChoiceSets>
+        <name>varBrandlist</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>Innova_Brand__c</picklistField>
+        <picklistObject>User</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>varRegionlist</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>Innova_Region__c</picklistField>
+        <picklistObject>User</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>varTimezone1</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>Time_Zone__c</picklistField>
+        <picklistObject>User</picklistObject>
+    </dynamicChoiceSets>
+    <environments>Default</environments>
+    <formulas>
+        <name>varBrand</name>
+        <dataType>String</dataType>
+        <expression>IF({!Brand}!=Null, {!Brand}, &quot;&quot;) + IF({!Brand1}!=Null, {!Brand1}, &quot;&quot;)</expression>
+    </formulas>
+    <interviewLabel>Innova - Screen flow to populate Region and Brand {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Innova - Screen flow to populate Region and Brand</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <recordUpdates>
+        <name>Update_Region_and_Brand</name>
+        <label>Update Region and Brand</label>
+        <locationX>176</locationX>
+        <locationY>242</locationY>
+        <connector>
+            <targetReference>Refresh_View</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$User.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Innova_Brand__c</field>
+            <value>
+                <elementReference>varBrand</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Innova_Region__c</field>
+            <value>
+                <elementReference>Region</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Time_Zone__c</field>
+            <value>
+                <elementReference>Time_Zone</elementReference>
+            </value>
+        </inputAssignments>
+        <object>User</object>
+    </recordUpdates>
+    <screens>
+        <name>Update_Info</name>
+        <label>Update Info</label>
+        <locationX>176</locationX>
+        <locationY>134</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>Update_Region_and_Brand</targetReference>
+        </connector>
+        <fields>
+            <name>Display1</name>
+            <fieldText>&lt;p&gt;&lt;strong style=&quot;font-size: 16px;&quot;&gt;Preferences&lt;/strong&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>Update_Info_Section1</name>
+            <fieldType>RegionContainer</fieldType>
+            <fields>
+                <name>Update_Info_Section1_Column1</name>
+                <fieldType>Region</fieldType>
+                <fields>
+                    <name>Region</name>
+                    <choiceReferences>varRegionlist</choiceReferences>
+                    <dataType>String</dataType>
+                    <fieldText>Region</fieldText>
+                    <fieldType>DropdownBox</fieldType>
+                    <isRequired>true</isRequired>
+                </fields>
+                <fields>
+                    <name>Brand</name>
+                    <choiceReferences>varBrandlist</choiceReferences>
+                    <dataType>String</dataType>
+                    <fieldText>Brand</fieldText>
+                    <fieldType>DropdownBox</fieldType>
+                    <isRequired>true</isRequired>
+                    <visibilityRule>
+                        <conditionLogic>and</conditionLogic>
+                        <conditions>
+                            <leftValueReference>Region</leftValueReference>
+                            <operator>NotEqualTo</operator>
+                            <rightValue>
+                                <stringValue>EMEA (Europe)</stringValue>
+                            </rightValue>
+                        </conditions>
+                    </visibilityRule>
+                </fields>
+                <fields>
+                    <name>Brand1</name>
+                    <choiceReferences>Innova_Solutions</choiceReferences>
+                    <choiceReferences>HireGenics</choiceReferences>
+                    <dataType>String</dataType>
+                    <fieldText>Brand</fieldText>
+                    <fieldType>DropdownBox</fieldType>
+                    <isRequired>true</isRequired>
+                    <visibilityRule>
+                        <conditionLogic>and</conditionLogic>
+                        <conditions>
+                            <leftValueReference>Region</leftValueReference>
+                            <operator>EqualTo</operator>
+                            <rightValue>
+                                <stringValue>EMEA (Europe)</stringValue>
+                            </rightValue>
+                        </conditions>
+                    </visibilityRule>
+                </fields>
+                <fields>
+                    <name>Time_Zone</name>
+                    <choiceReferences>varTimezone1</choiceReferences>
+                    <dataType>String</dataType>
+                    <fieldText>Time Zone</fieldText>
+                    <fieldType>DropdownBox</fieldType>
+                    <isRequired>true</isRequired>
+                </fields>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>12</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <isRequired>false</isRequired>
+            <regionContainerType>SectionWithoutHeader</regionContainerType>
+        </fields>
+        <nextOrFinishButtonLabel>Submit</nextOrFinishButtonLabel>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Update_Info</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+</Flow>

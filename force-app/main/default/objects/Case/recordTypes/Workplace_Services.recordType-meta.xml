@@ -193,10 +193,6 @@
     <picklistValues>
         <picklist>Origin</picklist>
         <values>
-            <fullName>Console</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>Phone</fullName>
             <default>false</default>
         </values>

@@ -9,6 +9,7 @@ import RECORD_SELECTED_CHANNEL from '@salesforce/messageChannel/Record_Selected_
 
 export default class KnowledgeCategories extends NavigationMixin(LightningElement) {
 
+    isPrimaryPortal = true;
     topics; // Declare the topics variable
     error;  // Declare an error variable to store potential errors
 
@@ -143,11 +144,11 @@ connectedCallback(){
             }
         });
     }
-
-    @wire(getTopics, { }) 
+  
+    @wire(getTopics, { isPrimaryPortal: '$isPrimaryPortal' })
     wiredTopics({ error, data }) {
         if (data) {
-            console.log('returned categories: ',data);
+            console.log('the returned categories: ',data);
             this.topics = data; 
             
         } else if (error) {

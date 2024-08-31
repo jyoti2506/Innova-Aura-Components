@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Field Support - Innova</name>
+    <queueMembers>
+        <publicGroups>
+            <publicGroup>Admins</publicGroup>
+            <publicGroup>Field_Support_Innova</publicGroup>
+        </publicGroups>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Innova_ITSC_Task__c</sobjectType>
+    </queueSobject>
+</Queue>

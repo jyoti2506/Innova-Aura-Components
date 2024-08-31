@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Change_Request_IT_infrastructure</fullName>
+    <active>true</active>
+    <label>Change Request - IT infrastructure</label>
+    <picklistValues>
+        <picklist>Category</picklist>
+        <values>
+            <fullName>Antivirus%2FEndpoint Protection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cloud - Azure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cloud - OCI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cyber Security Support - OSI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DNS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data Encryption</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Database</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Firewall</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Licenses %2F Assets</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nagios Alert</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Network</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Network Support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Office 365</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Patch Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SQL Server Support - OSI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Server Support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Storage %2F Backup - OSI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telephone %26 mobile</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telephony Support - OSI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UPS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vmware Virtualization Support - OSI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Windows Desktop Support - OSI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Windows Server Support - OSI</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Impact</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Priority</picklist>
+        <values>
+            <fullName>Critical</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Moderate</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>RiskLevel</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Canceled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scheduled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Submitted for approval</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

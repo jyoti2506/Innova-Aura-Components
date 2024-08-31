@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>wkitsm__OpenPorts__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Returns the top 1000 (according to Nmap) open tcp ports.  Example: 135,443,445,902,912,1536,1537,1538,1539,1566</description>
+    <externalId>false</externalId>
+    <label>Open Ports</label>
+    <length>6000</length>
+    <trackHistory>false</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

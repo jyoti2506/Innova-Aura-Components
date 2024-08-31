@@ -3,7 +3,6 @@
     <fullName>wkitsm__Change</fullName>
     <active>true</active>
     <businessProcess>wkitsm__ITSC - Change Process</businessProcess>
-    <compactLayoutAssignment>Innova_Compact_Layout</compactLayoutAssignment>
     <description>Create a request for a change on a recurring or trending problem or incident.</description>
     <label>Change</label>
     <picklistValues>
@@ -2017,6 +2016,10 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>Data Update%2FAdd at Placement Level</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>DayForce Access</fullName>
             <default>false</default>
         </values>
@@ -2649,10 +2652,6 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>SharePoint</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>SharePoint Site Access</fullName>
             <default>false</default>
         </values>
@@ -2952,10 +2951,6 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>Commuter Programs</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>DBA Support</fullName>
             <default>false</default>
         </values>
@@ -2981,10 +2976,6 @@
         </values>
         <values>
             <fullName>ERP Support</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Employment Records</fullName>
             <default>false</default>
         </values>
         <values>
@@ -3088,10 +3079,6 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>Open Enrollment</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>Operations</fullName>
             <default>false</default>
         </values>
@@ -3169,10 +3156,6 @@
         </values>
         <values>
             <fullName>Sales - Operations</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Salesforce %5BHR%5D</fullName>
             <default>false</default>
         </values>
         <values>
@@ -3311,10 +3294,6 @@
     </picklistValues>
     <picklistValues>
         <picklist>Origin</picklist>
-        <values>
-            <fullName>Console</fullName>
-            <default>false</default>
-        </values>
         <values>
             <fullName>Direct Contact</fullName>
             <default>false</default>

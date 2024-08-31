@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Application_Support_My_ACS_Innova_ITSC_Task</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Application Support - My ACS</label>
+    <queue>Application_Support_My_ACS</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

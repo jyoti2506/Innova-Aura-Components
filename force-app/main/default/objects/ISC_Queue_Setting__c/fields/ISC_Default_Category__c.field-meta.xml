@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ISC_Default_Category__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <externalId>false</externalId>
+    <label>Default Category</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>ISC_Category__c.Queue__c</field>
+            <operation>equals</operation>
+            <valueField>$Source.System_Queue__c</valueField>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>ISC_Category__c</referenceTo>
+    <relationshipLabel>Queue Settings</relationshipLabel>
+    <relationshipName>Queue_Settings</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

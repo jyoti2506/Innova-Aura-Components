@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>ritesh.mishra@cloudaction.com</contactEmail>
+    <iconUrl>https://login.salesforce.com/logos/Salesforce/Salesforce/icon.png</iconUrl>
+    <label>IT Service Center Portal</label>
+    <logoUrl>https://login.salesforce.com/logos/Salesforce/Salesforce/logo.png</logoUrl>
+    <startUrl>https://innovasolutionsitsc.lightning.force.com/servlet/networks/switch?networkId=0DBDn000000sdlI</startUrl>
+</ConnectedApp>

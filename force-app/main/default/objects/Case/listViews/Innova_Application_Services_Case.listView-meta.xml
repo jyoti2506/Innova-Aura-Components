@@ -8,7 +8,6 @@
     <columns>CASES.STATUS</columns>
     <columns>CASES.PRIORITY</columns>
     <columns>CASES.CREATED_DATE</columns>
-    <columns>Innova_Due_Date__c</columns>
     <columns>OWNER_NAME</columns>
     <columns>Innova_Category1__c</columns>
     <columns>Innova_Subcategory1__c</columns>

@@ -2,8 +2,7 @@
 <ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Only_System_and_Admin_Can_Close</fullName>
     <active>true</active>
-    <description>Only System and Admins can set Status to Closed</description>
-    <errorConditionFormula>ISPICKVAL( Status , &apos;Closed&apos;)  &amp;&amp; 
+    <errorConditionFormula>ISPICKVAL( Status , &apos;Closed&apos;) &amp;&amp;
 
 $Profile.Name != &apos;System Administrator&apos;</errorConditionFormula>
     <errorMessage>You cannot close a case directly. Please select Resolved and the Case will auto-close in 5 days.</errorMessage>

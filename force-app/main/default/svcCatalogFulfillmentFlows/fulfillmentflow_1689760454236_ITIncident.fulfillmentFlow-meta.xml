@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SvcCatalogFulfillmentFlow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>&lt;p&gt;Submit an Incident.&lt;/p&gt;</description>
+    <flow>Innova_Created_My_Support_Ticket_Form_From_Portal_Side</flow>
+    <isProtected>false</isProtected>
+    <masterLabel>IT Incident</masterLabel>
+</SvcCatalogFulfillmentFlow>

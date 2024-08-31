@@ -1,7 +1,7 @@
 import { LightningElement,api } from 'lwc';
 export default class KnowledgeArticleHyperlink extends LightningElement {
 
-    baseUrl = '/Service/s/knowledge-article?recId=';
+    baseUrl = '/s/knowledge-article?recId=';
 
     @api articlerecord;
 

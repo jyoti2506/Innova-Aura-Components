@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FSO_Volt_Data_Feeds_Innova_ITSC_Task</fullName>
+    <filterScope>Queue</filterScope>
+    <label>FSO - Volt- Data Feeds</label>
+    <queue>FSO_Volt_Data_Feeds</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

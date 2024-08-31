@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Permission Set Group Employees</label>
+    <permissionSets>Employee_Concierge_User_Data_Access</permissionSets>
+    <permissionSets>Employee_Knowledge_User</permissionSets>
+    <permissionSets>Employee_Workspace_User_Data_Access</permissionSets>
+    <permissionSets>IT_Service_Center_Knowledge</permissionSets>
+    <permissionSets>IT_Service_Center_Standard_Field_Access</permissionSets>
+    <permissionSets>Innova_ITSC_Company_Wide_Security_Access</permissionSets>
+    <permissionSets>Innova_ITSC_Task_Permission_for_Employees</permissionSets>
+    <permissionSets>force__ServiceCatalogUser</permissionSets>
+    <permissionSets>wkdw__EmployeeConciergeAccess</permissionSets>
+    <permissionSets>wkdw__helpdesk_user</permissionSets>
+    <permissionSets>wkdw__workplace_user</permissionSets>
+    <permissionSets>wkitsm__IT_Service_Center_Request_Menu_Requester</permissionSets>
+    <permissionSets>wkitsm__IT_Service_Center_Requester</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

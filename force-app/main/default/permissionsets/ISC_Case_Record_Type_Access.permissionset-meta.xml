@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Gives access to Case Record Types for IT agents to manage Cases in IT Service Center.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>ISC Case Record Type Access</label>
+    <recordTypeVisibilities>
+        <recordType>Case.wkitsm__Incident</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <recordType>Case.wkitsm__Request</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+</PermissionSet>

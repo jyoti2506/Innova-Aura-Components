@@ -26,11 +26,6 @@
                 <label>Access /Permissions Management</label>
             </value>
             <value>
-                <fullName>Access / Permissions Management</fullName>
-                <default>false</default>
-                <label>Access / Permissions Management</label>
-            </value>
-            <value>
                 <fullName>Access Issue</fullName>
                 <default>false</default>
                 <label>Access Issue</label>
@@ -522,6 +517,7 @@
             <value>
                 <fullName>Data Corruption Issue</fullName>
                 <default>false</default>
+                <isActive>false</isActive>
                 <label>Data Corruption Issue</label>
             </value>
             <value>
@@ -991,6 +987,7 @@
             <value>
                 <fullName>Maintenance</fullName>
                 <default>false</default>
+                <isActive>false</isActive>
                 <label>Maintenance</label>
             </value>
             <value>
@@ -1164,11 +1161,6 @@
                 <label>Notification Issue</label>
             </value>
             <value>
-                <fullName>Not Set</fullName>
-                <default>false</default>
-                <label>Not Set</label>
-            </value>
-            <value>
                 <fullName>Onboarding</fullName>
                 <default>false</default>
                 <label>Onboarding</label>
@@ -1177,11 +1169,6 @@
                 <fullName>Onboarding Documents</fullName>
                 <default>false</default>
                 <label>Onboarding Documents</label>
-            </value>
-            <value>
-                <fullName>Order</fullName>
-                <default>false</default>
-                <label>Order</label>
             </value>
             <value>
                 <fullName>Other</fullName>
@@ -1284,9 +1271,10 @@
                 <label>Patching</label>
             </value>
             <value>
-                <fullName>Patching / Upgrade</fullName>
+                <fullName>Patching/Upgrade</fullName>
                 <default>false</default>
-                <label>Patching / Upgrade</label>
+                <isActive>false</isActive>
+                <label>Patching/Upgrade</label>
             </value>
             <value>
                 <fullName>Pay/Bill &amp; Portal rates update</fullName>
@@ -1967,11 +1955,6 @@
                 <label>Unable to view the menu or menu items</label>
             </value>
             <value>
-                <fullName>Unexpected Behavior</fullName>
-                <default>false</default>
-                <label>Unexpected Behavior</label>
-            </value>
-            <value>
                 <fullName>Unexpected behaviour</fullName>
                 <default>false</default>
                 <isActive>false</isActive>
@@ -2078,11 +2061,6 @@
                 <label>User Query</label>
             </value>
             <value>
-                <fullName>User Request</fullName>
-                <default>false</default>
-                <label>User Request</label>
-            </value>
-            <value>
                 <fullName>User Roles and Policies</fullName>
                 <default>false</default>
                 <label>User Roles and Policies</label>
@@ -2095,6 +2073,7 @@
             <value>
                 <fullName>Vendor</fullName>
                 <default>false</default>
+                <isActive>false</isActive>
                 <label>Vendor</label>
             </value>
             <value>
@@ -2220,7 +2199,6 @@
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Human Resource</controllingFieldValue>
-            <controllingFieldValue>Payroll [APM]</controllingFieldValue>
             <valueName>Employee</valueName>
         </valueSettings>
         <valueSettings>
@@ -2851,63 +2829,6 @@
             <valueName>SGnA Manual Load</valueName>
         </valueSettings>
         <valueSettings>
-            <controllingFieldValue>Payroll [APM]</controllingFieldValue>
-            <valueName>Access / Permissions Management</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Payroll [APM]</controllingFieldValue>
-            <controllingFieldValue>Create/Update/Delete</controllingFieldValue>
-            <valueName>Candidate</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Payroll [APM]</controllingFieldValue>
-            <controllingFieldValue>Data Correction / Update</controllingFieldValue>
-            <valueName>Customer</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Payroll [APM]</controllingFieldValue>
-            <valueName>Data Corruption Issue</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Payroll [APM]</controllingFieldValue>
-            <valueName>Maintenance</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Payroll [APM]</controllingFieldValue>
-            <valueName>Not Set</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Payroll [APM]</controllingFieldValue>
-            <valueName>Order</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Payroll [APM]</controllingFieldValue>
-            <valueName>Patching / Upgrade</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Payroll [APM]</controllingFieldValue>
-            <controllingFieldValue>Create/Update/Delete</controllingFieldValue>
-            <valueName>Placement</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Payroll [APM]</controllingFieldValue>
-            <controllingFieldValue>Bullhorn</controllingFieldValue>
-            <controllingFieldValue>Security &amp; Maintenance</controllingFieldValue>
-            <valueName>System Unavailable</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Payroll [APM]</controllingFieldValue>
-            <valueName>Unexpected Behavior</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Payroll [APM]</controllingFieldValue>
-            <valueName>User Request</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Payroll [APM]</controllingFieldValue>
-            <valueName>Vendor</valueName>
-        </valueSettings>
-        <valueSettings>
             <controllingFieldValue>FPnA related</controllingFieldValue>
             <valueName>FPnA related Issues</valueName>
         </valueSettings>
@@ -2957,6 +2878,10 @@
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Create/Update/Delete</controllingFieldValue>
+            <valueName>Candidate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Create/Update/Delete</controllingFieldValue>
             <valueName>Company</valueName>
         </valueSettings>
         <valueSettings>
@@ -2966,6 +2891,10 @@
         <valueSettings>
             <controllingFieldValue>Create/Update/Delete</controllingFieldValue>
             <valueName>Email Template</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Create/Update/Delete</controllingFieldValue>
+            <valueName>Placement</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Create/Update/Delete</controllingFieldValue>
@@ -3150,45 +3079,6 @@
             <valueName>Worker lookup issue</valueName>
         </valueSettings>
         <valueSettings>
-            <controllingFieldValue>Deployment [DevOps]</controllingFieldValue>
-            <controllingFieldValue>Jobs Issue</controllingFieldValue>
-            <controllingFieldValue>App Registration Creation</controllingFieldValue>
-            <controllingFieldValue>Environment Issues</controllingFieldValue>
-            <controllingFieldValue>Logs</controllingFieldValue>
-            <controllingFieldValue>TAC Not Working</controllingFieldValue>
-            <controllingFieldValue>App Registration Modification (Adding/ Removing Role, Adding/Removing user access)</controllingFieldValue>
-            <valueName>Non Prod QA</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Deployment [DevOps]</controllingFieldValue>
-            <controllingFieldValue>Jobs Issue</controllingFieldValue>
-            <controllingFieldValue>App Registration Creation</controllingFieldValue>
-            <controllingFieldValue>Environment Issues</controllingFieldValue>
-            <controllingFieldValue>Logs</controllingFieldValue>
-            <controllingFieldValue>TAC Not Working</controllingFieldValue>
-            <controllingFieldValue>App Registration Modification (Adding/ Removing Role, Adding/Removing user access)</controllingFieldValue>
-            <valueName>Non Prod SIT</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Deployment [DevOps]</controllingFieldValue>
-            <controllingFieldValue>Jobs Issue</controllingFieldValue>
-            <controllingFieldValue>App Registration Creation</controllingFieldValue>
-            <controllingFieldValue>Environment Issues</controllingFieldValue>
-            <controllingFieldValue>Logs</controllingFieldValue>
-            <controllingFieldValue>TAC Not Working</controllingFieldValue>
-            <controllingFieldValue>App Registration Modification (Adding/ Removing Role, Adding/Removing user access)</controllingFieldValue>
-            <valueName>Non Prod UAT</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Deployment [DevOps]</controllingFieldValue>
-            <controllingFieldValue>Jobs Issue</controllingFieldValue>
-            <controllingFieldValue>App Registration Creation</controllingFieldValue>
-            <controllingFieldValue>Environment Issues</controllingFieldValue>
-            <controllingFieldValue>Logs</controllingFieldValue>
-            <controllingFieldValue>App Registration Modification (Adding/ Removing Role, Adding/Removing user access)</controllingFieldValue>
-            <valueName>Production</valueName>
-        </valueSettings>
-        <valueSettings>
             <controllingFieldValue>CAF Not Available</controllingFieldValue>
             <valueName>CAF not available in CAP Portal for approved placement in BH</valueName>
         </valueSettings>
@@ -3258,44 +3148,54 @@
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Data Update/Add at Employement Level</controllingFieldValue>
+            <controllingFieldValue>Data Update/Add at Placement Level</controllingFieldValue>
             <valueName>Address update request</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Data Update/Add at Employement Level</controllingFieldValue>
+            <controllingFieldValue>Data Update/Add at Placement Level</controllingFieldValue>
             <controllingFieldValue>Data Correction / Update</controllingFieldValue>
             <valueName>Data Correction/Update- Drop Down values</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Data Update/Add at Employement Level</controllingFieldValue>
+            <controllingFieldValue>Data Update/Add at Placement Level</controllingFieldValue>
             <valueName>Full / partime or Remote Status change request</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Data Update/Add at Employement Level</controllingFieldValue>
+            <controllingFieldValue>Data Update/Add at Placement Level</controllingFieldValue>
             <valueName>LOB / Location Segment Update</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Data Update/Add at Employement Level</controllingFieldValue>
+            <controllingFieldValue>Data Update/Add at Placement Level</controllingFieldValue>
             <controllingFieldValue>Data Correction / Update</controllingFieldValue>
             <valueName>Other Data Correction / Update</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Data Update/Add at Employement Level</controllingFieldValue>
+            <controllingFieldValue>Data Update/Add at Placement Level</controllingFieldValue>
             <valueName>Pay/Bill &amp; Portal rates update</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Data Update/Add at Employement Level</controllingFieldValue>
+            <controllingFieldValue>Data Update/Add at Placement Level</controllingFieldValue>
             <valueName>Pay Group/cycle/frequency has update</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Data Update/Add at Employement Level</controllingFieldValue>
+            <controllingFieldValue>Data Update/Add at Placement Level</controllingFieldValue>
             <valueName>PO number Issue and update</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Data Update/Add at Employement Level</controllingFieldValue>
+            <controllingFieldValue>Data Update/Add at Placement Level</controllingFieldValue>
             <valueName>Project / PRBU / Internal_ORG update</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Data Update/Add at Employement Level</controllingFieldValue>
+            <controllingFieldValue>Data Update/Add at Placement Level</controllingFieldValue>
             <valueName>Required Date update</valueName>
         </valueSettings>
         <valueSettings>
@@ -3304,7 +3204,24 @@
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Data Update/Add at Employement Level</controllingFieldValue>
+            <controllingFieldValue>Data Update/Add at Placement Level</controllingFieldValue>
             <valueName>work state and sick/PTO rule update</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Data Update/Add at Placement Level</controllingFieldValue>
+            <valueName>Customer and Supplier update</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Data Update/Add at Placement Level</controllingFieldValue>
+            <valueName>Ref and Tags update</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Data Update/Add at Placement Level</controllingFieldValue>
+            <valueName>Status update at placement level</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Data Update/Add at Placement Level</controllingFieldValue>
+            <valueName>Worker type change request</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Data Access</controllingFieldValue>
@@ -3441,6 +3358,11 @@
             <valueName>Placement Transmission</valueName>
         </valueSettings>
         <valueSettings>
+            <controllingFieldValue>Bullhorn</controllingFieldValue>
+            <controllingFieldValue>Security &amp; Maintenance</controllingFieldValue>
+            <valueName>System Unavailable</valueName>
+        </valueSettings>
+        <valueSettings>
             <controllingFieldValue>Portal Access</controllingFieldValue>
             <valueName>Unable to access/Login</valueName>
         </valueSettings>
@@ -3479,6 +3401,37 @@
         <valueSettings>
             <controllingFieldValue>Deployment</controllingFieldValue>
             <valueName>Production Deployment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>App Registration Creation</controllingFieldValue>
+            <controllingFieldValue>Environment Issues</controllingFieldValue>
+            <controllingFieldValue>Logs</controllingFieldValue>
+            <controllingFieldValue>TAC Not Working</controllingFieldValue>
+            <controllingFieldValue>App Registration Modification (Adding/ Removing Role, Adding/Removing user access)</controllingFieldValue>
+            <valueName>Non Prod QA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>App Registration Creation</controllingFieldValue>
+            <controllingFieldValue>Environment Issues</controllingFieldValue>
+            <controllingFieldValue>Logs</controllingFieldValue>
+            <controllingFieldValue>TAC Not Working</controllingFieldValue>
+            <controllingFieldValue>App Registration Modification (Adding/ Removing Role, Adding/Removing user access)</controllingFieldValue>
+            <valueName>Non Prod SIT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>App Registration Creation</controllingFieldValue>
+            <controllingFieldValue>Environment Issues</controllingFieldValue>
+            <controllingFieldValue>Logs</controllingFieldValue>
+            <controllingFieldValue>TAC Not Working</controllingFieldValue>
+            <controllingFieldValue>App Registration Modification (Adding/ Removing Role, Adding/Removing user access)</controllingFieldValue>
+            <valueName>Non Prod UAT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>App Registration Creation</controllingFieldValue>
+            <controllingFieldValue>Environment Issues</controllingFieldValue>
+            <controllingFieldValue>Logs</controllingFieldValue>
+            <controllingFieldValue>App Registration Modification (Adding/ Removing Role, Adding/Removing user access)</controllingFieldValue>
+            <valueName>Production</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Daxtra</controllingFieldValue>
@@ -3600,6 +3553,10 @@
         <valueSettings>
             <controllingFieldValue>Access Related (Terminate)</controllingFieldValue>
             <valueName>Access Related (Terminate)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Data Correction / Update</controllingFieldValue>
+            <valueName>Customer</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Data Correction / Update</controllingFieldValue>

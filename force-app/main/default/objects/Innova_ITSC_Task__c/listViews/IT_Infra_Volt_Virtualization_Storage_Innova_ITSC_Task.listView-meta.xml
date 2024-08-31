@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IT_Infra_Volt_Virtualization_Storage_Innova_ITSC_Task</fullName>
+    <filterScope>Queue</filterScope>
+    <label>IT Infra - Volt Virtualization &amp; Storage</label>
+    <queue>IT_Infra_Volt_Virtualization_Storage</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

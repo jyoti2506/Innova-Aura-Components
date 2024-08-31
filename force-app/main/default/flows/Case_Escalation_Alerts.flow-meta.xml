@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>59.0</apiVersion>
+    <decisions>
+        <name>Case_Milestone_Escalation</name>
+        <label>Case - Milestone Escalation</label>
+        <locationX>402</locationX>
+        <locationY>539</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Owner_and_Queue</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Milestone_Notification__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Response: SLA violation </stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Milestone_Notification__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Response: Warning of upcoming SLA violation</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Milestone_Notification__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Resolution: Warning of upcoming SLA violation</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Milestone_Notification__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Resolution: SLA Violation </stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Notification_Owner_and_Queue</targetReference>
+            </connector>
+            <label>Owner and Queue</label>
+        </rules>
+        <rules>
+            <name>SLA_violation_escalation_to_L1</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Milestone_Notification__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Response: SLA violation escalation to L1 </stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Milestone_Notification__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Resolution: SLA violation escalation to L1 </stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Notification_L1_Public_Group</targetReference>
+            </connector>
+            <label>SLA violation escalation to L1</label>
+        </rules>
+        <rules>
+            <name>SLA_violation_escalation_to_L2</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Milestone_Notification__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Response: SLA violation escalation to L2 </stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Milestone_Notification__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Resolution: SLA violation escalation to L2 </stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Notification_L2_Public_Group</targetReference>
+            </connector>
+            <label>SLA violation escalation to L2</label>
+        </rules>
+    </decisions>
+    <description>Update Email Template to: SLA Milestone Notification - DJ - 1/2/24
+email in case of warning and violation of response / resolution</description>
+    <environments>Default</environments>
+    <interviewLabel>Case - Escalation Alerts {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Case - Escalation Alerts</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Queue_Owner_Record</name>
+        <label>Get Queue Owner Record</label>
+        <locationX>402</locationX>
+        <locationY>431</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Case_Milestone_Escalation</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Queue_Name__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Current_Queue__c</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Innova_Queue_Owner__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Set_Milestone_Notification_to_Blank_Null</name>
+        <label>Set Milestone Notification to Blank/Null</label>
+        <locationX>50</locationX>
+        <locationY>755</locationY>
+        <inputAssignments>
+            <field>Milestone_Notification__c</field>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>276</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Set_queue_email_address</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Milestone_Notification__c</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Milestone_Notification__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <object>Case</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <subflows>
+        <name>Notification_L1_Public_Group</name>
+        <label>Notification L1 Public Group</label>
+        <locationX>402</locationX>
+        <locationY>1055</locationY>
+        <connector>
+            <isGoTo>true</isGoTo>
+            <targetReference>Notification_Owner_and_Queue</targetReference>
+        </connector>
+        <flowName>Innova_General_Notification</flowName>
+        <inputAssignments>
+            <name>Case</name>
+            <value>
+                <elementReference>$Record</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>varEmailTemplateName</name>
+            <value>
+                <stringValue>SLA Milestone Notification</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>varManualGroupID</name>
+            <value>
+                <elementReference>Get_Queue_Owner_Record.Innova_Public_Group_Id__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>varRecipientType</name>
+            <value>
+                <stringValue>Group</stringValue>
+            </value>
+        </inputAssignments>
+    </subflows>
+    <subflows>
+        <name>Notification_L2_Public_Group</name>
+        <label>Notification L2 Public Group</label>
+        <locationX>490</locationX>
+        <locationY>647</locationY>
+        <connector>
+            <targetReference>Notification_L1_Public_Group</targetReference>
+        </connector>
+        <flowName>Innova_General_Notification</flowName>
+        <inputAssignments>
+            <name>Case</name>
+            <value>
+                <elementReference>$Record</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>varAppendOwnerToNotification</name>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>varEmailTemplateName</name>
+            <value>
+                <stringValue>SLA Milestone Notification</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>varManualGroupID</name>
+            <value>
+                <elementReference>Get_Queue_Owner_Record.Public_Group_Id_Escalation_L2__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>varRecipientType</name>
+            <value>
+                <stringValue>Group</stringValue>
+            </value>
+        </inputAssignments>
+    </subflows>
+    <subflows>
+        <name>Notification_Owner_and_Queue</name>
+        <label>Notification Owner and Queue</label>
+        <locationX>50</locationX>
+        <locationY>647</locationY>
+        <connector>
+            <targetReference>Set_Milestone_Notification_to_Blank_Null</targetReference>
+        </connector>
+        <flowName>Innova_General_Notification</flowName>
+        <inputAssignments>
+            <name>Case</name>
+            <value>
+                <elementReference>$Record</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>varEmailTemplateName</name>
+            <value>
+                <stringValue>SLA Milestone Notification</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>varIncludeCurrentQueue</name>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>varNotificationBody</name>
+            <value>
+                <elementReference>$Record.Milestone_Notification__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>varNotificationTitle</name>
+            <value>
+                <stringValue>{!$Record.CaseNumber} - {!$Record.Milestone_Notification__c}</stringValue>
+            </value>
+        </inputAssignments>
+    </subflows>
+    <subflows>
+        <description>Gets and sets the email address for the specific queue</description>
+        <name>Set_queue_email_address</name>
+        <label>Set queue email address</label>
+        <locationX>402</locationX>
+        <locationY>323</locationY>
+        <connector>
+            <targetReference>Get_Queue_Owner_Record</targetReference>
+        </connector>
+        <flowName>Innova_Get_Org_Wide_Email_Address</flowName>
+        <inputAssignments>
+            <name>Case</name>
+            <value>
+                <elementReference>$Record</elementReference>
+            </value>
+        </inputAssignments>
+        <outputAssignments>
+            <assignToReference>varSenderEmailAddress</assignToReference>
+            <name>OrgWideEmailAddress</name>
+        </outputAssignments>
+    </subflows>
+    <variables>
+        <name>varSenderEmailAddress</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

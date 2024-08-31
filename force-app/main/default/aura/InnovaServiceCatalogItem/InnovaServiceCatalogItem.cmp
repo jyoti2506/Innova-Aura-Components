@@ -1,0 +1,18 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global" >
+	
+    <aura:attribute name="title" type="String" />
+    <aura:attribute name="subTitle" type="String" />
+    <aura:attribute name="icon" type="String" />
+    <aura:attribute name="flowAPIName" type="String" />
+    
+    <lightning:navigation aura:id="navService"/>
+    
+    <div style="display: flex; align-items: center; border-bottom: 2px solid #ccc; padding-top: 10px; padding-bottom: 8px;">
+        <lightning:icon iconName="{!v.icon}" size="large" />
+        <a href="javascript:void(0);" onclick="{!c.navigateToPage}">
+            <p class="item-title">{!v.title}</p>
+            <p class="item-sub-title">{!v.subTitle}</p>
+        </a>
+    </div>
+    
+</aura:component>

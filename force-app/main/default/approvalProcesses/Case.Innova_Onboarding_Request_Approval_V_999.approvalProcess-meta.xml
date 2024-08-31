@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <allowRecall>true</allowRecall>
+    <allowedSubmitters>
+        <type>creator</type>
+    </allowedSubmitters>
+    <allowedSubmitters>
+        <type>owner</type>
+    </allowedSubmitters>
+    <approvalPageFields>
+        <field>CaseNumber</field>
+        <field>Owner</field>
+        <field>RecordType</field>
+        <field>Status</field>
+        <field>wkitsm__Category__c</field>
+        <field>Subject</field>
+        <field>Description</field>
+        <field>Innova_Service_Request_Details__c</field>
+        <field>CreatedDate</field>
+    </approvalPageFields>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>Innova_Manager__c</name>
+                <type>relatedUserField</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <description>Managers Approval step for Billable Employee</description>
+        <entryCriteria>
+            <criteriaItems>
+                <field>Case.Innova_Service_Request_Details__c</field>
+                <operation>contains</operation>
+                <value>Hiring Manager approval required if Full Desktop Access is selected.</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Service_Request_Details__c</field>
+                <operation>contains</operation>
+                <value>Microsoft Office License Type</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Check_For_Manager__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </criteriaItems>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>Hiring Manager Approval For Full Desktop Access</label>
+        <name>Manager_Approval</name>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>Innova_Manager__c</name>
+                <type>relatedUserField</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <booleanFilter>(1 OR 2 OR 3 OR 4 OR 5 OR 6 OR 7 OR 8 OR 9 OR 10 OR 11 OR 12 OR 13 OR 14 OR 15 OR 16 OR 17) AND 18 AND 19 AND 20</booleanFilter>
+            <criteriaItems>
+                <field>Case.Innova_Service_Request_Details__c</field>
+                <operation>contains</operation>
+                <value>Laptop Charger</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Service_Request_Details__c</field>
+                <operation>contains</operation>
+                <value>Monitors Dual</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Service_Request_Details__c</field>
+                <operation>contains</operation>
+                <value>Monitor Single</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Service_Request_Details__c</field>
+                <operation>contains</operation>
+                <value>Headset Wired</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Service_Request_Details__c</field>
+                <operation>contains</operation>
+                <value>Keyboard Wired</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Service_Request_Details__c</field>
+                <operation>contains</operation>
+                <value>Docking Station</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Service_Request_Details__c</field>
+                <operation>contains</operation>
+                <value>Mouse Wired</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Service_Request_Details__c</field>
+                <operation>contains</operation>
+                <value>Other</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Service_Request_Details__c</field>
+                <operation>contains</operation>
+                <value>Printer</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Service_Request_Details__c</field>
+                <operation>contains</operation>
+                <value>Desktop Speaker (Jabra)</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Service_Request_Details__c</field>
+                <operation>contains</operation>
+                <value>Headset</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Service_Request_Details__c</field>
+                <operation>contains</operation>
+                <value>External Webcam Wired</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Service_Request_Details__c</field>
+                <operation>contains</operation>
+                <value>Keyboard/Mouse Combo Wireless</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Service_Request_Details__c</field>
+                <operation>contains</operation>
+                <value>Mouse</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Service_Request_Details__c</field>
+                <operation>contains</operation>
+                <value>Keyboard</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Service_Request_Details__c</field>
+                <operation>contains</operation>
+                <value>Keyboard Wireless</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Service_Request_Details__c</field>
+                <operation>contains</operation>
+                <value>Mouse Wireless</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Service_Request_Details__c</field>
+                <operation>contains</operation>
+                <value>Laptop Type</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Region1__c</field>
+                <operation>notEqual</operation>
+                <value>USA</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Hiring_Manager__c</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </criteriaItems>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>Manager</label>
+        <name>Approval_Manager</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>Innova_IT_Approval</name>
+                <type>queue</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <booleanFilter>1 OR 2 OR 3</booleanFilter>
+            <criteriaItems>
+                <field>Case.Innova_Service_Request_Details__c</field>
+                <operation>contains</operation>
+                <value>This option will require business justification or be a client requirement. IT Approval is required</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Service_Request_Details__c</field>
+                <operation>contains</operation>
+                <value>This option is for software developers only and will require IT Approval</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Service_Request_Details__c</field>
+                <operation>contains</operation>
+                <value>This option is for VPs and above and will require IT Approval</value>
+            </criteriaItems>
+        </entryCriteria>
+        <label>IT Approval</label>
+        <name>IT_Approval</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <description>2-Level New Hire Approval (Manager + IT)</description>
+    <emailTemplate>wkitsm__ITSCEmailNotifications/Innova_Solution_Approval_Email_Template</emailTemplate>
+    <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
+    <entryCriteria>
+        <criteriaItems>
+            <field>Case.Innova_Service_Request_Trigger__c</field>
+            <operation>equals</operation>
+            <value>Onboarding Request</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.RecordType</field>
+            <operation>equals</operation>
+            <value>Request</value>
+        </criteriaItems>
+    </entryCriteria>
+    <finalApprovalActions>
+        <action>
+            <name>Isapproved</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Status_is_approved1</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalApprovalActions>
+    <finalApprovalRecordLock>false</finalApprovalRecordLock>
+    <finalRejectionActions>
+        <action>
+            <name>Isrejected</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Status_is_Rejected</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalRejectionActions>
+    <finalRejectionRecordLock>false</finalRejectionRecordLock>
+    <initialSubmissionActions>
+        <action>
+            <name>submit_for_approval</name>
+            <type>FieldUpdate</type>
+        </action>
+    </initialSubmissionActions>
+    <label>Innova Onboarding Request Approval11</label>
+    <nextAutomatedApprover>
+        <useApproverFieldOfRecordOwner>false</useApproverFieldOfRecordOwner>
+        <userHierarchyField>Manager</userHierarchyField>
+    </nextAutomatedApprover>
+    <processOrder>7</processOrder>
+    <recordEditability>AdminOrCurrentApprover</recordEditability>
+    <showApprovalHistory>true</showApprovalHistory>
+</ApprovalProcess>

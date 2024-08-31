@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IT_Internal_Security_SOC_Innova_ITSC_Task</fullName>
+    <filterScope>Queue</filterScope>
+    <label>IT - Internal Security – SOC</label>
+    <queue>IT_Internal_Security_SOC</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

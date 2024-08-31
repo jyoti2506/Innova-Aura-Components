@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Email2Case_Address__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>Email2Case Address</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>ISC_Email_Setting__c.Type__c</field>
+            <operation>equals</operation>
+            <value>Email2Case</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>ISC_Email_Setting__c</referenceTo>
+    <relationshipLabel>Email Settings (Email2Case Address)</relationshipLabel>
+    <relationshipName>Email_Settings</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

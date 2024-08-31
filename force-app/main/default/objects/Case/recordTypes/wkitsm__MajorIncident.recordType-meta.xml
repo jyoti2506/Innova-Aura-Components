@@ -3,7 +3,6 @@
     <fullName>wkitsm__MajorIncident</fullName>
     <active>true</active>
     <businessProcess>wkitsm__ITSC - Major Incident Process</businessProcess>
-    <compactLayoutAssignment>Innova_Compact_Layout</compactLayoutAssignment>
     <description>Log a ticket for a major loss or disruption of operations, services, or functions.</description>
     <label>Major Incident</label>
     <picklistValues>
@@ -181,10 +180,6 @@
     </picklistValues>
     <picklistValues>
         <picklist>Origin</picklist>
-        <values>
-            <fullName>Console</fullName>
-            <default>false</default>
-        </values>
         <values>
             <fullName>Direct Contact</fullName>
             <default>false</default>

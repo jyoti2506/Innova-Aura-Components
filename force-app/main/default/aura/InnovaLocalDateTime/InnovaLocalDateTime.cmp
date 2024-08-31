@@ -1,0 +1,11 @@
+<aura:component controller="CustomFeedComponentController" implements="forceCommunity:availableForAllPageTypes" access="global" >
+    
+    <aura:handler name="init" value="{!this}" action="{!c.init}" />
+    <aura:attribute name="utcTime" type="String" />
+    <aura:attribute name="localTime" type="String" />
+    
+    <aura:if isTrue="{!v.utcTime}">
+    	<div class="timestamp" style="color: #008000;">{!v.localTime}</div>
+    </aura:if>
+    
+</aura:component>

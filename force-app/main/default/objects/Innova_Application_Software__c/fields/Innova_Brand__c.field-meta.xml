@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Innova_Brand__c</fullName>
+    <externalId>false</externalId>
+    <label>Brand</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Hiregenics</fullName>
+                <default>false</default>
+                <label>HireGenics</label>
+            </value>
+            <value>
+                <fullName>Innova Solutions</fullName>
+                <default>false</default>
+                <label>Innova Solutions</label>
+            </value>
+            <value>
+                <fullName>Volt</fullName>
+                <default>false</default>
+                <label>Volt</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

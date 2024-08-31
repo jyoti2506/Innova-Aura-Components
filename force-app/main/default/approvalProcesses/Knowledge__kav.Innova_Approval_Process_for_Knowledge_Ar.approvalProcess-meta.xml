@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <allowRecall>false</allowRecall>
+    <allowedSubmitters>
+        <type>creator</type>
+    </allowedSubmitters>
+    <allowedSubmitters>
+        <type>owner</type>
+    </allowedSubmitters>
+    <approvalPageFields>
+        <field>Title</field>
+        <field>Owner</field>
+        <field>Innova_Validation_Status__c</field>
+    </approvalPageFields>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>Innova_Knowledge_Managers</name>
+                <type>queue</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <description>Submit Approval to Knowledge Managers Queue</description>
+        <label>Submit Approval to Knowledge Managers Queue</label>
+        <name>Submit_Approval_to_Knowledge_Managers_Queue</name>
+    </approvalStep>
+    <description>Approval Process for Knowledge Article</description>
+    <emailTemplate>unfiled$public/Innova_Solution_Knowledge_article_has_been_submitted_for_approval_Email_Template</emailTemplate>
+    <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
+    <entryCriteria>
+        <criteriaItems>
+            <field>Knowledge__kav.Innova_Validation_Status__c</field>
+            <operation>equals</operation>
+            <value>Not Validated</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Knowledge__kav.PublishStatus</field>
+            <operation>equals</operation>
+            <value>Draft</value>
+        </criteriaItems>
+    </entryCriteria>
+    <finalApprovalActions>
+        <action>
+            <name>Innova_Solution_Knowledge_article_has_been_Approved_Email_Template</name>
+            <type>Alert</type>
+        </action>
+        <action>
+            <name>Knowledge_Publish</name>
+            <type>KnowledgePublish</type>
+        </action>
+        <action>
+            <name>Validation_Status</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalApprovalActions>
+    <finalApprovalRecordLock>false</finalApprovalRecordLock>
+    <finalRejectionRecordLock>false</finalRejectionRecordLock>
+    <label>Innova Approval Process for Knowledge Ar</label>
+    <processOrder>1</processOrder>
+    <recordEditability>AdminOrCurrentApprover</recordEditability>
+    <showApprovalHistory>true</showApprovalHistory>
+</ApprovalProcess>

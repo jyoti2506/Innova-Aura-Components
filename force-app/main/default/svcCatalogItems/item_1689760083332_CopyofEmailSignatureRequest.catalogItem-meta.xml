@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SvcCatalogItemDef xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>58.0</apiVersion>
+    <categories>
+        <isPrimaryCategory>true</isPrimaryCategory>
+        <sortOrder>3</sortOrder>
+        <svcCatalogCategory>category_1639787721401_Technology</svcCatalogCategory>
+    </categories>
+    <description>&lt;p&gt;Submit this request to change or add an alternate email signature.&lt;/p&gt;</description>
+    <fulfillmentFlow>fulfillmentflow_1688564474499_EmailSignatureRequest</fulfillmentFlow>
+    <image>singature</image>
+    <isFeatured>false</isFeatured>
+    <isProtected>false</isProtected>
+    <masterLabel>Email Signature Request</masterLabel>
+    <status>Deprecated</status>
+</SvcCatalogItemDef>

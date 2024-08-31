@@ -5,7 +5,6 @@
     <fields>RecordTypeId</fields>
     <fields>Innova_Category1__c</fields>
     <fields>Priority</fields>
-    <fields>Innova_Due_Date__c</fields>
     <fields>OwnerId</fields>
     <fields>Current_Queue__c</fields>
     <fields>SuppliedEmail</fields>

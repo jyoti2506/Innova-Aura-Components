@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ISC_Incident_Default</fullName>
+    <fields>Subject</fields>
+    <fields>CaseNumber</fields>
+    <fields>RecordTypeId</fields>
+    <fields>ISC_Current_Queue__c</fields>
+    <fields>Owner__c</fields>
+    <fields>Priority</fields>
+    <fields>wkitsm__DueDate__c</fields>
+    <label>Incident (Default)</label>
+</CompactLayout>

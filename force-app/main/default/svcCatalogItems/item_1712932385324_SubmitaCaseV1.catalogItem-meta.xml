@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SvcCatalogItemDef xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>60.0</apiVersion>
+    <categories>
+        <isPrimaryCategory>false</isPrimaryCategory>
+        <sortOrder>10</sortOrder>
+        <svcCatalogCategory>category_1689759204688_All</svcCatalogCategory>
+    </categories>
+    <description>&lt;p&gt;V1 Version Submit a Case&lt;/p&gt;</description>
+    <isFeatured>false</isFeatured>
+    <isProtected>false</isProtected>
+    <masterLabel>Submit a Case - V1</masterLabel>
+    <status>Deprecated</status>
+</SvcCatalogItemDef>

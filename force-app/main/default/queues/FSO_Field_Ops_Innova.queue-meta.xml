@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>FSO - Field Ops - Innova</name>
+    <queueMembers>
+        <publicGroups>
+            <publicGroup>FSO_Field_Ops_Innova</publicGroup>
+        </publicGroups>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Innova_ITSC_Task__c</sobjectType>
+    </queueSobject>
+</Queue>

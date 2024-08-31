@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SvcCatalogItemDef xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>58.0</apiVersion>
+    <categories>
+        <isPrimaryCategory>true</isPrimaryCategory>
+        <sortOrder>1</sortOrder>
+        <svcCatalogCategory>category_1689759204688_All</svcCatalogCategory>
+    </categories>
+    <description>&lt;p&gt;Used to request corporate applications/software required for your job.&lt;/p&gt;</description>
+    <fulfillmentFlow>fulfillmentflow_1689781728374_SoftwareApplicationRequest</fulfillmentFlow>
+    <image>software1</image>
+    <isFeatured>false</isFeatured>
+    <isProtected>false</isProtected>
+    <masterLabel>Applications/Software Request</masterLabel>
+    <status>Deprecated</status>
+</SvcCatalogItemDef>

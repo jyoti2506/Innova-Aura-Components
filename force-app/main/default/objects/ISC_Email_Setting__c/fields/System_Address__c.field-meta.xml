@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>System_Address__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <externalId>false</externalId>
+    <label>System Address</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>ISC_System_Record__c.Type__c</field>
+            <operation>equals</operation>
+            <value>Org Wide Address, Email2Case</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>ISC_System_Record__c</referenceTo>
+    <relationshipLabel>Email Settings</relationshipLabel>
+    <relationshipName>Email_Settings</relationshipName>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

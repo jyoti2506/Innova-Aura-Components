@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SvcCatalogItemDef xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>57.0</apiVersion>
+    <categories>
+        <isPrimaryCategory>true</isPrimaryCategory>
+        <sortOrder>1</sortOrder>
+        <svcCatalogCategory>category_1682336796440_HardwareRequest</svcCatalogCategory>
+    </categories>
+    <description>&lt;p&gt;This form allows users to request new hardware such as computers, monitors, and other peripherals.&lt;/p&gt;</description>
+    <image>chrome_PvNVC5kmiY_1</image>
+    <isFeatured>true</isFeatured>
+    <isProtected>false</isProtected>
+    <masterLabel>Hardware Request</masterLabel>
+    <status>Deprecated</status>
+</SvcCatalogItemDef>

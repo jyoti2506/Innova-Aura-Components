@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Change_Request_Hardware_Approval_ChangeRequest</fullName>
+    <columns>Name</columns>
+    <columns>Subject</columns>
+    <columns>Status</columns>
+    <columns>Priority</columns>
+    <columns>CreatedDate</columns>
+    <columns>CreatedBy</columns>
+    <filterScope>Everything</filterScope>
+    <label>Change Request - IT Infrastructure</label>
+    <sharedTo>
+        <group>IT_Infrastructure</group>
+        <group>Service_Desk</group>
+    </sharedTo>
+</ListView>

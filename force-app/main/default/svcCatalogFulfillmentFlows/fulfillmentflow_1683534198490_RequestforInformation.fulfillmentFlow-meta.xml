@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SvcCatalogFulfillmentFlow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>&lt;p&gt;Request for Information&lt;/p&gt;</description>
+    <flow>Innova_Request_for_Information</flow>
+    <isProtected>false</isProtected>
+    <masterLabel>Request for Information</masterLabel>
+</SvcCatalogFulfillmentFlow>

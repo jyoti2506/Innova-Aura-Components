@@ -3,7 +3,6 @@
     <fullName>wkitsm__Problem</fullName>
     <active>true</active>
     <businessProcess>wkitsm__ITSC - Problem Process</businessProcess>
-    <compactLayoutAssignment>Innova_Compact_Layout</compactLayoutAssignment>
     <description>Correlate tickets around incidents that are related to a failure in the IT infrastructure.</description>
     <label>Problem</label>
     <picklistValues>
@@ -185,10 +184,6 @@
     </picklistValues>
     <picklistValues>
         <picklist>Origin</picklist>
-        <values>
-            <fullName>Console</fullName>
-            <default>false</default>
-        </values>
         <values>
             <fullName>Direct Contact</fullName>
             <default>false</default>

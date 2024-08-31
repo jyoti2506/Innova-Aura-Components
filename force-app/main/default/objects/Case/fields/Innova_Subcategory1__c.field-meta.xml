@@ -188,11 +188,6 @@
                 <label>Antivirus/Endpoint Protection</label>
             </value>
             <value>
-                <fullName>APM Support</fullName>
-                <default>false</default>
-                <label>APM Support</label>
-            </value>
-            <value>
                 <fullName>Application</fullName>
                 <default>false</default>
                 <label>Application</label>
@@ -226,6 +221,11 @@
                 <fullName>App Not Working</fullName>
                 <default>false</default>
                 <label>App Not Working</label>
+            </value>
+            <value>
+                <fullName>Approve PF Transfer</fullName>
+                <default>false</default>
+                <label>Approve PF Transfer</label>
             </value>
             <value>
                 <fullName>Archiving</fullName>
@@ -299,6 +299,11 @@
                 <default>false</default>
                 <isActive>false</isActive>
                 <label>Backups</label>
+            </value>
+            <value>
+                <fullName>Bank account changes</fullName>
+                <default>false</default>
+                <label>Bank account changes</label>
             </value>
             <value>
                 <fullName>Banner Ad</fullName>
@@ -625,12 +630,18 @@
             <value>
                 <fullName>Commuter Programs</fullName>
                 <default>false</default>
+                <isActive>false</isActive>
                 <label>Commuter Programs</label>
             </value>
             <value>
                 <fullName>Company Event</fullName>
                 <default>false</default>
                 <label>Company Event</label>
+            </value>
+            <value>
+                <fullName>Compliance - Misc</fullName>
+                <default>false</default>
+                <label>Compliance - Misc</label>
             </value>
             <value>
                 <fullName>Compliance Training</fullName>
@@ -745,6 +756,11 @@
                 <default>false</default>
                 <isActive>false</isActive>
                 <label>Data Corruption Issue</label>
+            </value>
+            <value>
+                <fullName>Data request - Misc</fullName>
+                <default>false</default>
+                <label>Data request - Misc</label>
             </value>
             <value>
                 <fullName>Data Warehouse ETL</fullName>
@@ -1010,9 +1026,14 @@
                 <label>Employee Referral</label>
             </value>
             <value>
-                <fullName>Employment Records</fullName>
+                <fullName>Employee Report</fullName>
                 <default>false</default>
-                <label>Employment Records</label>
+                <label>Employee Report</label>
+            </value>
+            <value>
+                <fullName>Employees CTC</fullName>
+                <default>false</default>
+                <label>Employees CTC</label>
             </value>
             <value>
                 <fullName>Employment Screening</fullName>
@@ -1030,6 +1051,11 @@
                 <label>ERP Support</label>
             </value>
             <value>
+                <fullName>ESI related</fullName>
+                <default>false</default>
+                <label>ESI related</label>
+            </value>
+            <value>
                 <fullName>Exception Related</fullName>
                 <default>false</default>
                 <label>Exception Related</label>
@@ -1045,6 +1071,11 @@
                 <default>false</default>
                 <isActive>false</isActive>
                 <label>Exchange policy/Rule</label>
+            </value>
+            <value>
+                <fullName>Extra hours</fullName>
+                <default>false</default>
+                <label>Extra hours</label>
             </value>
             <value>
                 <fullName>F5 VPN</fullName>
@@ -1130,6 +1161,16 @@
                 <label>Fixed Project Related</label>
             </value>
             <value>
+                <fullName>Flexi Benefit Plan</fullName>
+                <default>false</default>
+                <label>Flexi Benefit Plan</label>
+            </value>
+            <value>
+                <fullName>Form 16</fullName>
+                <default>false</default>
+                <label>Form 16</label>
+            </value>
+            <value>
                 <fullName>FortiClient</fullName>
                 <default>false</default>
                 <isActive>false</isActive>
@@ -1185,6 +1226,11 @@
                 <default>false</default>
                 <isActive>false</isActive>
                 <label>General Public Relations Request</label>
+            </value>
+            <value>
+                <fullName>General Query</fullName>
+                <default>false</default>
+                <label>General Query</label>
             </value>
             <value>
                 <fullName>General Questions</fullName>
@@ -1460,6 +1506,11 @@
                 <label>IT</label>
             </value>
             <value>
+                <fullName>IT asset clearance</fullName>
+                <default>false</default>
+                <label>IT asset clearance</label>
+            </value>
+            <value>
                 <fullName>Item Stuck</fullName>
                 <default>false</default>
                 <label>Item Stuck</label>
@@ -1593,6 +1644,16 @@
                 <label>Login/Access</label>
             </value>
             <value>
+                <fullName>LOP clarification</fullName>
+                <default>false</default>
+                <label>LOP clarification</label>
+            </value>
+            <value>
+                <fullName>LOP reversal</fullName>
+                <default>false</default>
+                <label>LOP reversal</label>
+            </value>
+            <value>
                 <fullName>Lost Badge</fullName>
                 <default>false</default>
                 <label>Lost Badge</label>
@@ -1660,6 +1721,16 @@
                 <fullName>Medical</fullName>
                 <default>false</default>
                 <label>Medical</label>
+            </value>
+            <value>
+                <fullName>Medical Card</fullName>
+                <default>false</default>
+                <label>Medical Card</label>
+            </value>
+            <value>
+                <fullName>Mediclaim Addition</fullName>
+                <default>false</default>
+                <label>Mediclaim Addition</label>
             </value>
             <value>
                 <fullName>Meeting Room</fullName>
@@ -1919,6 +1990,16 @@
                 <label>Office Supplies</label>
             </value>
             <value>
+                <fullName>Official Data</fullName>
+                <default>false</default>
+                <label>Official Data</label>
+            </value>
+            <value>
+                <fullName>Official Letters</fullName>
+                <default>false</default>
+                <label>Official Letters</label>
+            </value>
+            <value>
                 <fullName>Onboarding</fullName>
                 <default>false</default>
                 <label>Onboarding</label>
@@ -1935,8 +2016,19 @@
                 <label>Onboarding Metrics Support</label>
             </value>
             <value>
+                <fullName>One time deductions</fullName>
+                <default>false</default>
+                <label>One time deductions</label>
+            </value>
+            <value>
+                <fullName>One time payments – incentives/allowances/joining bonus/referrals etc.</fullName>
+                <default>false</default>
+                <label>One time payments – incentives/allowances/joining bonus/referrals etc.</label>
+            </value>
+            <value>
                 <fullName>Open Enrollment</fullName>
                 <default>false</default>
+                <isActive>false</isActive>
                 <label>Open Enrollment</label>
             </value>
             <value>
@@ -1997,6 +2089,11 @@
                 <default>false</default>
                 <isActive>false</isActive>
                 <label>Other Marketing Request</label>
+            </value>
+            <value>
+                <fullName>Other reports</fullName>
+                <default>false</default>
+                <label>Other reports</label>
             </value>
             <value>
                 <fullName>Others - CC Innova</fullName>
@@ -2077,9 +2174,19 @@
                 <label>Payroll Issues</label>
             </value>
             <value>
+                <fullName>Payroll - Misc</fullName>
+                <default>false</default>
+                <label>Payroll - Misc</label>
+            </value>
+            <value>
                 <fullName>Payroll – Operations</fullName>
                 <default>false</default>
                 <label>Payroll – Operations</label>
+            </value>
+            <value>
+                <fullName>Payslip</fullName>
+                <default>false</default>
+                <label>Payslip</label>
             </value>
             <value>
                 <fullName>PeopleSoft</fullName>
@@ -2150,6 +2257,21 @@
                 <fullName>Personal Data</fullName>
                 <default>false</default>
                 <label>Personal Data</label>
+            </value>
+            <value>
+                <fullName>Personal Data [HR India]</fullName>
+                <default>false</default>
+                <label>Personal Data [HR India]</label>
+            </value>
+            <value>
+                <fullName>Personal Letters</fullName>
+                <default>false</default>
+                <label>Personal Letters</label>
+            </value>
+            <value>
+                <fullName>PF Related</fullName>
+                <default>false</default>
+                <label>PF Related</label>
             </value>
             <value>
                 <fullName>Physical Building Access</fullName>
@@ -2261,6 +2383,11 @@
                 <label>Query - CC Innova</label>
             </value>
             <value>
+                <fullName>Query related to IJP</fullName>
+                <default>false</default>
+                <label>Query related to IJP</label>
+            </value>
+            <value>
                 <fullName>Quickbooks SaaS Only</fullName>
                 <default>false</default>
                 <isActive>false</isActive>
@@ -2307,6 +2434,11 @@
                 <default>false</default>
                 <isActive>false</isActive>
                 <label>Registration</label>
+            </value>
+            <value>
+                <fullName>Rehire Eligibility</fullName>
+                <default>false</default>
+                <label>Rehire Eligibility</label>
             </value>
             <value>
                 <fullName>Relocation</fullName>
@@ -2386,14 +2518,19 @@
                 <label>Sage</label>
             </value>
             <value>
+                <fullName>Salary advance request</fullName>
+                <default>false</default>
+                <label>Salary advance request</label>
+            </value>
+            <value>
+                <fullName>Salary related query</fullName>
+                <default>false</default>
+                <label>Salary related query</label>
+            </value>
+            <value>
                 <fullName>Salesforce</fullName>
                 <default>false</default>
                 <label>Salesforce</label>
-            </value>
-            <value>
-                <fullName>Salesforce [HR]</fullName>
-                <default>false</default>
-                <label>Salesforce [HR]</label>
             </value>
             <value>
                 <fullName>Salesforce Sales Cloud</fullName>
@@ -2478,6 +2615,11 @@
                 <default>false</default>
                 <isActive>false</isActive>
                 <label>Sharepoint - Marketing</label>
+            </value>
+            <value>
+                <fullName>Shift Change</fullName>
+                <default>false</default>
+                <label>Shift Change</label>
             </value>
             <value>
                 <fullName>Signature</fullName>
@@ -3025,10 +3167,6 @@
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Benefits</controllingFieldValue>
-            <valueName>Commuter Programs</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Benefits</controllingFieldValue>
             <valueName>Dental</valueName>
         </valueSettings>
         <valueSettings>
@@ -3073,10 +3211,6 @@
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Benefits</controllingFieldValue>
-            <valueName>Open Enrollment</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Benefits</controllingFieldValue>
             <valueName>Vision</valueName>
         </valueSettings>
         <valueSettings>
@@ -3088,12 +3222,73 @@
             <valueName>Wellness</valueName>
         </valueSettings>
         <valueSettings>
+            <controllingFieldValue>HRIS Related</controllingFieldValue>
+            <valueName>Official Data</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HRIS Related</controllingFieldValue>
+            <controllingFieldValue>General HR</controllingFieldValue>
+            <valueName>Personal Data</valueName>
+        </valueSettings>
+        <valueSettings>
             <controllingFieldValue>Compensation</controllingFieldValue>
             <valueName>Job Profile</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Compensation</controllingFieldValue>
             <valueName>Merit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Payroll [India]</controllingFieldValue>
+            <valueName>Bank account changes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Payroll [India]</controllingFieldValue>
+            <valueName>Extra hours</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Payroll [India]</controllingFieldValue>
+            <valueName>Flexi Benefit Plan</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Payroll [India]</controllingFieldValue>
+            <valueName>Form 16</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Payroll [India]</controllingFieldValue>
+            <valueName>IT asset clearance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Payroll [India]</controllingFieldValue>
+            <valueName>LOP clarification</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Payroll [India]</controllingFieldValue>
+            <valueName>LOP reversal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Payroll [India]</controllingFieldValue>
+            <valueName>One time deductions</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Payroll [India]</controllingFieldValue>
+            <valueName>One time payments – incentives/allowances/joining bonus/referrals etc.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Payroll [India]</controllingFieldValue>
+            <valueName>Payroll - Misc</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Payroll [India]</controllingFieldValue>
+            <valueName>Payslip</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Payroll [India]</controllingFieldValue>
+            <valueName>Salary advance request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Payroll [India]</controllingFieldValue>
+            <valueName>Salary related query</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Compliance and Reports</controllingFieldValue>
@@ -3124,12 +3319,52 @@
             <valueName>Workforce Data</valueName>
         </valueSettings>
         <valueSettings>
+            <controllingFieldValue>Benefits/Insurance</controllingFieldValue>
+            <valueName>General Query</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Benefits/Insurance</controllingFieldValue>
+            <valueName>Medical Card</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Benefits/Insurance</controllingFieldValue>
+            <valueName>Mediclaim Addition</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>General Query</controllingFieldValue>
+            <valueName>Shift Change</valueName>
+        </valueSettings>
+        <valueSettings>
             <controllingFieldValue>Employee Job Data</controllingFieldValue>
             <controllingFieldValue>HR Technology</controllingFieldValue>
             <controllingFieldValue>IT</controllingFieldValue>
             <controllingFieldValue>Payroll</controllingFieldValue>
             <controllingFieldValue>Talent Acquisition</controllingFieldValue>
             <valueName>ORACLE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Data Request</controllingFieldValue>
+            <valueName>Data request - Misc</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Data Request</controllingFieldValue>
+            <valueName>Employee Report</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Data Request</controllingFieldValue>
+            <valueName>Employees CTC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Data Request</controllingFieldValue>
+            <valueName>Other reports</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Data Request</controllingFieldValue>
+            <valueName>Query related to IJP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Data Request</controllingFieldValue>
+            <valueName>Rehire Eligibility</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Employee Relations</controllingFieldValue>
@@ -3351,10 +3586,6 @@
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>General HR</controllingFieldValue>
-            <valueName>Employment Records</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>General HR</controllingFieldValue>
             <valueName>Employment Screening</valueName>
         </valueSettings>
         <valueSettings>
@@ -3370,10 +3601,6 @@
         <valueSettings>
             <controllingFieldValue>General HR</controllingFieldValue>
             <valueName>Onboarding</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>General HR</controllingFieldValue>
-            <valueName>Personal Data</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>HR Ops</controllingFieldValue>
@@ -3422,10 +3649,6 @@
         <valueSettings>
             <controllingFieldValue>Internal Security – SOC</controllingFieldValue>
             <valueName>Unwanted Software</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>IT</controllingFieldValue>
-            <valueName>Salesforce [HR]</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Customer Account Support</controllingFieldValue>
@@ -3767,6 +3990,26 @@
         <valueSettings>
             <controllingFieldValue>Talent Development</controllingFieldValue>
             <valueName>Required Training</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Letter Requests</controllingFieldValue>
+            <valueName>Official Letters</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Letter Requests</controllingFieldValue>
+            <valueName>Personal Letters</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Compliance</controllingFieldValue>
+            <valueName>Compliance - Misc</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Compliance</controllingFieldValue>
+            <valueName>ESI related</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Compliance</controllingFieldValue>
+            <valueName>PF Related</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>WPS India</controllingFieldValue>

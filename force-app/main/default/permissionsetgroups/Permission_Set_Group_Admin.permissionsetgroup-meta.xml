@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Permission Set Group Admin</label>
+    <permissionSets>Employee_Concierge_User_Data_Access</permissionSets>
+    <permissionSets>Employee_Workspace_Admin</permissionSets>
+    <permissionSets>ISC_Base_Objects_Access</permissionSets>
+    <permissionSets>IT_Service_Center_Knowledge</permissionSets>
+    <permissionSets>IT_Service_Center_Standard_Field_Access</permissionSets>
+    <permissionSets>Innova_ITSC_Agent_Access</permissionSets>
+    <permissionSets>Innova_ITSC_Company_Wide_Security_Access</permissionSets>
+    <permissionSets>force__ServiceCatalogBuilder</permissionSets>
+    <permissionSets>force__ServiceCatalogUser</permissionSets>
+    <permissionSets>wkdw__EmployeeConciergeAccess</permissionSets>
+    <permissionSets>wkdw__helpdesk_user</permissionSets>
+    <permissionSets>wkitsm__AnnouncementsAdmin</permissionSets>
+    <permissionSets>wkitsm__ChangeCalendarAdmin</permissionSets>
+    <permissionSets>wkitsm__ChangeCalendarBasic</permissionSets>
+    <permissionSets>wkitsm__ChangeCalendarWrite</permissionSets>
+    <permissionSets>wkitsm__IT_Service_Center</permissionSets>
+    <permissionSets>wkitsm__IT_Service_Center_App_User</permissionSets>
+    <permissionSets>wkitsm__IT_Service_Center_Case_Record_Type_Access</permissionSets>
+    <permissionSets>wkitsm__IT_Service_Center_Configuration_Manager</permissionSets>
+    <permissionSets>wkitsm__IT_Service_Center_Request_Menu_Admin</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

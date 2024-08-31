@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SvcCatalogFulfillmentFlow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>&lt;p&gt;Submit this request to change or add an alternate email signature.&lt;/p&gt;</description>
+    <flow>Innova_Signature_Template_Request</flow>
+    <isProtected>false</isProtected>
+    <masterLabel>Email Signature Request</masterLabel>
+</SvcCatalogFulfillmentFlow>

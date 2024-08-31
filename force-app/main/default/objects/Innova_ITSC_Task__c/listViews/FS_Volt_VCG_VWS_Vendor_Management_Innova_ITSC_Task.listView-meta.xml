@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Volt_VCG_VWS_Vendor_Management_Innova_ITSC_Task</fullName>
+    <filterScope>Queue</filterScope>
+    <label>FS - Volt-VCG/VWS Vendor Management</label>
+    <queue>FS_Volt_VCG_VWS_Vendor_Management</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

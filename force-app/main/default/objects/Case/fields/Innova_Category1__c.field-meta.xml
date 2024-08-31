@@ -12,11 +12,35 @@
         <controllingField>Innova_Service1__c</controllingField>
         <restricted>true</restricted>
         <valueSetDefinition>
-            <sorted>false</sorted>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Access</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Access</label>
+            </value>
             <value>
                 <fullName>Access Control</fullName>
                 <default>false</default>
                 <label>Access Control</label>
+            </value>
+            <value>
+                <fullName>Account</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Account</label>
+            </value>
+            <value>
+                <fullName>Application/Software</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Application/Software</label>
+            </value>
+            <value>
+                <fullName>Applications/Software</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Applications/Software</label>
             </value>
             <value>
                 <fullName>Application Support</fullName>
@@ -29,14 +53,55 @@
                 <label>AR - VCG</label>
             </value>
             <value>
+                <fullName>AR - VCG - Billing</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>AR - VCG - Billing</label>
+            </value>
+            <value>
+                <fullName>AR - VCG - Reconciliation</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>AR - VCG - Reconciliation</label>
+            </value>
+            <value>
+                <fullName>Background Check</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Background Check</label>
+            </value>
+            <value>
                 <fullName>Benefits</fullName>
                 <default>false</default>
                 <label>Benefits</label>
             </value>
             <value>
+                <fullName>Benefits/Insurance</fullName>
+                <default>false</default>
+                <label>Benefits/Insurance</label>
+            </value>
+            <value>
+                <fullName>Billing</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Billing</label>
+            </value>
+            <value>
+                <fullName>Blogs</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Blogs</label>
+            </value>
+            <value>
                 <fullName>Breakroom</fullName>
                 <default>false</default>
                 <label>Breakroom</label>
+            </value>
+            <value>
+                <fullName>Cloud</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Cloud</label>
             </value>
             <value>
                 <fullName>Commissions</fullName>
@@ -47,6 +112,11 @@
                 <fullName>Compensation</fullName>
                 <default>false</default>
                 <label>Compensation</label>
+            </value>
+            <value>
+                <fullName>Compliance</fullName>
+                <default>false</default>
+                <label>Compliance</label>
             </value>
             <value>
                 <fullName>Compliance and Reports</fullName>
@@ -69,9 +139,43 @@
                 <label>Copier</label>
             </value>
             <value>
+                <fullName>Creative &amp; Design</fullName>
+                <default>false</default>
+                <label>Creative &amp; Design</label>
+            </value>
+            <value>
+                <fullName>Customer.Account Management</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Customer.Account Management</label>
+            </value>
+            <value>
                 <fullName>Customer Account Support</fullName>
                 <default>false</default>
                 <label>Customer Account Support</label>
+            </value>
+            <value>
+                <fullName>Data Feeds</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Data Feeds</label>
+            </value>
+            <value>
+                <fullName>Data Request</fullName>
+                <default>false</default>
+                <label>Data Request</label>
+            </value>
+            <value>
+                <fullName>Email</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Email</label>
+            </value>
+            <value>
+                <fullName>Email Signature</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Email Signature</label>
             </value>
             <value>
                 <fullName>Employee Job Data</fullName>
@@ -87,6 +191,18 @@
                 <fullName>Employment Verifications</fullName>
                 <default>false</default>
                 <label>Employment Verifications</label>
+            </value>
+            <value>
+                <fullName>Events</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Events</label>
+            </value>
+            <value>
+                <fullName>Exclaimer</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Exclaimer</label>
             </value>
             <value>
                 <fullName>Facilities US</fullName>
@@ -109,14 +225,25 @@
                 <label>Field Support - Innova</label>
             </value>
             <value>
+                <fullName>Field Support - Volt</fullName>
+                <default>false</default>
+                <label>Field Support - Volt</label>
+            </value>
+            <value>
+                <fullName>Front Office Tier 3 Vendor Peoplenet</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Front Office Tier 3 Vendor Peoplenet</label>
+            </value>
+            <value>
                 <fullName>General HR</fullName>
                 <default>false</default>
                 <label>General HR</label>
             </value>
             <value>
-                <fullName>Creative &amp; Design</fullName>
+                <fullName>General Query</fullName>
                 <default>false</default>
-                <label>Creative &amp; Design</label>
+                <label>General Query</label>
             </value>
             <value>
                 <fullName>General Repair</fullName>
@@ -124,9 +251,20 @@
                 <label>General Repair</label>
             </value>
             <value>
+                <fullName>Hardware</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Hardware</label>
+            </value>
+            <value>
                 <fullName>Hiregenics</fullName>
                 <default>false</default>
                 <label>Hiregenics</label>
+            </value>
+            <value>
+                <fullName>HRIS Related</fullName>
+                <default>false</default>
+                <label>HRIS Related</label>
             </value>
             <value>
                 <fullName>HR Ops</fullName>
@@ -164,6 +302,11 @@
                 <label>Janitorial</label>
             </value>
             <value>
+                <fullName>Letter Requests</fullName>
+                <default>false</default>
+                <label>Letter Requests</label>
+            </value>
+            <value>
                 <fullName>Lights</fullName>
                 <default>false</default>
                 <label>Lights</label>
@@ -177,204 +320,6 @@
                 <fullName>Move/Add/Change</fullName>
                 <default>false</default>
                 <label>Move/Add/Change</label>
-            </value>
-            <value>
-                <fullName>Office Supplies</fullName>
-                <default>false</default>
-                <label>Office Supplies</label>
-            </value>
-            <value>
-                <fullName>Other (Facilities Request)</fullName>
-                <default>false</default>
-                <label>Other (Facilities Request)</label>
-            </value>
-            <value>
-                <fullName>Parking</fullName>
-                <default>false</default>
-                <label>Parking</label>
-            </value>
-            <value>
-                <fullName>Payroll</fullName>
-                <default>false</default>
-                <label>Payroll</label>
-            </value>
-            <value>
-                <fullName>Peoplenet</fullName>
-                <default>false</default>
-                <label>Peoplenet</label>
-            </value>
-            <value>
-                <fullName>Web &amp; Digital</fullName>
-                <default>false</default>
-                <label>Web &amp; Digital</label>
-            </value>
-            <value>
-                <fullName>Recognition</fullName>
-                <default>false</default>
-                <label>Recognition</label>
-            </value>
-            <value>
-                <fullName>Saftey/Security</fullName>
-                <default>false</default>
-                <label>Saftey/Security</label>
-            </value>
-            <value>
-                <fullName>Seating/Desk</fullName>
-                <default>false</default>
-                <label>Seating/Desk</label>
-            </value>
-            <value>
-                <fullName>Service Desk</fullName>
-                <default>false</default>
-                <label>Service Desk</label>
-            </value>
-            <value>
-                <fullName>Supplier Registrations</fullName>
-                <default>false</default>
-                <label>Supplier Registrations</label>
-            </value>
-            <value>
-                <fullName>Talent Acquisition</fullName>
-                <default>false</default>
-                <label>Talent Acquisition</label>
-            </value>
-            <value>
-                <fullName>Talent Development</fullName>
-                <default>false</default>
-                <label>Talent Development</label>
-            </value>
-            <value>
-                <fullName>VCG Associate Vendor Management</fullName>
-                <default>false</default>
-                <label>VCG Associate Vendor Management</label>
-            </value>
-            <value>
-                <fullName>Vending</fullName>
-                <default>false</default>
-                <label>Vending</label>
-            </value>
-            <value>
-                <fullName>VWS Associate Vendor Management</fullName>
-                <default>false</default>
-                <label>VWS Associate Vendor Management</label>
-            </value>
-            <value>
-                <fullName>WPS India</fullName>
-                <default>false</default>
-                <label>WPS India</label>
-            </value>
-            <value>
-                <fullName>Field Support - Volt</fullName>
-                <default>false</default>
-                <label>Field Support - Volt</label>
-            </value>
-            <value>
-                <fullName>AR - VCG - Billing</fullName>
-                <default>false</default>
-                <isActive>false</isActive>
-                <label>AR - VCG - Billing</label>
-            </value>
-            <value>
-                <fullName>AR - VCG - Reconciliation</fullName>
-                <default>false</default>
-                <isActive>false</isActive>
-                <label>AR - VCG - Reconciliation</label>
-            </value>
-            <value>
-                <fullName>Access</fullName>
-                <default>false</default>
-                <isActive>false</isActive>
-                <label>Access</label>
-            </value>
-            <value>
-                <fullName>Account</fullName>
-                <default>false</default>
-                <isActive>false</isActive>
-                <label>Account</label>
-            </value>
-            <value>
-                <fullName>Application/Software</fullName>
-                <default>false</default>
-                <isActive>false</isActive>
-                <label>Application/Software</label>
-            </value>
-            <value>
-                <fullName>Applications/Software</fullName>
-                <default>false</default>
-                <isActive>false</isActive>
-                <label>Applications/Software</label>
-            </value>
-            <value>
-                <fullName>Background Check</fullName>
-                <default>false</default>
-                <isActive>false</isActive>
-                <label>Background Check</label>
-            </value>
-            <value>
-                <fullName>Billing</fullName>
-                <default>false</default>
-                <isActive>false</isActive>
-                <label>Billing</label>
-            </value>
-            <value>
-                <fullName>Blogs</fullName>
-                <default>false</default>
-                <isActive>false</isActive>
-                <label>Blogs</label>
-            </value>
-            <value>
-                <fullName>Cloud</fullName>
-                <default>false</default>
-                <isActive>false</isActive>
-                <label>Cloud</label>
-            </value>
-            <value>
-                <fullName>Customer.Account Management</fullName>
-                <default>false</default>
-                <isActive>false</isActive>
-                <label>Customer.Account Management</label>
-            </value>
-            <value>
-                <fullName>Data Feeds</fullName>
-                <default>false</default>
-                <isActive>false</isActive>
-                <label>Data Feeds</label>
-            </value>
-            <value>
-                <fullName>Email</fullName>
-                <default>false</default>
-                <isActive>false</isActive>
-                <label>Email</label>
-            </value>
-            <value>
-                <fullName>Email Signature</fullName>
-                <default>false</default>
-                <isActive>false</isActive>
-                <label>Email Signature</label>
-            </value>
-            <value>
-                <fullName>Events</fullName>
-                <default>false</default>
-                <isActive>false</isActive>
-                <label>Events</label>
-            </value>
-            <value>
-                <fullName>Exclaimer</fullName>
-                <default>false</default>
-                <isActive>false</isActive>
-                <label>Exclaimer</label>
-            </value>
-            <value>
-                <fullName>Front Office Tier 3 Vendor Peoplenet</fullName>
-                <default>false</default>
-                <isActive>false</isActive>
-                <label>Front Office Tier 3 Vendor Peoplenet</label>
-            </value>
-            <value>
-                <fullName>Hardware</fullName>
-                <default>false</default>
-                <isActive>false</isActive>
-                <label>Hardware</label>
             </value>
             <value>
                 <fullName>Network</fullName>
@@ -395,10 +340,45 @@
                 <label>O365</label>
             </value>
             <value>
+                <fullName>Office Supplies</fullName>
+                <default>false</default>
+                <label>Office Supplies</label>
+            </value>
+            <value>
+                <fullName>Other (Facilities Request)</fullName>
+                <default>false</default>
+                <label>Other (Facilities Request)</label>
+            </value>
+            <value>
+                <fullName>Parking</fullName>
+                <default>false</default>
+                <label>Parking</label>
+            </value>
+            <value>
                 <fullName>Password</fullName>
                 <default>false</default>
                 <isActive>false</isActive>
                 <label>Password</label>
+            </value>
+            <value>
+                <fullName>Payroll</fullName>
+                <default>false</default>
+                <label>Payroll</label>
+            </value>
+            <value>
+                <fullName>Payroll [India]</fullName>
+                <default>false</default>
+                <label>Payroll [India]</label>
+            </value>
+            <value>
+                <fullName>Peoplenet</fullName>
+                <default>false</default>
+                <label>Peoplenet</label>
+            </value>
+            <value>
+                <fullName>PF Related</fullName>
+                <default>false</default>
+                <label>PF Related</label>
             </value>
             <value>
                 <fullName>Physical Building Access</fullName>
@@ -413,6 +393,11 @@
                 <label>Process/Policy/Procedure - Program OPS</label>
             </value>
             <value>
+                <fullName>Recognition</fullName>
+                <default>false</default>
+                <label>Recognition</label>
+            </value>
+            <value>
                 <fullName>Reconciliation</fullName>
                 <default>false</default>
                 <isActive>false</isActive>
@@ -425,10 +410,20 @@
                 <label>Register</label>
             </value>
             <value>
+                <fullName>Saftey/Security</fullName>
+                <default>false</default>
+                <label>Saftey/Security</label>
+            </value>
+            <value>
                 <fullName>Scope CR</fullName>
                 <default>false</default>
                 <isActive>false</isActive>
                 <label>Scope CR</label>
+            </value>
+            <value>
+                <fullName>Seating/Desk</fullName>
+                <default>false</default>
+                <label>Seating/Desk</label>
             </value>
             <value>
                 <fullName>Security</fullName>
@@ -441,6 +436,11 @@
                 <default>false</default>
                 <isActive>false</isActive>
                 <label>Server</label>
+            </value>
+            <value>
+                <fullName>Service Desk</fullName>
+                <default>false</default>
+                <label>Service Desk</label>
             </value>
             <value>
                 <fullName>Sharepoint</fullName>
@@ -461,6 +461,16 @@
                 <label>Supplier Diversity</label>
             </value>
             <value>
+                <fullName>Supplier Registrations</fullName>
+                <default>false</default>
+                <label>Supplier Registrations</label>
+            </value>
+            <value>
+                <fullName>Talent Acquisition</fullName>
+                <default>false</default>
+                <label>Talent Acquisition</label>
+            </value>
+            <value>
                 <fullName>Talent and Fulfillment App Level 1 Support</fullName>
                 <default>false</default>
                 <isActive>false</isActive>
@@ -477,6 +487,11 @@
                 <default>false</default>
                 <isActive>false</isActive>
                 <label>Talent and Fulfillment App QA Support</label>
+            </value>
+            <value>
+                <fullName>Talent Development</fullName>
+                <default>false</default>
+                <label>Talent Development</label>
             </value>
             <value>
                 <fullName>Tax Percent</fullName>
@@ -497,10 +512,30 @@
                 <label>Termination</label>
             </value>
             <value>
+                <fullName>VCG Associate Vendor Management</fullName>
+                <default>false</default>
+                <label>VCG Associate Vendor Management</label>
+            </value>
+            <value>
+                <fullName>Vending</fullName>
+                <default>false</default>
+                <label>Vending</label>
+            </value>
+            <value>
                 <fullName>Volt</fullName>
                 <default>false</default>
                 <isActive>false</isActive>
                 <label>Volt</label>
+            </value>
+            <value>
+                <fullName>VWS Associate Vendor Management</fullName>
+                <default>false</default>
+                <label>VWS Associate Vendor Management</label>
+            </value>
+            <value>
+                <fullName>Web &amp; Digital</fullName>
+                <default>false</default>
+                <label>Web &amp; Digital</label>
             </value>
             <value>
                 <fullName>Website</fullName>
@@ -509,16 +544,21 @@
                 <label>Website</label>
             </value>
             <value>
+                <fullName>Workflow</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Workflow</label>
+            </value>
+            <value>
                 <fullName>Work Order Issue</fullName>
                 <default>false</default>
                 <isActive>false</isActive>
                 <label>Work Order Issue</label>
             </value>
             <value>
-                <fullName>Workflow</fullName>
+                <fullName>WPS India</fullName>
                 <default>false</default>
-                <isActive>false</isActive>
-                <label>Workflow</label>
+                <label>WPS India</label>
             </value>
             <value>
                 <fullName>Zero Time</fullName>
@@ -549,67 +589,47 @@
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Marketing</controllingFieldValue>
-            <valueName>Web &amp; Digital</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Marketing</controllingFieldValue>
             <valueName>Supplier Registrations</valueName>
         </valueSettings>
         <valueSettings>
-            <controllingFieldValue>HR Services</controllingFieldValue>
+            <controllingFieldValue>Marketing</controllingFieldValue>
+            <valueName>Web &amp; Digital</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HR Services [For US Employees only]</controllingFieldValue>
             <valueName>Benefits</valueName>
         </valueSettings>
         <valueSettings>
-            <controllingFieldValue>HR Services</controllingFieldValue>
-            <valueName>Compensation</valueName>
+            <controllingFieldValue>HR Services [For India Employees only]</controllingFieldValue>
+            <valueName>Benefits/Insurance</valueName>
         </valueSettings>
         <valueSettings>
-            <controllingFieldValue>HR Services</controllingFieldValue>
-            <valueName>Compliance and Reports</valueName>
+            <controllingFieldValue>HR Services [For India Employees only]</controllingFieldValue>
+            <valueName>Compliance</valueName>
         </valueSettings>
         <valueSettings>
-            <controllingFieldValue>HR Services</controllingFieldValue>
-            <valueName>Employee Job Data</valueName>
+            <controllingFieldValue>HR Services [For India Employees only]</controllingFieldValue>
+            <valueName>Data Request</valueName>
         </valueSettings>
         <valueSettings>
-            <controllingFieldValue>HR Services</controllingFieldValue>
-            <valueName>Employee Relations</valueName>
+            <controllingFieldValue>HR Services [For India Employees only]</controllingFieldValue>
+            <valueName>General Query</valueName>
         </valueSettings>
         <valueSettings>
-            <controllingFieldValue>HR Services</controllingFieldValue>
-            <valueName>Employment Verifications</valueName>
+            <controllingFieldValue>HR Services [For India Employees only]</controllingFieldValue>
+            <valueName>HRIS Related</valueName>
         </valueSettings>
         <valueSettings>
-            <controllingFieldValue>HR Services</controllingFieldValue>
-            <valueName>General HR</valueName>
+            <controllingFieldValue>HR Services [For India Employees only]</controllingFieldValue>
+            <valueName>Letter Requests</valueName>
         </valueSettings>
         <valueSettings>
-            <controllingFieldValue>HR Services</controllingFieldValue>
-            <valueName>HR Ops</valueName>
+            <controllingFieldValue>HR Services [For India Employees only]</controllingFieldValue>
+            <valueName>Payroll [India]</valueName>
         </valueSettings>
         <valueSettings>
-            <controllingFieldValue>HR Services</controllingFieldValue>
-            <valueName>HR Technology</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>HR Services</controllingFieldValue>
-            <valueName>IT</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>HR Services</controllingFieldValue>
-            <valueName>Payroll</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>HR Services</controllingFieldValue>
-            <valueName>Recognition</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>HR Services</controllingFieldValue>
-            <valueName>Talent Acquisition</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>HR Services</controllingFieldValue>
-            <valueName>Talent Development</valueName>
+            <controllingFieldValue>HR Services [For India Employees only]</controllingFieldValue>
+            <valueName>PF Related</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Finance Services</controllingFieldValue>
@@ -657,11 +677,11 @@
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Field Support and Operations</controllingFieldValue>
-            <valueName>Hiregenics</valueName>
+            <valueName>Field Support - Volt</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Field Support and Operations</controllingFieldValue>
-            <valueName>Field Support - Volt</valueName>
+            <valueName>Hiregenics</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Facilities</controllingFieldValue>

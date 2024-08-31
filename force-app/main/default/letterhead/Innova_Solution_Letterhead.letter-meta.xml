@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Letterhead xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <backgroundColor>#FCFDFE</backgroundColor>
+    <bodyColor>#FFFFFF</bodyColor>
+    <bottomLine>
+        <color>#0070CD</color>
+        <height>0</height>
+    </bottomLine>
+    <description>This Letterhead used in Email template for Footer and Header Formatting</description>
+    <footer>
+        <backgroundColor>#FFFFFF</backgroundColor>
+        <height>100</height>
+        <horizontalAlignment>Left</horizontalAlignment>
+        <verticalAlignment>Top</verticalAlignment>
+    </footer>
+    <header>
+        <backgroundColor>#FFFFFF</backgroundColor>
+        <height>0</height>
+        <horizontalAlignment>Center</horizontalAlignment>
+        <logo>SharedDocuments/Innova_Solution_Logo.jpg</logo>
+        <verticalAlignment>Top</verticalAlignment>
+    </header>
+    <middleLine>
+        <color>#0070CD</color>
+        <height>0</height>
+    </middleLine>
+    <name>Innova Solution Letterhead</name>
+    <topLine>
+        <color>#0070CD</color>
+        <height>0</height>
+    </topLine>
+</Letterhead>

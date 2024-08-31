@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SvcCatalogFulfillmentFlow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>&lt;p&gt;Software/Application Request&lt;/p&gt;</description>
+    <flow>Innova_ApplicationList</flow>
+    <isProtected>false</isProtected>
+    <masterLabel>Software/Application Request</masterLabel>
+</SvcCatalogFulfillmentFlow>

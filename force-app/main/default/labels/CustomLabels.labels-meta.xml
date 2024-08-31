@@ -8,6 +8,48 @@
         <value>00GDn000000SKGyMAO</value>
     </labels>
     <labels>
+        <fullName>ISC_Accept_On_Pending</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ISC_Accept_On_Pending</shortDescription>
+        <value>true</value>
+    </labels>
+    <labels>
+        <fullName>ISC_Accept_On_Resolved</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ISC_Accept_On_Resolved</shortDescription>
+        <value>true</value>
+    </labels>
+    <labels>
+        <fullName>ISC_Admin_Group</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ID for Admin Public Group</shortDescription>
+        <value>00GDn000000Sj5Z</value>
+    </labels>
+    <labels>
+        <fullName>ISC_Integration_User</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ISC_Integration_User</shortDescription>
+        <value>005Dn000004CQVTIA4</value>
+    </labels>
+    <labels>
+        <fullName>ISC_System_Queue</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ISC_System_Queue</shortDescription>
+        <value>00GDK000004EqD02AK</value>
+    </labels>
+    <labels>
+        <fullName>ISC_Task_Record_type</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ISC_Task_Record_type</shortDescription>
+        <value>012DK000001SyO3YAK</value>
+    </labels>
+    <labels>
         <fullName>IncidentRecordIDs</fullName>
         <language>en_US</language>
         <protected>false</protected>

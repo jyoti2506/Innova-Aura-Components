@@ -1,0 +1,826 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Assignment_Change_Email_alert_for_Approval</fullName>
+        <description>Assignment Change - Email alert for Approval</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Innova_IT_Approval</recipient>
+            <type>group</type>
+        </recipients>
+        <recipients>
+            <recipient>jutermehle@acsicorp.com.itsc</recipient>
+            <type>user</type>
+        </recipients>
+        <senderAddress>sc.sb1@innovasolutions.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>SystemAdminOnly/Case_Assignment_Change_Approval_1710529188130</template>
+    </alerts>
+    <alerts>
+        <fullName>Innova_Case_has_commented_by_Agent</fullName>
+        <description>Innova Case has commented by Agent</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactEmail</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>servicedesk.it@innovasolutions.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>wkitsm__ITSCEmailNotifications/Innova_Case_has_commented_by_Agent</template>
+    </alerts>
+    <alerts>
+        <fullName>Innova_Case_has_commented_by_End_User</fullName>
+        <description>Innova Case has commented by End User</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>servicedesk.it@innovasolutions.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>wkitsm__ITSCEmailNotifications/Innova_Case_has_commented_by_End_User</template>
+    </alerts>
+    <alerts>
+        <fullName>Innova_Email_to_Agent_Assign_Case_to_Agent</fullName>
+        <description>Innova - Email to Agent - Assign Case to Agent</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>servicedesk.it@innovasolutions.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>wkitsm__ITSCEmailNotifications/Innova_Incident_is_ReassignEmail_Template</template>
+    </alerts>
+    <alerts>
+        <fullName>Innova_Email_to_Creator_New_Case_Requestor</fullName>
+        <description>Innova - Email to Requestor - New Case Created (only in case of on behalf)</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderAddress>servicedesk.it@innovasolutions.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>wkitsm__ITSCEmailNotifications/Innova_Case_is_Created_Email_Template_End_User</template>
+    </alerts>
+    <alerts>
+        <fullName>Innova_Email_to_OnBehalf_Case_is_Resolved</fullName>
+        <description>Innova - Email to OnBehalf - Case is Resolved</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Innova_On_Behalf_Of__c</field>
+            <type>contactLookup</type>
+        </recipients>
+        <senderAddress>servicedesk.it@innovasolutions.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>wkitsm__ITSCEmailNotifications/Innova_Email_to_OnBehalf_Case_is_Resolved</template>
+    </alerts>
+    <alerts>
+        <fullName>Innova_Email_to_Queue_New_Case_Created</fullName>
+        <description>Innova - Email to Queue - New Case Created</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>servicedesk.it@innovasolutions.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>wkitsm__ITSCEmailNotifications/Innova_Email_to_Queue_Case_Created</template>
+    </alerts>
+    <alerts>
+        <fullName>Innova_Email_to_Requestor_Case_is_Resolved</fullName>
+        <description>Innova - Email to Requestor - Case is Resolved</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderAddress>servicedesk.it@innovasolutions.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>wkitsm__ITSCEmailNotifications/Innova_Email_to_Requestor_Case_is_Resolved</template>
+    </alerts>
+    <alerts>
+        <fullName>Innova_Email_to_Requestor_New_Case_Created</fullName>
+        <description>Innova - Email to Requestor - New Case Created</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactEmail</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>servicedesk.it@innovasolutions.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>wkitsm__ITSCEmailNotifications/Innova_Case_is_Created_Email_Template_End_User</template>
+    </alerts>
+    <alerts>
+        <fullName>Innova_Fault_path_Email_Template</fullName>
+        <description>Innova Fault path Email Template</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderAddress>servicedesk.it@innovasolutions.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>wkitsm__ITSCEmailNotifications/Innova_Fault_path_Email_Template</template>
+    </alerts>
+    <alerts>
+        <fullName>Innova_Solution_Approval_Email_Template_Reminder</fullName>
+        <description>Innova Solution Approval Email Template- Reminder</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>Innova_IT_Approval</recipient>
+            <type>group</type>
+        </recipients>
+        <recipients>
+            <field>Innova_Manager__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderAddress>servicedesk.it@innovasolutions.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>wkitsm__ITSCEmailNotifications/Innova_Solution_Approval_Email_Template_Reminder</template>
+    </alerts>
+    <alerts>
+        <fullName>Innova_Solution_Task_Creation_Email_Alert</fullName>
+        <description>Innova Solution Task Creation Email Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>wkitsm__ITSCEmailNotifications/Innova_Task_is_Created_Email_Template1</template>
+    </alerts>
+    <alerts>
+        <fullName>wkitsm__ITSCCaseResolvedEmailAlert</fullName>
+        <description>ITSC - Send email notification when a case is resolved</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactEmail</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>servicedesk.it@innovasolutions.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>wkitsm__ITSCEmailNotifications/wkitsm__ITSCCaseResolved</template>
+    </alerts>
+    <alerts>
+        <fullName>wkitsm__ITSCCaseStatusEmailAlert</fullName>
+        <description>ITSC - Send email notification when a case status is changed</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactEmail</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>servicedesk.it@innovasolutions.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>wkitsm__ITSCEmailNotifications/wkitsm__ITSCStatusChange</template>
+    </alerts>
+    <alerts>
+        <fullName>wkitsm__ITSCNewCaseEmailAlert</fullName>
+        <description>ITSC - Send email notification when a new case is created</description>
+        <protected>false</protected>
+        <recipients>
+            <field>ContactEmail</field>
+            <type>email</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>servicedesk.it@innovasolutions.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>wkitsm__ITSCEmailNotifications/wkitsm__ITSCNewCase</template>
+    </alerts>
+    <alerts>
+        <fullName>wkitsm__MajorIncidentActionTeamNotificationAlert</fullName>
+        <description>Major Incident Action Team Notification Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderAddress>servicedesk.it@innovasolutions.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>wkitsm__ITSCEmailNotifications/wkitsm__ITSCMIUpdate</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Assignment_Change_Approved</fullName>
+        <field>Status</field>
+        <literalValue>Approved</literalValue>
+        <name>Assignment Change - Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>ChangePriorityToHigh</fullName>
+        <field>Priority</field>
+        <literalValue>High</literalValue>
+        <name>Changes the case priority to high.</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Isapproved</fullName>
+        <field>Innova_IsApproved__c</field>
+        <literalValue>1</literalValue>
+        <name>Isapproved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Isrejected</fullName>
+        <field>Innova_IsRejected__c</field>
+        <literalValue>1</literalValue>
+        <name>Isrejected</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>L0_Resolution_Violation</fullName>
+        <field>Milestone_Notification__c</field>
+        <literalValue>Resolution: SLA Violation </literalValue>
+        <name>L0 - Resolution Violation</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>L0_Resolution_Warning</fullName>
+        <field>Milestone_Notification__c</field>
+        <literalValue>Resolution: Warning of upcoming SLA violation</literalValue>
+        <name>L0 - Resolution Warning</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>P1_Resolution_Warning</fullName>
+        <field>Milestone_Notification__c</field>
+        <literalValue>Resolution: Warning of upcoming SLA violation</literalValue>
+        <name>P1 - Resolution Warning</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Resolution_Violated</fullName>
+        <field>Innova_Resolution_Violated__c</field>
+        <literalValue>1</literalValue>
+        <name>Resolution Violated</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Resolution_Violated0</fullName>
+        <field>Innova_Resolution_Violated__c</field>
+        <literalValue>1</literalValue>
+        <name>Resolution Violated</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Resolution_Violated00</fullName>
+        <field>Innova_Resolution_Violated__c</field>
+        <literalValue>1</literalValue>
+        <name>Resolution Violated</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Resolution_Violated01</fullName>
+        <field>Innova_Resolution_Violated__c</field>
+        <literalValue>1</literalValue>
+        <name>Resolution Violated</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Resolution_Violated1</fullName>
+        <field>Innova_Resolution_Violated__c</field>
+        <literalValue>1</literalValue>
+        <name>Resolution Violated</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Resolution_Violated101</fullName>
+        <field>Innova_Resolution_Violated__c</field>
+        <literalValue>1</literalValue>
+        <name>Resolution Violated</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Resolution_Violated11</fullName>
+        <field>Innova_Resolution_Violated__c</field>
+        <literalValue>1</literalValue>
+        <name>Resolution Violated</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Resolution_Violated2</fullName>
+        <field>Innova_Resolution_Violated__c</field>
+        <literalValue>1</literalValue>
+        <name>Resolution Violated</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Resolution_Violated201</fullName>
+        <field>Innova_Resolution_Violated__c</field>
+        <literalValue>1</literalValue>
+        <name>Resolution Violated</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Resolution_Violated21</fullName>
+        <field>Innova_Resolution_Violated__c</field>
+        <literalValue>1</literalValue>
+        <name>Resolution Violated</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Resolution_Violation_Request</fullName>
+        <field>Milestone_Notification__c</field>
+        <literalValue>Resolution: SLA Violation </literalValue>
+        <name>Resolution Violation Request</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Response_SLA_Violation</fullName>
+        <field>Milestone_Notification__c</field>
+        <literalValue>Response: SLA violation </literalValue>
+        <name>Response SLA Violation</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Response_Violated</fullName>
+        <field>Innova_Response_Violated__c</field>
+        <literalValue>1</literalValue>
+        <name>Response Violated</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Response_Violated1</fullName>
+        <field>Innova_Response_Violated__c</field>
+        <literalValue>1</literalValue>
+        <name>Response Violated</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Response_Violated2</fullName>
+        <field>Innova_Response_Violated__c</field>
+        <literalValue>1</literalValue>
+        <name>Response Violated</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Response_Violated3</fullName>
+        <field>Innova_Response_Violated__c</field>
+        <literalValue>1</literalValue>
+        <name>Response Violated</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Status_Update_Approved</fullName>
+        <field>Status</field>
+        <literalValue>Approved</literalValue>
+        <name>Status Update - Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Status_Update_Recalled</fullName>
+        <field>Status</field>
+        <literalValue>New</literalValue>
+        <name>Status Update - Recalled</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Status_Update_Rejected</fullName>
+        <field>Status</field>
+        <literalValue>Resolved</literalValue>
+        <name>Status Update - Rejected</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Status_Update_Rejected_Reason</fullName>
+        <field>wkitsm__ResolutionType__c</field>
+        <literalValue>Rejected</literalValue>
+        <name>Status Update - Rejected Reason</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Status_Update_Submitted_for_Approval</fullName>
+        <field>Status</field>
+        <literalValue>Submitted for Approval</literalValue>
+        <name>Status Update - Submitted for Approval</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Status_Update_Submitted_for_Approval2</fullName>
+        <field>Status</field>
+        <literalValue>Submitted for Approval</literalValue>
+        <name>Status Update - Submitted for Approval</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Status_is_Approved</fullName>
+        <field>Status</field>
+        <literalValue>Approved</literalValue>
+        <name>Status is Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Status_is_Rejected</fullName>
+        <field>Status</field>
+        <literalValue>Rejected</literalValue>
+        <name>Status is Rejected</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Status_is_approved1</fullName>
+        <field>Status</field>
+        <literalValue>Approved</literalValue>
+        <name>Status is approved12</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Approved_checkbox</fullName>
+        <field>Innova_IsApproved__c</field>
+        <literalValue>1</literalValue>
+        <name>Update Approved checkbox.</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Rejected_Checkbox</fullName>
+        <field>Innova_IsRejected__c</field>
+        <literalValue>1</literalValue>
+        <name>Update Rejected Checkbox</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>X1st_Warning</fullName>
+        <field>Innova_Warning_Time__c</field>
+        <literalValue>1st Warning</literalValue>
+        <name>1st Warning</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>X1st_Warning0</fullName>
+        <field>Innova_Warning_Time__c</field>
+        <literalValue>1st Warning</literalValue>
+        <name>1st Warning</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>X1st_Warning00</fullName>
+        <field>Innova_Warning_Time__c</field>
+        <literalValue>1st Warning</literalValue>
+        <name>1st Warning</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>X1st_Warning000</fullName>
+        <field>Innova_Warning_Time__c</field>
+        <literalValue>1st Warning</literalValue>
+        <name>1st Warning</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>X1st_Warning1</fullName>
+        <field>Innova_Warning_Time__c</field>
+        <literalValue>1st Warning</literalValue>
+        <name>1st Warning</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>X1st_Warning101</fullName>
+        <field>Innova_Warning_Time__c</field>
+        <literalValue>1st Warning</literalValue>
+        <name>1st Warning</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>X1st_Warning11</fullName>
+        <field>Innova_Warning_Time__c</field>
+        <literalValue>1st Warning</literalValue>
+        <name>1st Warning</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>X1st_Warning111</fullName>
+        <field>Innova_Warning_Time__c</field>
+        <literalValue>1st Warning</literalValue>
+        <name>1st Warning</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>X1st_Warning2</fullName>
+        <field>Innova_Warning_Time__c</field>
+        <literalValue>1st Warning</literalValue>
+        <name>1st Warning</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>X1st_Warning201</fullName>
+        <field>Innova_Warning_Time__c</field>
+        <literalValue>1st Warning</literalValue>
+        <name>1st Warning</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>X2nd_Warning</fullName>
+        <field>Innova_Warning_Time__c</field>
+        <literalValue>2nd Warning</literalValue>
+        <name>2nd Warning</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>X2nd_Warning0</fullName>
+        <field>Innova_Warning_Time__c</field>
+        <literalValue>2nd Warning</literalValue>
+        <name>2nd Warning</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>X2nd_Warning1</fullName>
+        <field>Innova_Warning_Time__c</field>
+        <literalValue>2nd Warning</literalValue>
+        <name>2nd Warning</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>X2nd_Warning101</fullName>
+        <field>Innova_Warning_Time__c</field>
+        <literalValue>2nd Warning</literalValue>
+        <name>2nd Warning</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>X2nd_Warning111</fullName>
+        <field>Innova_Warning_Time__c</field>
+        <literalValue>2nd Warning</literalValue>
+        <name>2nd Warning</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>X2nd_Warning301</fullName>
+        <field>Innova_Warning_Time__c</field>
+        <literalValue>2nd Warning</literalValue>
+        <name>2nd Warning</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>X3rd_Warning</fullName>
+        <field>Innova_Warning_Time__c</field>
+        <literalValue>3rd Warning</literalValue>
+        <name>3rd Warning</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>X3rd_Warning0</fullName>
+        <field>Innova_Warning_Time__c</field>
+        <literalValue>3rd Warning</literalValue>
+        <name>3rd Warning</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>X3rd_Warning00</fullName>
+        <field>Innova_Warning_Time__c</field>
+        <literalValue>3rd Warning</literalValue>
+        <name>3rd Warning</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>X3rd_Warning1</fullName>
+        <field>Innova_Warning_Time__c</field>
+        <literalValue>3rd Warning</literalValue>
+        <name>3rd Warning</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>submit_for_approval</fullName>
+        <field>Status</field>
+        <literalValue>Submitted for Approval</literalValue>
+        <name>submit for approval</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>wkitsm__Update_Change_Status_Approved</fullName>
+        <field>Status</field>
+        <literalValue>Approved</literalValue>
+        <name>Update Change Status - Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>wkitsm__Update_Change_Status_RFC</fullName>
+        <field>Status</field>
+        <literalValue>Request for Change</literalValue>
+        <name>Update Change Status - RFC</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>wkitsm__Update_Change_Status_Rejected</fullName>
+        <field>Status</field>
+        <literalValue>Rejected</literalValue>
+        <name>Update Change Status - Rejected</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>wkitsm__Update_Escalation</fullName>
+        <field>IsEscalated</field>
+        <literalValue>1</literalValue>
+        <name>Update Escalation</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>wkitsm__ITSC - Case Resolved</fullName>
+        <actions>
+            <name>wkitsm__ITSCCaseResolvedEmailAlert</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <description>ITSC - Workflow rule when a case is resolved</description>
+        <formula>AND(  NOT($Setup.wkitsm__ItscPublicSettings__c.wkitsm__DoesSkipWorkflowRules__c),   OR(   RecordType.DeveloperName=&apos;Incident&apos;,   RecordType.DeveloperName=&apos;Request&apos;  ),  ISPICKVAL(Status, &apos;Resolved&apos;) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>wkitsm__ITSC - Case Status Change</fullName>
+        <actions>
+            <name>wkitsm__ITSCCaseStatusEmailAlert</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <description>ITSC - Workflow rule when a case status is changed</description>
+        <formula>AND(  NOT($Setup.wkitsm__ItscPublicSettings__c.wkitsm__DoesSkipWorkflowRules__c),   OR(   RecordType.DeveloperName=&apos;Incident&apos;,   RecordType.DeveloperName=&apos;Request&apos;  ),  NOT(ISPICKVAL(Status, &apos;Resolved&apos;)),  ISCHANGED(Status) )</formula>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+    <rules>
+        <fullName>wkitsm__ITSC - New Case</fullName>
+        <actions>
+            <name>wkitsm__ITSCNewCaseEmailAlert</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <description>ITSC - Workflow rule for new case creation</description>
+        <formula>AND(   NOT($Setup.wkitsm__ItscPublicSettings__c.wkitsm__DoesSkipWorkflowRules__c),   OR(   RecordType.DeveloperName=&apos;Incident&apos;,   RecordType.DeveloperName=&apos;Request&apos;  ) )</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+</Workflow>

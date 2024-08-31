@@ -1,0 +1,833 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AssignmentRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignmentRule>
+        <fullName>Innova Case Assignment Rule v2</fullName>
+        <active>false</active>
+        <ruleEntry>
+            <assignedTo>Facilities_US</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Innova_Service1__c</field>
+                <operation>equals</operation>
+                <value>Facilities</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Category1__c</field>
+                <operation>equals</operation>
+                <value>Facilities US</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Facilities_WPS_India</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Innova_Service1__c</field>
+                <operation>equals</operation>
+                <value>Facilities</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Category1__c</field>
+                <operation>equals</operation>
+                <value>WPS India</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>FSO_Consultant_Care_Hiregenics</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Innova_Service1__c</field>
+                <operation>equals</operation>
+                <value>Field Support and Operations</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Category1__c</field>
+                <operation>equals</operation>
+                <value>Consultant Care - HireGenics</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>FSO_Consultant_Care_Innova</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Innova_Service1__c</field>
+                <operation>equals</operation>
+                <value>Field Support and Operations</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Category1__c</field>
+                <operation>equals</operation>
+                <value>Consultant Care - Innova</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>FSO_Volt_Background_Check</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Innova_Service1__c</field>
+                <operation>equals</operation>
+                <value>Field Support and Operations</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Subcategory1__c</field>
+                <operation>equals</operation>
+                <value>MSP Support</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>FSO_Volt_Customer_Account_Management</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Innova_Service1__c</field>
+                <operation>equals</operation>
+                <value>Field Support and Operations</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Category1__c</field>
+                <operation>equals</operation>
+                <value>Hiregenics</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>FSO_Field_Ops_Innova</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Innova_Service1__c</field>
+                <operation>equals</operation>
+                <value>Field Support and Operations</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Category1__c</field>
+                <operation>equals</operation>
+                <value>Field Ops - Innova</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Field_Support_Innova</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Innova_Service1__c</field>
+                <operation>equals</operation>
+                <value>Field Support and Operations</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Category1__c</field>
+                <operation>equals</operation>
+                <value>Field Support - Innova</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Field_Support_Volt</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Innova_Service1__c</field>
+                <operation>equals</operation>
+                <value>Field Support and Operations</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Category1__c</field>
+                <operation>equals</operation>
+                <value>Field Support - Volt</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Field_Support_Volt</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Innova_Service1__c</field>
+                <operation>equals</operation>
+                <value>Field Support and Operations</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>FS_Volt_AR_VCG</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Innova_Service1__c</field>
+                <operation>equals</operation>
+                <value>Finance Services</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Category1__c</field>
+                <operation>equals</operation>
+                <value>AR - VCG</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>FS_Commissions</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Innova_Service1__c</field>
+                <operation>equals</operation>
+                <value>Finance Services</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Category1__c</field>
+                <operation>equals</operation>
+                <value>Commissions</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>FS_Volt_Customer_Acct_Support_Peoplenet</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>1 AND (2 OR 3)</booleanFilter>
+            <criteriaItems>
+                <field>Case.Innova_Service1__c</field>
+                <operation>equals</operation>
+                <value>Finance Services</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Category1__c</field>
+                <operation>equals</operation>
+                <value>Customer Account Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Category1__c</field>
+                <operation>equals</operation>
+                <value>Peoplenet</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>FS_Volt_Field_Emp_Pay</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Innova_Service1__c</field>
+                <operation>equals</operation>
+                <value>Finance Services</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Category1__c</field>
+                <operation>equals</operation>
+                <value>Field Employee Pay</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>FS_Volt_VCG_VWS_Vendor_Management</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>1 AND (2  OR 3)</booleanFilter>
+            <criteriaItems>
+                <field>Case.Innova_Service1__c</field>
+                <operation>equals</operation>
+                <value>Finance Services</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Category1__c</field>
+                <operation>equals</operation>
+                <value>VCG Associate Vendor Management</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Category1__c</field>
+                <operation>equals</operation>
+                <value>VWS Associate Vendor Management</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>FS_Volt_VCG_VWS_Vendor_Management</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Innova_Service1__c</field>
+                <operation>equals</operation>
+                <value>Finance Services</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Innova_HR_Services</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Innova_Service1__c</field>
+                <operation>equals</operation>
+                <value>HR Services</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>HR_Services_India_HRIS</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>1 AND (2 OR 3 OR 4)</booleanFilter>
+            <criteriaItems>
+                <field>Case.Innova_Service1__c</field>
+                <operation>equals</operation>
+                <value>HR Services [For India Employees only]</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Category1__c</field>
+                <operation>equals</operation>
+                <value>HRIS Related</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Category1__c</field>
+                <operation>equals</operation>
+                <value>Data Request</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Category1__c</field>
+                <operation>equals</operation>
+                <value>General Query</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>HR_Services_India_Payroll</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>1 AND (2 OR 3)</booleanFilter>
+            <criteriaItems>
+                <field>Case.Innova_Service1__c</field>
+                <operation>equals</operation>
+                <value>HR Services [For India Employees only]</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Category1__c</field>
+                <operation>equals</operation>
+                <value>Payroll</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Category1__c</field>
+                <operation>equals</operation>
+                <value>Letter Requests</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>HR_Services_India_PF</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>1 AND (2 OR 3)</booleanFilter>
+            <criteriaItems>
+                <field>Case.Innova_Service1__c</field>
+                <operation>equals</operation>
+                <value>HR Services [For India Employees only]</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Category1__c</field>
+                <operation>equals</operation>
+                <value>Compliance</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Category1__c</field>
+                <operation>equals</operation>
+                <value>PF Related</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>HR_Services_India_Benefits_Insurance</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Innova_Service1__c</field>
+                <operation>equals</operation>
+                <value>HR Services [For India Employees only]</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Category1__c</field>
+                <operation>equals</operation>
+                <value>Benefits/Insurance</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>HR_Services_India_HRIS</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Innova_Service1__c</field>
+                <operation>equals</operation>
+                <value>HR Services [For India Employees only]</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>IT_Infra_Volt_Cyber_Security_Support</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Innova_Category1__c</field>
+                <operation>equals</operation>
+                <value>Infrastructure</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Subcategory1__c</field>
+                <operation>equals</operation>
+                <value>Cyber Security Support - OSI</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>IT_Infra_Volt_Network_Support</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Innova_Category1__c</field>
+                <operation>equals</operation>
+                <value>Infrastructure</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Subcategory1__c</field>
+                <operation>equals</operation>
+                <value>Network Support</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>IT_Infra_Volt_SQL_Server_Support</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Innova_Category1__c</field>
+                <operation>equals</operation>
+                <value>Infrastructure</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Subcategory1__c</field>
+                <operation>equals</operation>
+                <value>SQL Server Support - OSI</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>IT_Infra_Volt_Telephony</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Innova_Category1__c</field>
+                <operation>equals</operation>
+                <value>Infrastructure</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Subcategory1__c</field>
+                <operation>equals</operation>
+                <value>Telephony Support - OSI</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>IT_Infra_Volt_Virtualization_Storage</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <booleanFilter>1 AND (2 OR 3)</booleanFilter>
+            <criteriaItems>
+                <field>Case.Innova_Category1__c</field>
+                <operation>equals</operation>
+                <value>Infrastructure</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Subcategory1__c</field>
+                <operation>equals</operation>
+                <value>VMware Virtualization Support - OSI</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Subcategory1__c</field>
+                <operation>equals</operation>
+                <value>Storage_Backup - OSI</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>IT_Infra_Volt_Windows_Desktop_Support</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Innova_Category1__c</field>
+                <operation>equals</operation>
+                <value>Infrastructure</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Subcategory1__c</field>
+                <operation>equals</operation>
+                <value>Windows Desktop Support - OSI</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>IT_Infra_Volt_Windows_Server_Support</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Innova_Category1__c</field>
+                <operation>equals</operation>
+                <value>Infrastructure</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Subcategory1__c</field>
+                <operation>equals</operation>
+                <value>Windows Server Support - OSI</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>IT_Infrastructure</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Innova_Category1__c</field>
+                <operation>equals</operation>
+                <value>Infrastructure</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>IT_Internal_Security_SOC</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Innova_Category1__c</field>
+                <operation>equals</operation>
+                <value>Internal Security – SOC</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Application_Support_BI</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Innova_Category1__c</field>
+                <operation>equals</operation>
+                <value>Application Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Subcategory1__c</field>
+                <operation>equals</operation>
+                <value>BI Support</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Application_Support_Booking_Management</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Innova_Category1__c</field>
+                <operation>equals</operation>
+                <value>Application Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Subcategory1__c</field>
+                <operation>equals</operation>
+                <value>Booking Management System</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Application_Support_CAP</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Innova_Category1__c</field>
+                <operation>equals</operation>
+                <value>Application Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Subcategory1__c</field>
+                <operation>equals</operation>
+                <value>CAP</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Application_Support_ClientPlaybook</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Innova_Category1__c</field>
+                <operation>equals</operation>
+                <value>Application Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Subcategory1__c</field>
+                <operation>equals</operation>
+                <value>Client Playbook</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Application_Support_Coupa</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Innova_Category1__c</field>
+                <operation>equals</operation>
+                <value>Application Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Subcategory1__c</field>
+                <operation>equals</operation>
+                <value>Coupa</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Application_Support_GT_DBASupport</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Innova_Category1__c</field>
+                <operation>equals</operation>
+                <value>Application Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Subcategory1__c</field>
+                <operation>equals</operation>
+                <value>DBA Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Sub_Subcategory__c</field>
+                <operation>equals</operation>
+                <value>Guardian</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Application_Support_DBA</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Innova_Category1__c</field>
+                <operation>equals</operation>
+                <value>Application Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Subcategory1__c</field>
+                <operation>equals</operation>
+                <value>DBA Support</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Application_Support_DevOps</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Innova_Category1__c</field>
+                <operation>equals</operation>
+                <value>Application Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Subcategory1__c</field>
+                <operation>equals</operation>
+                <value>DevOps</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Application_Support_Dynamics_Nav</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Innova_Category1__c</field>
+                <operation>equals</operation>
+                <value>Application Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Subcategory1__c</field>
+                <operation>equals</operation>
+                <value>Dynamics NAV</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Application_Support_ePas</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Innova_Category1__c</field>
+                <operation>equals</operation>
+                <value>Application Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Subcategory1__c</field>
+                <operation>equals</operation>
+                <value>ePas Support</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Application_Support_ERP</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Innova_Category1__c</field>
+                <operation>equals</operation>
+                <value>Application Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Subcategory1__c</field>
+                <operation>equals</operation>
+                <value>ERP Support</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Application_Support_Fusionadmin</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Innova_Category1__c</field>
+                <operation>equals</operation>
+                <value>Application Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Subcategory1__c</field>
+                <operation>equals</operation>
+                <value>Fusionadmin</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Application_Support_HGComply</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Innova_Category1__c</field>
+                <operation>equals</operation>
+                <value>Application Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Subcategory1__c</field>
+                <operation>equals</operation>
+                <value>HGComply</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Application_Support_IComply360</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Innova_Category1__c</field>
+                <operation>equals</operation>
+                <value>Application Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Subcategory1__c</field>
+                <operation>equals</operation>
+                <value>IComply360</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Application_Support_Luminance</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Innova_Category1__c</field>
+                <operation>equals</operation>
+                <value>Application Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Subcategory1__c</field>
+                <operation>equals</operation>
+                <value>Luminance Support</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Application_Support_My_ACS</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Innova_Category1__c</field>
+                <operation>equals</operation>
+                <value>Application Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Subcategory1__c</field>
+                <operation>equals</operation>
+                <value>MyACS Support</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Application_Support_Onboarding_Metrics</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Innova_Category1__c</field>
+                <operation>equals</operation>
+                <value>Application Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Subcategory1__c</field>
+                <operation>equals</operation>
+                <value>Onboarding Metrics Support</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Application_Support_Finance</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Innova_Category1__c</field>
+                <operation>equals</operation>
+                <value>Application Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Subcategory1__c</field>
+                <operation>equals</operation>
+                <value>Application Support - Peoplesoft - Finance</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Application_Support_GT_PSSupport</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Innova_Category1__c</field>
+                <operation>equals</operation>
+                <value>Application Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Subcategory1__c</field>
+                <operation>equals</operation>
+                <value>Application Support - Peoplesoft - Guardian</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Application_Support_HR_Peoplesoft</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Innova_Category1__c</field>
+                <operation>equals</operation>
+                <value>Application Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Subcategory1__c</field>
+                <operation>equals</operation>
+                <value>Application Support - Peoplesoft - HR</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Application_Support_Salesforce</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Innova_Category1__c</field>
+                <operation>equals</operation>
+                <value>Application Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Subcategory1__c</field>
+                <operation>equals</operation>
+                <value>Salesforce</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Application_Support_SharePoint</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Innova_Category1__c</field>
+                <operation>equals</operation>
+                <value>Application Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Subcategory1__c</field>
+                <operation>equals</operation>
+                <value>SharePoint</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Application_Support_T_E_Portal</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Innova_Category1__c</field>
+                <operation>equals</operation>
+                <value>Application Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Subcategory1__c</field>
+                <operation>equals</operation>
+                <value>T&amp;E Portal</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Application_Support_Workllama</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Innova_Category1__c</field>
+                <operation>equals</operation>
+                <value>Application Support</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Subcategory1__c</field>
+                <operation>equals</operation>
+                <value>WorkLLama</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Application_Support_Bullhorn</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Innova_Category1__c</field>
+                <operation>equals</operation>
+                <value>Application Support</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Service_Cloud</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Innova_Category1__c</field>
+                <operation>equals</operation>
+                <value>Service Desk</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Subcategory1__c</field>
+                <operation>equals</operation>
+                <value>Service Cloud Request</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Marketing</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.Innova_Service1__c</field>
+                <operation>equals</operation>
+                <value>Marketing</value>
+            </criteriaItems>
+        </ruleEntry>
+        <ruleEntry>
+            <assignedTo>Service_Desk</assignedTo>
+            <assignedToType>Queue</assignedToType>
+            <criteriaItems>
+                <field>Case.CaseNumber</field>
+                <operation>notEqual</operation>
+            </criteriaItems>
+        </ruleEntry>
+    </assignmentRule>
+</AssignmentRules>

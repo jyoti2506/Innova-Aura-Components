@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Application_Support_GT_PSSupport_Innova_ITSC_Task</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Application Support - GT PSSupport</label>
+    <queue>Application_Support_GT_PSSupport</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

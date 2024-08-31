@@ -1,0 +1,23 @@
+<aura:component controller="CustomFeedComponentController" implements="forceCommunity:availableForAllPageTypes" access="global" >
+	
+    <aura:handler name="init" value="{!this}" action="{!c.init}" />
+    <aura:attribute name="feedItemId" type="String" />
+    <aura:attribute name="feedComments" type="List" />
+       
+    <div class="slds-m-around_medium">
+      <aura:iteration items="{!v.feedComments}" var="feedcomment" indexVar="index">
+          <!--<aura:iteration items="{!v.feedCommentWrapperTime}" var="feedcomment" indexVar="index">-->
+            <div class="bordered">
+                <div class="comment-box">
+                    <img src="{!feedcomment.CommenterProfilePicUrl}" alt="Profile" class="profile-pic" style="width: 40px; height: 40px; border-radius: 50%; object-fit: cover; border: 2px solid #fff; display: inline-block;" />
+                    <div class="comment-details" style="display: inline-block; vertical-align: top; margin-left: 10px;">
+                        <div class="user-info"><b>{!feedcomment.CommenterName}</b></div>
+                        <div class="timestamp" style="color: #008000;">{!feedcomment.formattedTime}</div>
+                        <ui:outputRichText value="{!feedcomment.CommentBody}" class="captured-comment" />
+                    </div>
+                </div>
+            </div>
+        </aura:iteration>
+    </div>
+    
+</aura:component>

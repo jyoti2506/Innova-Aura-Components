@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SvcCatalogFulfillmentFlow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>&lt;p&gt;Onboarding Request Form&lt;/p&gt;</description>
+    <flow>Innova_Onboarding_Request_Form</flow>
+    <isProtected>false</isProtected>
+    <masterLabel>Onboarding Request Form</masterLabel>
+</SvcCatalogFulfillmentFlow>

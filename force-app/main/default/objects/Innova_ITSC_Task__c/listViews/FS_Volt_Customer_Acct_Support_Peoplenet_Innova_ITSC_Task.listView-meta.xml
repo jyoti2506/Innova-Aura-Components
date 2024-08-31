@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FS_Volt_Customer_Acct_Support_Peoplenet_Innova_ITSC_Task</fullName>
+    <filterScope>Queue</filterScope>
+    <label>FS Volt Customer Acct Support-Peoplenet</label>
+    <queue>FS_Volt_Customer_Acct_Support_Peoplenet</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

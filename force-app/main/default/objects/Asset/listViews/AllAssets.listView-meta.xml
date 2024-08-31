@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AllAssets</fullName>
+    <columns>ASSET.NAME</columns>
+    <columns>ASSET.SERIAL_NUMBER</columns>
+    <columns>PRODUCT2.NAME</columns>
+    <columns>ASSET.LAST_UPDATE</columns>
+    <columns>UPDATEDBY_USER.ALIAS</columns>
+    <columns>ASSET.CREATED_DATE</columns>
+    <columns>wkitsm__TaniumAssetId__c</columns>
+    <columns>wkitsm__TaniumCmdbId__c</columns>
+    <columns>wkitsm__OnlineStatus__c</columns>
+    <columns>wkitsm__TaniumClientActive__c</columns>
+    <columns>wkitsm__Vendor__c</columns>
+    <columns>wkitsm__Version__c</columns>
+    <columns>wkitsm__Value__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>wkitsm__TaniumClientActive__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>All Assets</label>
+</ListView>

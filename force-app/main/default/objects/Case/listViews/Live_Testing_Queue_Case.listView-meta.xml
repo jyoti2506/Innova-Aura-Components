@@ -7,13 +7,13 @@
     <columns>CASES.STATUS</columns>
     <columns>CASES.PRIORITY</columns>
     <columns>CASES.CREATED_DATE</columns>
-    <columns>Innova_Due_Date__c</columns>
     <columns>CORE.USERS.ALIAS</columns>
     <columns>Innova_Category1__c</columns>
     <columns>Innova_Subcategory1__c</columns>
+    <columns>Innova_Sub_Subcategory__c</columns>
     <filterScope>Queue</filterScope>
     <label>Cases for review</label>
-    <queue>Cases_for_review</queue>
+    <queue>Live_Testing_Queue</queue>
     <sharedTo>
         <group>Admins</group>
     </sharedTo>

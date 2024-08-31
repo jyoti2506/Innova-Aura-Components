@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>HR Services - India - Payroll</name>
+    <queueMembers>
+        <publicGroups>
+            <publicGroup>HR_Services_India_PF</publicGroup>
+        </publicGroups>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>ISC_Catalog_Item__c</sobjectType>
+    </queueSobject>
+</Queue>

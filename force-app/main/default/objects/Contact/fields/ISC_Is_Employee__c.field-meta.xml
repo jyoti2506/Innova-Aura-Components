@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ISC_Is_Employee__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(ISBLANK(AccountId), false, IF( Account.RecordType.DeveloperName = &quot;PersonAccount&quot;, true, false))</formula>
+    <label>Is Employee</label>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>wkitsm__IsItemIcon_fileupload__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Field that stores whether or not a file was uploaded as a request menu item icon. Configured as text field as opposed to checkbox to work around apparent issues with the lightning-file-upload value functionality.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Field that stores whether or not a file was uploaded as a request menu item icon.</inlineHelpText>
+    <label>Is Request Menu Item Icon</label>
+    <length>10</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

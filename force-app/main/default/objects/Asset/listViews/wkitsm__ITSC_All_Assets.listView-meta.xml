@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>wkitsm__ITSC_All_Assets</fullName>
+    <columns>ASSET.NAME</columns>
+    <columns>wkitsm__ConfigurationItemClass__c</columns>
+    <columns>ASSET.RECORDTYPE</columns>
+    <columns>wkitsm__SerialNumber__c</columns>
+    <columns>wkitsm__Manufacturer__c</columns>
+    <columns>wkitsm__Model__c</columns>
+    <columns>wkitsm__DomainName__c</columns>
+    <columns>wkitsm__OperatingSystem__c</columns>
+    <columns>wkitsm__OsVersion__c</columns>
+    <columns>wkitsm__LastLoggedInUser__c</columns>
+    <columns>wkitsm__LastObserved__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ASSET.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Asset.wkitsm__TaniumCustomCI,Asset.wkitsm__TaniumManagedCI,Asset.wkitsm__TaniumUnmanagedCI,Asset.wkitsm__TaniumDiscoverCI</value>
+    </filters>
+    <label>ITSC - All Assets</label>
+</ListView>

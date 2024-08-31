@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>shrikant.asol@cloudaction.com</contactEmail>
+    <label>Service Console Portal</label>
+    <startUrl>https://innovasolutionsitsc--fullsb.sandbox.my.salesforce.com/servlet/networks/switch?networkId=0DBDK0000004d7V&amp;</startUrl>
+</ConnectedApp>

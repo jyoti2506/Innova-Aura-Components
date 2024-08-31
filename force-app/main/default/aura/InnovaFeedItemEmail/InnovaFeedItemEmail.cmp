@@ -1,0 +1,23 @@
+<aura:component controller="CustomFeedComponentController" implements="forceCommunity:availableForAllPageTypes" access="global" >
+	
+    <aura:handler name="init" value="{!this}" action="{!c.init}" />
+    <aura:attribute name="emailMessageId" type="String" />
+    <aura:attribute name="emailMessage" type="Object" />
+    
+    
+    <div class="comment-wrapper">
+       <!-- <lightning:icon iconName="action:email" size="small" alternativeText="email" />
+        <div class="comment-info" >
+            <div class="user-info"><b>{!v.emailMessage.FromAddress}</b></div>
+            
+            <aura:if isTrue="{!v.emailMessage}">
+            	<c:InnovaLocalDateTime utcTime="{!v.emailMessage.MessageDate}"/>
+            </aura:if>
+            
+        </div>-->
+    </div>
+    <div class="comment-body">
+        <lightning:formattedRichText value="{!v.emailMessage.HtmlBody}" class="captured-comment" />
+    </div>
+	
+</aura:component>

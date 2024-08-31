@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SvcCatalogFulfillmentFlow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>&lt;p&gt;&lt;span style=&quot;font-family: Roboto;&quot;&gt;Used to terminate an employee, gather their hardware, and remove access to corporate applications.&lt;/span&gt;&lt;/p&gt;</description>
+    <flow>Innova_Termination_Request_With_Task</flow>
+    <isProtected>false</isProtected>
+    <masterLabel>Termination Request with Task</masterLabel>
+</SvcCatalogFulfillmentFlow>

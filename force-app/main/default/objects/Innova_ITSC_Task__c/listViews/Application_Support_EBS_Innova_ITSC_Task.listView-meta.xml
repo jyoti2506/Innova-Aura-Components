@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Application_Support_EBS_Innova_ITSC_Task</fullName>
+    <columns>NAME</columns>
+    <filterScope>Queue</filterScope>
+    <label>Application Support - ERP</label>
+    <queue>Application_Support_ERP</queue>
+    <sharedTo>
+        <group>Application_Support_ERP</group>
+    </sharedTo>
+</ListView>

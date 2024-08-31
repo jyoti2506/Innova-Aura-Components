@@ -219,6 +219,11 @@
                 <label>Address Update</label>
             </value>
             <value>
+                <fullName>Address Verification Letter</fullName>
+                <default>false</default>
+                <label>Address Verification Letter</label>
+            </value>
+            <value>
                 <fullName>ADP Access</fullName>
                 <default>false</default>
                 <label>ADP Access</label>
@@ -247,6 +252,11 @@
                 <fullName>Application Defect</fullName>
                 <default>false</default>
                 <label>Application Defect</label>
+            </value>
+            <value>
+                <fullName>Apply Back Dated Leave</fullName>
+                <default>false</default>
+                <label>Apply Back Dated Leave</label>
             </value>
             <value>
                 <fullName>App Not Working</fullName>
@@ -417,11 +427,6 @@
                 <label>Block access card</label>
             </value>
             <value>
-                <fullName>Blocking Sessions</fullName>
-                <default>false</default>
-                <label>Blocking Sessions</label>
-            </value>
-            <value>
                 <fullName>Bonus Payouts</fullName>
                 <default>false</default>
                 <label>Bonus Payouts</label>
@@ -516,6 +521,7 @@
             <value>
                 <fullName>Cafeteria</fullName>
                 <default>false</default>
+                <isActive>false</isActive>
                 <label>Cafeteria</label>
             </value>
             <value>
@@ -881,7 +887,6 @@
             <value>
                 <fullName>Data Update/Add at Placement Level</fullName>
                 <default>false</default>
-                <isActive>false</isActive>
                 <label>Data Update/Add at Placement Level</label>
             </value>
             <value>
@@ -938,14 +943,19 @@
                 <label>Delete</label>
             </value>
             <value>
+                <fullName>Department Change</fullName>
+                <default>false</default>
+                <label>Department Change</label>
+            </value>
+            <value>
                 <fullName>Deployment</fullName>
                 <default>false</default>
                 <label>Deployment</label>
             </value>
             <value>
-                <fullName>Deployment [DevOps]</fullName>
+                <fullName>Designation Change</fullName>
                 <default>false</default>
-                <label>Deployment [DevOps]</label>
+                <label>Designation Change</label>
             </value>
             <value>
                 <fullName>Desk Allocation</fullName>
@@ -1092,6 +1102,11 @@
                 <label>Employment Letter</label>
             </value>
             <value>
+                <fullName>Employment Verification</fullName>
+                <default>false</default>
+                <label>Employment Verification</label>
+            </value>
+            <value>
                 <fullName>Employment Verification Letter</fullName>
                 <default>false</default>
                 <label>Employment Verification Letter</label>
@@ -1164,6 +1179,11 @@
                 <fullName>Existing Exception</fullName>
                 <default>false</default>
                 <label>Existing Exception</label>
+            </value>
+            <value>
+                <fullName>Exit Status</fullName>
+                <default>false</default>
+                <label>Exit Status</label>
             </value>
             <value>
                 <fullName>Expenses Issue</fullName>
@@ -1540,11 +1560,6 @@
                 <label>Jobs Integrations</label>
             </value>
             <value>
-                <fullName>Jobs Issue</fullName>
-                <default>false</default>
-                <label>Jobs Issue</label>
-            </value>
-            <value>
                 <fullName>Jury Duty</fullName>
                 <default>false</default>
                 <label>Jury Duty</label>
@@ -1576,6 +1591,11 @@
                 <label>Leave / FMLA</label>
             </value>
             <value>
+                <fullName>Leave Balance</fullName>
+                <default>false</default>
+                <label>Leave Balance</label>
+            </value>
+            <value>
                 <fullName>Leave without Pay</fullName>
                 <default>false</default>
                 <label>Leave without Pay</label>
@@ -1604,6 +1624,11 @@
                 <fullName>LOB or Location Change</fullName>
                 <default>false</default>
                 <label>LOB or Location Change</label>
+            </value>
+            <value>
+                <fullName>Location Change</fullName>
+                <default>false</default>
+                <label>Location Change</label>
             </value>
             <value>
                 <fullName>Login/Access</fullName>
@@ -1644,6 +1669,11 @@
                 <fullName>Machine Broken</fullName>
                 <default>false</default>
                 <label>Machine Broken</label>
+            </value>
+            <value>
+                <fullName>Manager Change</fullName>
+                <default>false</default>
+                <label>Manager Change</label>
             </value>
             <value>
                 <fullName>Mandatory time off</fullName>
@@ -1829,7 +1859,6 @@
             <value>
                 <fullName>Offer Letter Updates</fullName>
                 <default>false</default>
-                <isActive>false</isActive>
                 <label>Offer Letter Updates</label>
             </value>
             <value>
@@ -1837,6 +1866,11 @@
                 <default>false</default>
                 <isActive>false</isActive>
                 <label>Office Location Change</label>
+            </value>
+            <value>
+                <fullName>OM Change</fullName>
+                <default>false</default>
+                <label>OM Change</label>
             </value>
             <value>
                 <fullName>Onboarding</fullName>
@@ -1872,11 +1906,6 @@
                 <fullName>Oracle</fullName>
                 <default>false</default>
                 <label>Oracle</label>
-            </value>
-            <value>
-                <fullName>Oracle Critical Alerts</fullName>
-                <default>false</default>
-                <label>Oracle Critical Alerts</label>
             </value>
             <value>
                 <fullName>ORACLE Guidance</fullName>
@@ -2035,11 +2064,6 @@
                 <label>Payroll</label>
             </value>
             <value>
-                <fullName>Payroll [APM]</fullName>
-                <default>false</default>
-                <label>Payroll [APM]</label>
-            </value>
-            <value>
                 <fullName>Payroll Extract</fullName>
                 <default>false</default>
                 <label>Payroll Extract</label>
@@ -2048,6 +2072,11 @@
                 <fullName>Payrolling Related</fullName>
                 <default>false</default>
                 <label>Payrolling Related</label>
+            </value>
+            <value>
+                <fullName>Payroll Projects</fullName>
+                <default>false</default>
+                <label>Payroll Projects</label>
             </value>
             <value>
                 <fullName>Paystub/W2 Access</fullName>
@@ -2126,13 +2155,9 @@
                 <label>Playbook Creation</label>
             </value>
             <value>
-                <fullName>PMON Process Not Running</fullName>
-                <default>false</default>
-                <label>PMON Process Not Running</label>
-            </value>
-            <value>
                 <fullName>Policies (and Handbook) reviews</fullName>
                 <default>false</default>
+                <isActive>false</isActive>
                 <label>Policies (and Handbook) reviews</label>
             </value>
             <value>
@@ -2316,6 +2341,7 @@
             <value>
                 <fullName>Rehire  (Billable)</fullName>
                 <default>false</default>
+                <isActive>false</isActive>
                 <label>Rehire  (Billable)</label>
             </value>
             <value>
@@ -2386,6 +2412,7 @@
             <value>
                 <fullName>Request for Reporting</fullName>
                 <default>false</default>
+                <isActive>false</isActive>
                 <label>Request for Reporting</label>
             </value>
             <value>
@@ -2396,6 +2423,7 @@
             <value>
                 <fullName>Requisition Errors</fullName>
                 <default>false</default>
+                <isActive>false</isActive>
                 <label>Requisition Errors</label>
             </value>
             <value>
@@ -2470,6 +2498,11 @@
                 <label>Rules</label>
             </value>
             <value>
+                <fullName>Salary Verification</fullName>
+                <default>false</default>
+                <label>Salary Verification</label>
+            </value>
+            <value>
                 <fullName>Salesforce</fullName>
                 <default>false</default>
                 <label>Salesforce</label>
@@ -2512,6 +2545,7 @@
             <value>
                 <fullName>SharePoint</fullName>
                 <default>false</default>
+                <isActive>false</isActive>
                 <label>SharePoint</label>
             </value>
             <value>
@@ -2979,6 +3013,11 @@
                 <label>Visa Designation</label>
             </value>
             <value>
+                <fullName>Visa Process Letter</fullName>
+                <default>false</default>
+                <label>Visa Process Letter</label>
+            </value>
+            <value>
                 <fullName>VISA Related</fullName>
                 <default>false</default>
                 <label>VISA Related</label>
@@ -3047,7 +3086,6 @@
             <value>
                 <fullName>Workforce Data Audits</fullName>
                 <default>false</default>
-                <isActive>false</isActive>
                 <label>Workforce Data Audits</label>
             </value>
             <value>
@@ -3140,10 +3178,6 @@
         <valueSettings>
             <controllingFieldValue>Highways</controllingFieldValue>
             <valueName>Update Content</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>Housekeeping</controllingFieldValue>
-            <valueName>Cafeteria</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Housekeeping</controllingFieldValue>
@@ -3446,12 +3480,60 @@
             <valueName>Money Network Inventory</valueName>
         </valueSettings>
         <valueSettings>
+            <controllingFieldValue>Official Data</controllingFieldValue>
+            <valueName>Apply Back Dated Leave</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Official Data</controllingFieldValue>
+            <valueName>Exit Status</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Official Data</controllingFieldValue>
+            <valueName>Leave Balance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Official Data</controllingFieldValue>
+            <valueName>Location Change</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Official Data</controllingFieldValue>
+            <valueName>Manager Change</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Official Data</controllingFieldValue>
+            <valueName>OM Change</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Official Letters</controllingFieldValue>
+            <valueName>Department Change</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Official Letters</controllingFieldValue>
+            <valueName>Designation Change</valueName>
+        </valueSettings>
+        <valueSettings>
             <controllingFieldValue>Business Analytics</controllingFieldValue>
             <valueName>Oracle</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>Wellness</controllingFieldValue>
             <valueName>Virgin Pulse Enrollment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Personal Letters</controllingFieldValue>
+            <valueName>Address Verification Letter</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Personal Letters</controllingFieldValue>
+            <valueName>Employment Verification</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Personal Letters</controllingFieldValue>
+            <valueName>Salary Verification</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Personal Letters</controllingFieldValue>
+            <valueName>Visa Process Letter</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>WorkLLama</controllingFieldValue>
@@ -3971,10 +4053,6 @@
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>DBA Support</controllingFieldValue>
-            <valueName>Blocking Sessions</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>DBA Support</controllingFieldValue>
             <valueName>DBA</valueName>
         </valueSettings>
         <valueSettings>
@@ -3990,14 +4068,6 @@
             <valueName>Guardian</valueName>
         </valueSettings>
         <valueSettings>
-            <controllingFieldValue>DBA Support</controllingFieldValue>
-            <valueName>Oracle Critical Alerts</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>DBA Support</controllingFieldValue>
-            <valueName>PMON Process Not Running</valueName>
-        </valueSettings>
-        <valueSettings>
             <controllingFieldValue>DevOps</controllingFieldValue>
             <controllingFieldValue>Commisions Report</controllingFieldValue>
             <valueName>Access Related</valueName>
@@ -4009,10 +4079,6 @@
         <valueSettings>
             <controllingFieldValue>DevOps</controllingFieldValue>
             <valueName>App Registration Modification (Adding/ Removing Role, Adding/Removing user access)</valueName>
-        </valueSettings>
-        <valueSettings>
-            <controllingFieldValue>DevOps</controllingFieldValue>
-            <valueName>Deployment [DevOps]</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>DevOps</controllingFieldValue>
@@ -4032,7 +4098,7 @@
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>DevOps</controllingFieldValue>
-            <valueName>Jobs Issue</valueName>
+            <valueName>Jobs</valueName>
         </valueSettings>
         <valueSettings>
             <controllingFieldValue>DevOps</controllingFieldValue>

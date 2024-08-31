@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Innova_Application_Services_Innova_ITSC_Task1</fullName>
+    <columns>NAME</columns>
+    <filterScope>Queue</filterScope>
+    <label>Application Support - Bullhorn</label>
+    <queue>Application_Support_Bullhorn</queue>
+    <sharedTo>
+        <group>Application_Support_Bullhorn</group>
+    </sharedTo>
+</ListView>

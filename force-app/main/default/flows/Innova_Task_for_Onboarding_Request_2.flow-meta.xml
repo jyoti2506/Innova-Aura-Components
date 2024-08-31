@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>57.0</apiVersion>
+    <decisions>
+        <name>Check_For_Billable_and_No_Email_Address</name>
+        <label>Check For Billable and No Email Address</label>
+        <locationX>182</locationX>
+        <locationY>431</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Billable_and_No_Email_Address</name>
+            <conditionLogic>(1 AND 2) OR 3</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Innova_Related_Case__r.Innova_Employee_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Billable</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Innova_Email_Address__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Innova_Related_Case__r.Innova_Employee_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Non-Billable</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Learning_Management_System</targetReference>
+            </connector>
+            <label>Billable and No Email Address</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_for_Subject</name>
+        <label>Check for Subject</label>
+        <locationX>380</locationX>
+        <locationY>323</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Add_user_in_AD</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Innova_Subject__c</leftValueReference>
+                <operator>Contains</operator>
+                <rightValue>
+                    <stringValue>Add User in AD</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Check_For_Billable_and_No_Email_Address</targetReference>
+            </connector>
+            <label>Add user in AD</label>
+        </rules>
+    </decisions>
+    <description>Create 2 LMS Tasks after AD Account creation</description>
+    <environments>Default</environments>
+    <interviewLabel>Innova ta {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Portal - New Hire Tasks - LMS</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>Learning_Management_System</name>
+        <label>Learning Management System</label>
+        <locationX>50</locationX>
+        <locationY>539</locationY>
+        <connector>
+            <targetReference>Orientation</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Innova_Description__c</field>
+            <value>
+                <stringValue>Onboarding Request for New Hire - Details can be found in Service Request Details section</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Innova_Related_Case__c</field>
+            <value>
+                <elementReference>$Record.Innova_Related_Case__r.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Innova_Service_Request_Details__c</field>
+            <value>
+                <elementReference>$Record.Innova_Related_Case__r.Innova_Service_Request_Details__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Innova_Subject__c</field>
+            <value>
+                <stringValue>Onboard new hire into LMS</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>$Label.Innova_Learning_Management_System_Queue</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Innova_ITSC_Task__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>Orientation</name>
+        <label>Orientation</label>
+        <locationX>50</locationX>
+        <locationY>647</locationY>
+        <inputAssignments>
+            <field>Innova_Description__c</field>
+            <value>
+                <stringValue>New Hire Request - Details can be found in Service Request Details section</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Innova_Related_Case__c</field>
+            <value>
+                <elementReference>$Record.Innova_Related_Case__r.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Innova_Service_Request_Details__c</field>
+            <value>
+                <elementReference>$Record.Innova_Related_Case__r.Innova_Service_Request_Details__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Innova_Subject__c</field>
+            <value>
+                <stringValue>Enroll new hire into New Hire Orientation</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>$Label.Innova_Learning_Management_System_Queue</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Innova_ITSC_Task__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <start>
+        <locationX>254</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Check_for_Subject</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Innova_Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Completed</stringValue>
+            </value>
+        </filters>
+        <object>Innova_ITSC_Task__c</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

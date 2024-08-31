@@ -2,27 +2,23 @@
 <ListView xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>All_Open_Cases</fullName>
     <columns>CASES.CASE_NUMBER</columns>
-    <columns>NAME</columns>
     <columns>CASES.SUBJECT</columns>
+    <columns>NAME</columns>
     <columns>CASES.STATUS</columns>
-    <columns>CASES.PRIORITY</columns>
     <columns>CASES.CREATED_DATE</columns>
-    <columns>CORE.USERS.ALIAS</columns>
+    <columns>CASES.PRIORITY</columns>
+    <columns>OWNER_NAME</columns>
+    <columns>Current_Queue__c</columns>
+    <columns>Innova_Region1__c</columns>
+    <columns>Innova_Brand1__c</columns>
     <filterScope>Everything</filterScope>
     <filters>
-        <field>CASES.RECORDTYPE</field>
-        <operation>equals</operation>
-        <value>Case.wkitsm__Change,Case.wkitsm__Incident,Case.wkitsm__MajorIncident,Case.wkitsm__Problem,Case.wkitsm__Request</value>
-    </filters>
-    <filters>
-        <field>Created_by_User_id__c</field>
-        <operation>equals</operation>
-        <value>1</value>
-    </filters>
-    <filters>
         <field>CASES.STATUS</field>
-        <operation>equals</operation>
-        <value>New,Submitted for Approval,Assigned,Approved,In Progress,Transferred,Pending,Rejected,On Hold,Escalated,Critical,Analyzed,Prioritized,Workaround Documented,Known Error,Change Created,Request for Change,AutoCreate Problem,Change Implemented</value>
+        <operation>notEqual</operation>
+        <value>Resolved,Rejected,Closed</value>
     </filters>
     <label>All Open Cases</label>
+    <sharedTo>
+        <group>Innova_IT_Agents</group>
+    </sharedTo>
 </ListView>

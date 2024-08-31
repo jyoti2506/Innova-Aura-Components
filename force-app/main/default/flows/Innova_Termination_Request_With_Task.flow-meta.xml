@@ -1,11 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <actionCalls>
+        <name>Create_Request_Record_with_case_assignment_rule</name>
+        <label>Create Request Record with case assignment rule</label>
+        <locationX>176</locationX>
+        <locationY>1214</locationY>
+        <actionName>CaseCreationUtil</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Get_Case_id</targetReference>
+        </connector>
+        <faultConnector>
+            <targetReference>Error</targetReference>
+        </faultConnector>
+        <flowTransactionModel>Automatic</flowTransactionModel>
+        <inputParameters>
+            <name>caseRecord</name>
+            <value>
+                <elementReference>varCaseRecord</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>ruleName</name>
+            <value>
+                <stringValue>Innova Case Assignment Rule v2</stringValue>
+            </value>
+        </inputParameters>
+        <nameSegment>CaseCreationUtil</nameSegment>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+        <versionSegment>1</versionSegment>
+    </actionCalls>
+    <actionCalls>
+        <name>Home_Page</name>
+        <label>Home Page</label>
+        <locationX>176</locationX>
+        <locationY>2162</locationY>
+        <actionName>c:Homepage</actionName>
+        <actionType>component</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <nameSegment>c:Homepage</nameSegment>
+        <versionSegment>1</versionSegment>
+    </actionCalls>
     <apiVersion>57.0</apiVersion>
     <assignments>
         <name>Add_record_Into_Collection</name>
         <label>Add record Into Collection</label>
         <locationX>264</locationX>
-        <locationY>1430</locationY>
+        <locationY>1754</locationY>
         <assignmentItems>
             <assignToReference>varRContentDocumentLinks</assignToReference>
             <operator>Add</operator>
@@ -65,6 +106,13 @@
             </value>
         </assignmentItems>
         <assignmentItems>
+            <assignToReference>varCaseRecord.RecordTypeId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Label.Request_RecordType_Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
             <assignToReference>varCaseRecord.Innova_Region1__c</assignToReference>
             <operator>Assign</operator>
             <value>
@@ -107,19 +155,26 @@
             </value>
         </assignmentItems>
         <connector>
-            <targetReference>Loop_to_attach_File</targetReference>
+            <targetReference>Create_Request_Record_with_case_assignment_rule</targetReference>
         </connector>
     </assignments>
     <assignments>
         <name>Link_file_and_Req_Record</name>
         <label>Link file and Req Record</label>
         <locationX>264</locationX>
-        <locationY>1322</locationY>
+        <locationY>1646</locationY>
         <assignmentItems>
             <assignToReference>VarContentDocumentLink.ContentDocumentId</assignToReference>
             <operator>Assign</operator>
             <value>
                 <elementReference>Loop_to_attach_File</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>VarContentDocumentLink.LinkedEntityId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Create_Request_Record_with_case_assignment_rule</elementReference>
             </value>
         </assignmentItems>
         <connector>
@@ -447,7 +502,7 @@ If(!ISNULL({!Address_1}) &amp;&amp; !ISBLANK({!Address_1}), &apos;&lt;strong&gt;
         <name>Loop_to_attach_File</name>
         <label>Loop to attach File</label>
         <locationX>176</locationX>
-        <locationY>1214</locationY>
+        <locationY>1538</locationY>
         <collectionReference>VarContentDocID</collectionReference>
         <iterationOrder>Asc</iterationOrder>
         <nextValueConnector>
@@ -480,9 +535,33 @@ If(!ISNULL({!Address_1}) &amp;&amp; !ISBLANK({!Address_1}), &apos;&lt;strong&gt;
         <name>Create_Record_From_Collection</name>
         <label>Create Record From Collection</label>
         <locationX>176</locationX>
-        <locationY>1622</locationY>
+        <locationY>1946</locationY>
+        <connector>
+            <targetReference>lable_at_End1</targetReference>
+        </connector>
         <inputReference>varRContentDocumentLinks</inputReference>
     </recordCreates>
+    <recordLookups>
+        <name>Get_Case_id</name>
+        <label>Get Case id</label>
+        <locationX>176</locationX>
+        <locationY>1322</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_Record_from_que</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Create_Request_Record_with_case_assignment_rule</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Case</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
     <recordLookups>
         <name>Get_Contact</name>
         <label>Get Contact</label>
@@ -568,6 +647,27 @@ If(!ISNULL({!Address_1}) &amp;&amp; !ISBLANK({!Address_1}), &apos;&lt;strong&gt;
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
     <recordLookups>
+        <name>Get_Record_from_que</name>
+        <label>Get Record from que</label>
+        <locationX>176</locationX>
+        <locationY>1430</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Loop_to_attach_File</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_Case_id.OwnerId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Group</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
         <name>Get_Requested_For</name>
         <label>Get Requested For</label>
         <locationX>176</locationX>
@@ -637,7 +737,52 @@ If(!ISNULL({!Address_1}) &amp;&amp; !ISBLANK({!Address_1}), &apos;&lt;strong&gt;
         <object>User</object>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
+    <recordRollbacks>
+        <name>Rollback_created_case</name>
+        <label>Rollback created case</label>
+        <locationX>440</locationX>
+        <locationY>1430</locationY>
+    </recordRollbacks>
     <runInMode>SystemModeWithoutSharing</runInMode>
+    <screens>
+        <name>Error</name>
+        <label>Error</label>
+        <locationX>440</locationX>
+        <locationY>1322</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>Rollback_created_case</targetReference>
+        </connector>
+        <fields>
+            <name>Error1</name>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong style=&quot;color: rgb(68, 68, 68); background-color: rgb(255, 255, 255); font-size: 14px;&quot;&gt;Termination Request was not submitted Please contact to Salesforce administrator.&lt;/strong&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <name>lable_at_End1</name>
+        <label>lable at End</label>
+        <locationX>176</locationX>
+        <locationY>2054</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>Home_Page</targetReference>
+        </connector>
+        <fields>
+            <name>lable_at_End</name>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong style=&quot;color: rgb(11, 154, 35); background-color: rgb(255, 255, 255); font-size: 14px;&quot;&gt;Case Number# {!Get_Case_id.CaseNumber}&lt;/strong&gt;&lt;strong style=&quot;color: rgb(11, 154, 35); font-size: 14px;&quot;&gt; has been created.&lt;/strong&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <nextOrFinishButtonLabel>Close</nextOrFinishButtonLabel>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
     <screens>
         <name>Second_Screen_To_Show_Adress</name>
         <label>Second Screen To Show Address</label>
@@ -1476,6 +1621,53 @@ If(!ISNULL({!Address_1}) &amp;&amp; !ISBLANK({!Address_1}), &apos;&lt;strong&gt;
             <fieldType>LargeTextArea</fieldType>
             <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
             <isRequired>false</isRequired>
+        </fields>
+        <fields>
+            <name>Attachment</name>
+            <extensionName>c:fileUploadImproved</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <inputParameters>
+                <name>allowMultiple</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>cb_allowMultiple</name>
+                <value>
+                    <stringValue>CB_TRUE</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>sessionKey</name>
+                <value>
+                    <elementReference>$Flow.InterviewGuid</elementReference>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>label</name>
+                <value>
+                    <stringValue>Attachment</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>renderFilesBelow</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>cb_renderFilesBelow</name>
+                <value>
+                    <stringValue>CB_TRUE</stringValue>
+                </value>
+            </inputParameters>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <outputParameters>
+                <assignToReference>VarContentDocID</assignToReference>
+                <name>contentDocumentIds</name>
+            </outputParameters>
         </fields>
         <nextOrFinishButtonLabel>Submit</nextOrFinishButtonLabel>
         <showFooter>true</showFooter>

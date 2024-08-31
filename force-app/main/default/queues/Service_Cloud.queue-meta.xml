@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Service Cloud</name>
+    <queueMembers>
+        <users>
+            <user>adarla@acsicorp.com.itsc</user>
+            <user>jutermehle@acsicorp.com.itsc</user>
+            <user>a-simon.davey@volt.onmicrosoft.com.itsc</user>
+            <user>simon.davey@volt.com.itsc</user>
+            <user>sdavey@acsicorp.com.itsc</user>
+            <user>simondavey@volt.eu.com.itsc</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+    <queueSobject>
+        <sobjectType>Innova_ITSC_Task__c</sobjectType>
+    </queueSobject>
+</Queue>

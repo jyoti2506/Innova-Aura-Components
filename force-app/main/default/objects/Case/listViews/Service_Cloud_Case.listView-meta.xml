@@ -12,9 +12,10 @@
     <columns>Innova_End_User_Comment__c</columns>
     <columns>Innova_On_Behalf_Of__c</columns>
     <columns>Innova_Issue__c</columns>
+    <columns>ISC_Current_Queue__c</columns>
     <filterScope>Everything</filterScope>
     <filters>
-        <field>Current_Queue__c</field>
+        <field>ISC_Current_Queue__c</field>
         <operation>equals</operation>
         <value>Service Cloud</value>
     </filters>

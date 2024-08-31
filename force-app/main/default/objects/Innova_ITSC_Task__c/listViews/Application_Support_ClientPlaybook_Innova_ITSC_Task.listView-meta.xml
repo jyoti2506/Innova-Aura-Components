@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Application_Support_ClientPlaybook_Innova_ITSC_Task</fullName>
+    <columns>NAME</columns>
+    <filterScope>Queue</filterScope>
+    <label>Application Support - ClientPlaybook</label>
+    <queue>Application_Support_ClientPlaybook</queue>
+    <sharedTo>
+        <group>Application_Support_ClientPlaybook</group>
+    </sharedTo>
+</ListView>

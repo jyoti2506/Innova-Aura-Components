@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Innova_eBryIT_Innova_ITSC_Task1</fullName>
+    <filterScope>Queue</filterScope>
+    <label>eBryIT Queue</label>
+    <queue>Innova_eBryIT</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

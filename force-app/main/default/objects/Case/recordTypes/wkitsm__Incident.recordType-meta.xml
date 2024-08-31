@@ -3,7 +3,6 @@
     <fullName>wkitsm__Incident</fullName>
     <active>true</active>
     <businessProcess>wkitsm__ITSC - Incident Process</businessProcess>
-    <compactLayoutAssignment>Innova_Compact_Layout</compactLayoutAssignment>
     <description>Log a ticket for a loss or disruption of operations, services, or functions.</description>
     <label>Incident</label>
     <picklistValues>
@@ -40,6 +39,10 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>Benefits%2FInsurance</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>Breakroom</fullName>
             <default>false</default>
         </values>
@@ -49,6 +52,10 @@
         </values>
         <values>
             <fullName>Compensation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Compliance</fullName>
             <default>false</default>
         </values>
         <values>
@@ -73,6 +80,10 @@
         </values>
         <values>
             <fullName>Customer Account Support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data Request</fullName>
             <default>false</default>
         </values>
         <values>
@@ -112,6 +123,10 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>General Query</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>General Repair</fullName>
             <default>false</default>
         </values>
@@ -121,6 +136,10 @@
         </values>
         <values>
             <fullName>HR Technology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HRIS Related</fullName>
             <default>false</default>
         </values>
         <values>
@@ -148,6 +167,10 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>Letter Requests</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>Lights</fullName>
             <default>false</default>
         </values>
@@ -168,11 +191,19 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>PF Related</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>Parking</fullName>
             <default>false</default>
         </values>
         <values>
             <fullName>Payroll</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payroll %5BIndia%5D</fullName>
             <default>false</default>
         </values>
         <values>
@@ -243,10 +274,6 @@
         <picklist>Innova_Issue__c</picklist>
         <values>
             <fullName>Access %2F Permission Issue</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Access %2F Permissions Management</fullName>
             <default>false</default>
         </values>
         <values>
@@ -626,10 +653,6 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>Data Corruption Issue</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>Data Issue</fullName>
             <default>false</default>
         </values>
@@ -978,10 +1001,6 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>Maintenance</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>Management Team</fullName>
             <default>false</default>
         </values>
@@ -1106,10 +1125,6 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>Not Set</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>Not able to edit%2Fsubmit time card</fullName>
             <default>false</default>
         </values>
@@ -1127,10 +1142,6 @@
         </values>
         <values>
             <fullName>Onboarding Documents</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Order</fullName>
             <default>false</default>
         </values>
         <values>
@@ -1227,10 +1238,6 @@
         </values>
         <values>
             <fullName>Patching</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Patching %2F Upgrade</fullName>
             <default>false</default>
         </values>
         <values>
@@ -1738,10 +1745,6 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>Unexpected Behavior</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>Unsubscribe Request</fullName>
             <default>false</default>
         </values>
@@ -1806,10 +1809,6 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>User Request</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>User Roles and Policies</fullName>
             <default>false</default>
         </values>
@@ -1819,10 +1818,6 @@
         </values>
         <values>
             <fullName>VMS import issue</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Vendor</fullName>
             <default>false</default>
         </values>
         <values>
@@ -1915,7 +1910,11 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>HR Services</fullName>
+            <fullName>HR Services %5BFor India Employees only%5D</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HR Services %5BFor US Employees only%5D</fullName>
             <default>false</default>
         </values>
         <values>
@@ -2061,6 +2060,10 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>Address Verification Letter</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>Adware</fullName>
             <default>false</default>
         </values>
@@ -2094,6 +2097,10 @@
         </values>
         <values>
             <fullName>Application Defect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Apply Back Dated Leave</fullName>
             <default>false</default>
         </values>
         <values>
@@ -2173,10 +2180,6 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>Blocking Sessions</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>Bonus Payouts</fullName>
             <default>false</default>
         </values>
@@ -2242,10 +2245,6 @@
         </values>
         <values>
             <fullName>CSM Attribution</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Cafeteria</fullName>
             <default>false</default>
         </values>
         <values>
@@ -2449,6 +2448,10 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>Data Update%2FAdd at Placement Level</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>Daxtra</fullName>
             <default>false</default>
         </values>
@@ -2465,11 +2468,15 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>Department Change</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>Deployment</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Deployment %5BDevOps%5D</fullName>
+            <fullName>Designation Change</fullName>
             <default>false</default>
         </values>
         <values>
@@ -2569,6 +2576,10 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>Employment Verification</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>Employment Verification Letter</fullName>
             <default>false</default>
         </values>
@@ -2606,6 +2617,10 @@
         </values>
         <values>
             <fullName>Existing Exception</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exit Status</fullName>
             <default>false</default>
         </values>
         <values>
@@ -2841,10 +2856,6 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>Jobs Issue</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>Jury Duty</fullName>
             <default>false</default>
         </values>
@@ -2873,6 +2884,10 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>Leave Balance</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>Leave without Pay</fullName>
             <default>false</default>
         </values>
@@ -2890,6 +2905,10 @@
         </values>
         <values>
             <fullName>Loan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Location Change</fullName>
             <default>false</default>
         </values>
         <values>
@@ -2918,6 +2937,10 @@
         </values>
         <values>
             <fullName>Machine Broken</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manager Change</fullName>
             <default>false</default>
         </values>
         <values>
@@ -3061,7 +3084,15 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>OM Change</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>ORACLE Guidance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Offer Letter Updates</fullName>
             <default>false</default>
         </values>
         <values>
@@ -3090,10 +3121,6 @@
         </values>
         <values>
             <fullName>Oracle</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Oracle Critical Alerts</fullName>
             <default>false</default>
         </values>
         <values>
@@ -3142,10 +3169,6 @@
         </values>
         <values>
             <fullName>Ownership Update</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>PMON Process Not Running</fullName>
             <default>false</default>
         </values>
         <values>
@@ -3233,11 +3256,11 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>Payroll %5BAPM%5D</fullName>
+            <fullName>Payroll Extract</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Payroll Extract</fullName>
+            <fullName>Payroll Projects</fullName>
             <default>false</default>
         </values>
         <values>
@@ -3298,10 +3321,6 @@
         </values>
         <values>
             <fullName>Playbook Creation</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Policies %28and Handbook%29 reviews</fullName>
             <default>false</default>
         </values>
         <values>
@@ -3421,10 +3440,6 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>Rehire  %28Billable%29</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>Relocation</fullName>
             <default>false</default>
         </values>
@@ -3481,14 +3496,6 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>Request for Reporting</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Requisition Errors</fullName>
-            <default>false</default>
-        </values>
-        <values>
             <fullName>Resignation Submission</fullName>
             <default>false</default>
         </values>
@@ -3537,6 +3544,10 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>Salary Verification</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>Sales Tax Issues</fullName>
             <default>false</default>
         </values>
@@ -3566,10 +3577,6 @@
         </values>
         <values>
             <fullName>Service Related</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>SharePoint</fullName>
             <default>false</default>
         </values>
         <values>
@@ -3893,6 +3900,10 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>Visa Process Letter</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>Visa%2FImmigration</fullName>
             <default>false</default>
         </values>
@@ -3937,6 +3948,10 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>Workforce Data Audits</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>Zoom Room Issue</fullName>
             <default>false</default>
         </values>
@@ -3949,10 +3964,6 @@
         </values>
         <values>
             <fullName>ADA</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>APM Support</fullName>
             <default>false</default>
         </values>
         <values>
@@ -4060,6 +4071,10 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>Approve PF Transfer</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>Assignment Setup Issues</fullName>
             <default>false</default>
         </values>
@@ -4069,6 +4084,10 @@
         </values>
         <values>
             <fullName>BI Support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bank account changes</fullName>
             <default>false</default>
         </values>
         <values>
@@ -4184,11 +4203,11 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>Commuter Programs</fullName>
+            <fullName>Company Event</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Company Event</fullName>
+            <fullName>Compliance - Misc</fullName>
             <default>false</default>
         </values>
         <values>
@@ -4240,6 +4259,10 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>Data request - Misc</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>Database</fullName>
             <default>false</default>
         </values>
@@ -4288,6 +4311,10 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>ESI related</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>Email</fullName>
             <default>false</default>
         </values>
@@ -4308,7 +4335,11 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>Employment Records</fullName>
+            <fullName>Employee Report</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Employees CTC</fullName>
             <default>false</default>
         </values>
         <values>
@@ -4317,6 +4348,10 @@
         </values>
         <values>
             <fullName>Exception Related</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Extra hours</fullName>
             <default>false</default>
         </values>
         <values>
@@ -4352,11 +4387,23 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>Flexi Benefit Plan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Form 16</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>Furniture Arrangement</fullName>
             <default>false</default>
         </values>
         <values>
             <fullName>Fusionadmin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General Query</fullName>
             <default>false</default>
         </values>
         <values>
@@ -4420,6 +4467,10 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>IT asset clearance</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>Innova Europe - ATS</fullName>
             <default>false</default>
         </values>
@@ -4473,6 +4524,14 @@
         </values>
         <values>
             <fullName>JobDiva</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LOP clarification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LOP reversal</fullName>
             <default>false</default>
         </values>
         <values>
@@ -4549,6 +4608,14 @@
         </values>
         <values>
             <fullName>Medical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medical Card</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mediclaim Addition</fullName>
             <default>false</default>
         </values>
         <values>
@@ -4632,6 +4699,14 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>Official Data</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Official Letters</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>Onboarding</fullName>
             <default>false</default>
         </values>
@@ -4640,7 +4715,11 @@
             <default>false</default>
         </values>
         <values>
-            <fullName>Open Enrollment</fullName>
+            <fullName>One time deductions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>One time payments %E2%80%93 incentives%2Fallowances%2Fjoining bonus%2Freferrals etc%2E</fullName>
             <default>false</default>
         </values>
         <values>
@@ -4664,6 +4743,10 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>Other reports</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>Others - CC Innova</fullName>
             <default>false</default>
         </values>
@@ -4677,6 +4760,10 @@
         </values>
         <values>
             <fullName>Overpayments - Termed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PF Related</fullName>
             <default>false</default>
         </values>
         <values>
@@ -4716,7 +4803,15 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>Payroll - Misc</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>Payroll Issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payslip</fullName>
             <default>false</default>
         </values>
         <values>
@@ -4725,6 +4820,14 @@
         </values>
         <values>
             <fullName>Personal Data</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Personal Data %5BHR India%5D</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Personal Letters</fullName>
             <default>false</default>
         </values>
         <values>
@@ -4768,6 +4871,10 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>Query related to IJP</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>Rate%2FHour Discrepancy</fullName>
             <default>false</default>
         </values>
@@ -4789,6 +4896,10 @@
         </values>
         <values>
             <fullName>Refund Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rehire Eligibility</fullName>
             <default>false</default>
         </values>
         <values>
@@ -4824,15 +4935,19 @@
             <default>false</default>
         </values>
         <values>
+            <fullName>Salary advance request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salary related query</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>Sales - Operations</fullName>
             <default>false</default>
         </values>
         <values>
             <fullName>Salesforce</fullName>
-            <default>false</default>
-        </values>
-        <values>
-            <fullName>Salesforce %5BHR%5D</fullName>
             <default>false</default>
         </values>
         <values>
@@ -4853,6 +4968,10 @@
         </values>
         <values>
             <fullName>SharePoint</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shift Change</fullName>
             <default>false</default>
         </values>
         <values>
@@ -5135,10 +5254,6 @@
     </picklistValues>
     <picklistValues>
         <picklist>Origin</picklist>
-        <values>
-            <fullName>Console</fullName>
-            <default>true</default>
-        </values>
         <values>
             <fullName>Direct Contact</fullName>
             <default>false</default>

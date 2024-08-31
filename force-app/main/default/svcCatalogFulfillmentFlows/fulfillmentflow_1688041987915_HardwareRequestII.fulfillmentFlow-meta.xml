@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SvcCatalogFulfillmentFlow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>&lt;p&gt;&lt;span style=&quot;&quot;&gt;This form allows users to request new hardware such as computers, monitors, and other peripherals.&lt;/span&gt;&lt;/p&gt;</description>
+    <flow>Innova_Hardware_Request_With_Approval_and_Task_II</flow>
+    <isProtected>false</isProtected>
+    <masterLabel>Hardware Request II</masterLabel>
+</SvcCatalogFulfillmentFlow>

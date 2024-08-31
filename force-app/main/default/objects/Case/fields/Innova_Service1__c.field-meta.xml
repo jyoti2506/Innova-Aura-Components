@@ -36,6 +36,17 @@
             <value>
                 <fullName>HR Services</fullName>
                 <default>false</default>
+                <isActive>false</isActive>
+                <label>HR Services</label>
+            </value>
+            <value>
+                <fullName>HR Services [For India Employees only]</fullName>
+                <default>false</default>
+                <label>HR Services [For India Employees only]</label>
+            </value>
+            <value>
+                <fullName>HR Services [For US Employees only]</fullName>
+                <default>false</default>
                 <label>HR Services [For US Employees only]</label>
             </value>
             <value>

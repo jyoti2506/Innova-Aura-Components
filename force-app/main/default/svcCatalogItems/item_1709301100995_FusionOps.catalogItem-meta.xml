@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SvcCatalogItemDef xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>60.0</apiVersion>
+    <categories>
+        <isPrimaryCategory>false</isPrimaryCategory>
+        <sortOrder>8</sortOrder>
+        <svcCatalogCategory>category_1689759204688_All</svcCatalogCategory>
+    </categories>
+    <categories>
+        <isPrimaryCategory>false</isPrimaryCategory>
+        <sortOrder>8</sortOrder>
+        <svcCatalogCategory>category_1639787721401_Technology</svcCatalogCategory>
+    </categories>
+    <isFeatured>false</isFeatured>
+    <isProtected>false</isProtected>
+    <masterLabel>Fusion Ops</masterLabel>
+    <status>Deprecated</status>
+</SvcCatalogItemDef>

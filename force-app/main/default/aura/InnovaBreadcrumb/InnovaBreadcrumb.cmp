@@ -1,0 +1,26 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global" >
+    
+    <lightning:navigation aura:id="navService"/>
+    <aura:attribute name="isModalOpen" type="Boolean" default="false" />
+    
+    <lightning:button label="Back to Catalog" onclick="{!c.openModal}" />
+    
+    <aura:if isTrue="{!v.isModalOpen}">
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+                <header class="slds-modal__header">
+                    <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">Confirmation</h2>
+                </header>
+                <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                    <p>Are you sure you want to proceed?  You will lose all progress on this form.</p>
+                </div>
+                <footer class="slds-modal__footer">
+                    <lightning:button variant="neutral" label="Cancel" onclick="{!c.closeModal}" />
+                    <lightning:button variant="brand" label="Confirm" onclick="{!c.handleConfirm}" />
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </aura:if>
+    
+</aura:component>

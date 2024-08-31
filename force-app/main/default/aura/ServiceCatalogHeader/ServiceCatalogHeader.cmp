@@ -1,0 +1,21 @@
+<aura:component controller="ServiceCatalogHeaderController" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	
+     <aura:attribute name="flowApiName" type="String" />
+    <aura:attribute name="title" type="String" />
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+
+    <!-- Display the title -->
+    <aura:if isTrue="{!not(empty(v.title))}">
+        <div class="slds-page-header slds-text-align_center headerColor">
+        
+        <p class="slds-text-heading--label headerText" style="font-size: 24px;">
+            <b>{!v.title}</b>
+        </p>  
+        
+    </div>
+        <aura:set attribute="else">
+            <h1>No title found</h1>
+        </aura:set>
+    </aura:if>
+</aura:component>

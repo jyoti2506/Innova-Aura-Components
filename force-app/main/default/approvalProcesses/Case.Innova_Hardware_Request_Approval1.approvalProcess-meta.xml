@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <allowRecall>true</allowRecall>
+    <allowedSubmitters>
+        <type>creator</type>
+    </allowedSubmitters>
+    <allowedSubmitters>
+        <type>owner</type>
+    </allowedSubmitters>
+    <approvalPageFields>
+        <field>Contact</field>
+        <field>CaseNumber</field>
+        <field>Owner</field>
+        <field>CreatedDate</field>
+        <field>Subject</field>
+        <field>Description</field>
+        <field>Innova_Service_Request_Details__c</field>
+    </approvalPageFields>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>Innova_Manager__c</name>
+                <type>relatedUserField</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <booleanFilter>1 OR 2 OR 3 OR 4 OR 5 OR 6 OR 7 OR 8 OR 9 OR 10 OR 11 OR 12 OR 13 OR 14 OR 15 OR 16 OR 17</booleanFilter>
+            <criteriaItems>
+                <field>Case.Innova_Service_Request_Details__c</field>
+                <operation>contains</operation>
+                <value>Laptop Charger</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Service_Request_Details__c</field>
+                <operation>contains</operation>
+                <value>Monitors Dual</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Service_Request_Details__c</field>
+                <operation>contains</operation>
+                <value>Monitor Single</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Service_Request_Details__c</field>
+                <operation>contains</operation>
+                <value>Headset Wired</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Service_Request_Details__c</field>
+                <operation>contains</operation>
+                <value>Keyboard Wired</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Service_Request_Details__c</field>
+                <operation>contains</operation>
+                <value>Docking Station</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Service_Request_Details__c</field>
+                <operation>contains</operation>
+                <value>Mouse Wired</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Service_Request_Details__c</field>
+                <operation>contains</operation>
+                <value>Other</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Service_Request_Details__c</field>
+                <operation>contains</operation>
+                <value>Printer</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Service_Request_Details__c</field>
+                <operation>contains</operation>
+                <value>Desktop Speaker (Jabra)</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Service_Request_Details__c</field>
+                <operation>contains</operation>
+                <value>Headset</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Service_Request_Details__c</field>
+                <operation>contains</operation>
+                <value>External Webcam Wired</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Service_Request_Details__c</field>
+                <operation>contains</operation>
+                <value>Keyboard/Mouse Combo Wireless</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Service_Request_Details__c</field>
+                <operation>contains</operation>
+                <value>Mouse</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Service_Request_Details__c</field>
+                <operation>contains</operation>
+                <value>Keyboard</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Service_Request_Details__c</field>
+                <operation>contains</operation>
+                <value>Keyboard Wireless</value>
+            </criteriaItems>
+            <criteriaItems>
+                <field>Case.Innova_Service_Request_Details__c</field>
+                <operation>contains</operation>
+                <value>Mouse Wireless</value>
+            </criteriaItems>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>Manager</label>
+        <name>Manager</name>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>Innova_IT_Approval</name>
+                <type>queue</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <criteriaItems>
+                <field>Case.Innova_Service_Request_Details__c</field>
+                <operation>contains</operation>
+                <value>This option will require business justification or be a client requirement. IT Approval is required.</value>
+            </criteriaItems>
+        </entryCriteria>
+        <label>IT Approval</label>
+        <name>IT_Approval</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <emailTemplate>wkitsm__ITSCEmailNotifications/Innova_Solution_Approval_Email_Template</emailTemplate>
+    <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
+    <entryCriteria>
+        <criteriaItems>
+            <field>Case.RecordType</field>
+            <operation>equals</operation>
+            <value>Request</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Innova_Service_Request_Trigger__c</field>
+            <operation>equals</operation>
+            <value>Hardware Request</value>
+        </criteriaItems>
+    </entryCriteria>
+    <finalApprovalActions>
+        <action>
+            <name>Status_is_Approved</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Update_Approved_checkbox</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalApprovalActions>
+    <finalApprovalRecordLock>false</finalApprovalRecordLock>
+    <finalRejectionActions>
+        <action>
+            <name>Status_is_Rejected</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Update_Rejected_Checkbox</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalRejectionActions>
+    <finalRejectionRecordLock>false</finalRejectionRecordLock>
+    <initialSubmissionActions>
+        <action>
+            <name>submit_for_approval</name>
+            <type>FieldUpdate</type>
+        </action>
+    </initialSubmissionActions>
+    <label>Innova Hardware Request Approval</label>
+    <nextAutomatedApprover>
+        <useApproverFieldOfRecordOwner>false</useApproverFieldOfRecordOwner>
+        <userHierarchyField>Manager</userHierarchyField>
+    </nextAutomatedApprover>
+    <processOrder>6</processOrder>
+    <recordEditability>AdminOrCurrentApprover</recordEditability>
+    <showApprovalHistory>true</showApprovalHistory>
+</ApprovalProcess>

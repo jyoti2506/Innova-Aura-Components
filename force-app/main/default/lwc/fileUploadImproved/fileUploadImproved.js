@@ -117,24 +117,6 @@ export default class FileUpload extends NavigationMixin(LightningElement) {
     }
 
     connectedCallback(){
-        /*let storedFiles = sessionStorage.getItem('uploadedFiles');
-        if (storedFiles) {
-            this.processFiles(JSON.parse(storedFiles));
-        } else if (this.recordId && this.renderExistingFiles) {
-            getExistingFiles({ recordId: this.recordId })
-                .then((files) => {
-                    if (files != undefined && files.length > 0) {
-                        this.processFiles(files);
-                    } else {
-                        this.communicateEvent(this.docIds, this.versIds, this.fileNames, this.objFiles);
-                    }
-                })
-                .catch((error) => {
-                    this.showErrors(this.reduceErrors(error).toString());
-                })
-        } else {
-            this.communicateEvent(this.docIds, this.versIds, this.fileNames, this.objFiles);
-        }*/
         let cachedSelection = sessionStorage.getItem(this.sessionKey);
         if(cachedSelection){
             this.processFiles(JSON.parse(cachedSelection));
@@ -272,13 +254,6 @@ export default class FileUpload extends NavigationMixin(LightningElement) {
     }
     
     handleUploadFinished(files) {
-
-        // Process the uploaded files as usual
-        //super.handleUploadFinished(files);
-
-        // Store the file information in session storage
-        //sessionStorage.setItem('uploadedFiles', JSON.stringify(files));
-    
         
         let objFiles = [];
         let versIds = [];
@@ -436,40 +411,15 @@ export default class FileUpload extends NavigationMixin(LightningElement) {
         let docId = event.target.dataset.docid;
 
         console.log(docId);
-        event.preventDefault();
-
-// Call NavigationMixin.Navigate without preventing default behavior
-this[NavigationMixin.Navigate]({
-  type: 'standard__webPage',
-  attributes: {
-    url: 'https://innovasolutionsitsc--partialsb.sandbox.lightning.force.com/lightning/page/filePreview?selectedRecordId=' + docId,
-  },
-}).then(url => {
-  // Open the URL in a new window/tab
-  const newWindow = window.open(url, '_blank');
-  // (Optional) Focus the new window/tab
-  if (newWindow) {
-    newWindow.focus();
-  } else {
-    console.error('Error opening new window.');
-  }
-}).catch(error => {
-  console.error('Error navigating to file preview page:', error);
-});
+        event.preventDefault(); 
 
 
-
-
-      /*
-        this[NavigationMixin.Navigate]({
-            type: 'standard__namedPage',
-            attributes: {
-                pageName: 'filePreview',
-            },
-            state: {
-                selectedRecordId: '069DJ000001fYjcYAE',
-            },
-        });*/
+    this[NavigationMixin.Navigate]({
+        type: 'standard__webPage',
+        attributes: {
+            url: 'https://innovasolutionsitsc--fullsb.sandbox.lightning.force.com/lightning/page/filePreview?selectedRecordId=' + docId,
+        },
+    });
     }
 
     @api

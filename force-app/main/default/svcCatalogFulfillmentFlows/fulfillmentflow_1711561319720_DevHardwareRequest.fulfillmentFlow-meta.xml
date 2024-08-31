@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SvcCatalogFulfillmentFlow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Hardware Request V2</description>
+    <flow>Portal_Dev_Basic_Screen</flow>
+    <isProtected>false</isProtected>
+    <masterLabel>Dev - Hardware Request</masterLabel>
+</SvcCatalogFulfillmentFlow>

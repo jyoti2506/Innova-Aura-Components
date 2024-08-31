@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Send_from_address__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <externalId>false</externalId>
+    <label>Send from address</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>ISC_System_Record__c.Type__c</field>
+            <operation>equals</operation>
+            <value>Org Wide Address</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>ISC_System_Record__c</referenceTo>
+    <relationshipLabel>Queue Settings (Send from address)</relationshipLabel>
+    <relationshipName>Queue_Sender</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>
